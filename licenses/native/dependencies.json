@@ -1,0 +1,3495 @@
+{
+  "build": {
+    "platform": "windows-x86_64",
+    "distribution": "Official MSYS2 selected files; Serf rebuilt with enclosed minimal Apache-2.0 source patch",
+    "selection": "svn.exe and svnmucc.exe with recursive PE imports; no other utilities",
+    "sourceEvidence": "Complete corresponding sources, original package recipes, build metadata, original notices and runtime local-source build recipe",
+    "runtimeRequirements": "Windows; no separately installed SVN, MSYS2, compiler or Microsoft VC redistributable required"
+  },
+  "components": [
+    {
+      "name": "subversion",
+      "version": "1.14.5-4",
+      "license": "Apache-2.0 AND MIT AND Unicode-DFS-2015 AND retained embedded-component notices",
+      "packageDeclaredLicense": [
+        "spdx:Apache-2.0"
+      ],
+      "upstream": "https://subversion.apache.org/",
+      "binaryPackage": {
+        "filename": "subversion-1.14.5-4-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/subversion-1.14.5-4-x86_64.pkg.tar.zst",
+        "sha256": "79950820e107b00960fb91d5186786ee46ef0b775a9543e580435e050696580c"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/svn.exe",
+          "sha256": "4d769cb503d344cc2983e9ab5a09c7a5c870f8608b6a90f09d1d1e70e3dba42d",
+          "archiveEntry": "usr/bin/svn.exe",
+          "imports": [
+            "msys-svn_client-1-0.dll",
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_diff-1-0.dll",
+            "msys-svn_ra-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-svn_wc-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/svnmucc.exe",
+          "sha256": "8683c747198ab869e3e84d49190cde445541bea5c7ff4610c9cd8320d0d9e1cd",
+          "archiveEntry": "usr/bin/svnmucc.exe",
+          "imports": [
+            "msys-svn_client-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-svn_ra-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_client-1-0.dll",
+          "sha256": "d791d1cc4f401d93a59502f51e92f02f99dc2027d0151e54ee3d8661656b07bc",
+          "archiveEntry": "usr/bin/msys-svn_client-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_diff-1-0.dll",
+            "msys-svn_ra-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-svn_wc-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_delta-1-0.dll",
+          "sha256": "11fa622803c9223546134e22179d0acf27ea2b956ed3d6514504e797648b95b4",
+          "archiveEntry": "usr/bin/msys-svn_delta-1-0.dll",
+          "imports": [
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_diff-1-0.dll",
+          "sha256": "d290a7e795a9a70a5d4977f99e34c45153812f1a2e3f3285f4581ab5206ceee9",
+          "archiveEntry": "usr/bin/msys-svn_diff-1-0.dll",
+          "imports": [
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_ra-1-0.dll",
+          "sha256": "4657459c946b3342324b8ab99505dd11d3f7fe4a8c0ac864ba717dd421003f28",
+          "archiveEntry": "usr/bin/msys-svn_ra-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_ra_local-1-0.dll",
+            "msys-svn_ra_serf-1-0.dll",
+            "msys-svn_ra_svn-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_subr-1-0.dll",
+          "sha256": "3d59757e331f64aa98cf954511de24f1dd3598ea1dbc893b34524be325d8f0ef",
+          "archiveEntry": "usr/bin/msys-svn_subr-1-0.dll",
+          "imports": [
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-expat-1.dll",
+            "msys-lz4-1.dll",
+            "msys-magic-1.dll",
+            "msys-2.0.dll",
+            "msys-sqlite3-0.dll",
+            "msys-z.dll",
+            "CRYPT32.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_wc-1-0.dll",
+          "sha256": "9af273d44b56a6e1f23247b720c0291da7b28e7bf798aa12d729c30b2a887a7c",
+          "archiveEntry": "usr/bin/msys-svn_wc-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_diff-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_ra_local-1-0.dll",
+          "sha256": "98b47508439aad198b083ee3ff56bdc75b663619622939d3624063ba6bebbe91",
+          "archiveEntry": "usr/bin/msys-svn_ra_local-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_fs-1-0.dll",
+            "msys-svn_repos-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_ra_serf-1-0.dll",
+          "sha256": "f7d5cf12043d770feed12d924e94e2b228702808f20cd9d4e5f5ad85f5c16c89",
+          "archiveEntry": "usr/bin/msys-svn_ra_serf-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-2.0.dll",
+            "msys-serf-1-0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_ra_svn-1-0.dll",
+          "sha256": "caf4cd59a22fdd63eeb76049a8108e35fa5490e6e0b13e68eb5e93a7d6b63e77",
+          "archiveEntry": "usr/bin/msys-svn_ra_svn-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-2.0.dll",
+            "msys-sasl2-3.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_fs-1-0.dll",
+          "sha256": "73ad03b54d881f5422c51ee1058f9e981cec166487d4bf7366f7b5e74301630a",
+          "archiveEntry": "usr/bin/msys-svn_fs-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_fs_fs-1-0.dll",
+            "msys-svn_fs_util-1-0.dll",
+            "msys-svn_fs_x-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_repos-1-0.dll",
+          "sha256": "4e0f6f920c6cb1ac878835afe68132f71c1cf2d870aa103b85959bb927a8c9e7",
+          "archiveEntry": "usr/bin/msys-svn_repos-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_fs-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_fs_fs-1-0.dll",
+          "sha256": "8436f58efcb96210adcf79877f3d15dd88675ad245386071b4c8957324432a3e",
+          "archiveEntry": "usr/bin/msys-svn_fs_fs-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_fs_util-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_fs_util-1-0.dll",
+          "sha256": "d781af089ed4a806921ea2171ff830da396a7b47733d253412b39e7f4c739900",
+          "archiveEntry": "usr/bin/msys-svn_fs_util-1-0.dll",
+          "imports": [
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-svn_fs_x-1-0.dll",
+          "sha256": "8ff58bf36ab4244db1a12b7035e30c6532b7456e78ba9415cd6706fcc03284df",
+          "archiveEntry": "usr/bin/msys-svn_fs_x-1-0.dll",
+          "imports": [
+            "msys-svn_delta-1-0.dll",
+            "msys-svn_fs_util-1-0.dll",
+            "msys-svn_subr-1-0.dll",
+            "msys-apr-1-0.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/subversion/PKGBUILD",
+          "sha256": "a8952d4f5167df49fb89cf7e2eb394a310ec87fb0a3f6ba7be1b4c97d87b230c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/.SRCINFO",
+          "sha256": "1014cd294be4a59252c0d1d1ea657909f43ab542c123e413ed8ffcd5e5f2524e"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/PKGINFO",
+          "sha256": "dab08c7128c27ec0925e766e8287ce2708227adf3b5201fe770bfbc7438eedd0"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/BUILDINFO",
+          "sha256": "ef68e8a796a6fd0d7a898f8330f3292d83fb654e53afaa6609d2742ac7e849e5"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/source-notices/subversion-1.14.5/NOTICE",
+          "sha256": "0c45b3df6c336a0ddd90fc85b35a2f3a663304ced63440d69b2bbf47194af5b1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/source-notices/subversion-1.14.5/tools/dev/svnmover/linenoise/LICENSE",
+          "sha256": "efe1692aa5b869edaa0ac88f95eb0276c1125304ffc636a299db3ebbab47f62b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/source-notices/subversion-1.14.5/LICENSE",
+          "sha256": "484aff0cfbb81155a10f903ed756e27e9fc65578c245a295bae295c4bb51eaad"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/source-notices/subversion-1.14.5/subversion/libsvn_subr/lz4/LICENSE",
+          "sha256": "d15d99c8dc6b0ec22174c0e563a95bc40f9363ca7f9d9d793bb5c5a8e8d0af71"
+        },
+        {
+          "path": "licenses/native/msys2/packages/subversion/source-notices/subversion-1.14.5/subversion/libsvn_subr/utf8proc/LICENSE.md",
+          "sha256": "59e7eec11bf2156502070a2bc31b8bf28d90070da65842646f653cf59d2e8161"
+        },
+        {
+          "path": "licenses/native/msys2/sources/subversion-1.14.5-4.src.tar.zst",
+          "sha256": "8a1e870be5ede8822d5c42d430fc8fa5982f1e08212a54f514258e634f522fa5"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "subversion",
+          "base": "subversion",
+          "version": "1.14.5-4",
+          "url": "https://mirror.msys2.org/msys/sources/subversion-1.14.5-4.src.tar.zst",
+          "path": "licenses/native/msys2/sources/subversion-1.14.5-4.src.tar.zst",
+          "sha256": "8a1e870be5ede8822d5c42d430fc8fa5982f1e08212a54f514258e634f522fa5",
+          "bytes": 8693165,
+          "inputVerification": [
+            {
+              "source": "https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2",
+              "entry": "subversion/subversion-1.14.5.tar.bz2",
+              "sha256": "e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1",
+              "sha256FromRecipe": "e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1"
+            },
+            {
+              "source": "https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2.asc",
+              "entry": "subversion/subversion-1.14.5.tar.bz2.asc",
+              "sha256": "e8966d98094d6ebced303af6025a63107b09d10bed75ab44967f445dccabefe0",
+              "sha256FromRecipe": "SKIP"
+            },
+            {
+              "source": "svnclean",
+              "entry": "subversion/svnclean",
+              "sha256": "b09dd041aba0078c8d50df130ef2f96c3ef8486279a620532fef4fe48ef9961e",
+              "sha256FromRecipe": "b09dd041aba0078c8d50df130ef2f96c3ef8486279a620532fef4fe48ef9961e"
+            },
+            {
+              "source": "0001-Create-directories-in-build-tree.patch",
+              "entry": "subversion/0001-Create-directories-in-build-tree.patch",
+              "sha256": "76d20bc2614279a1e5a1335f0f2c9ca68a9fe48614843451659ef70fc133f059",
+              "sha256FromRecipe": "76d20bc2614279a1e5a1335f0f2c9ca68a9fe48614843451659ef70fc133f059"
+            },
+            {
+              "source": "0002-Fix-linking-for-Cygwin.patch",
+              "entry": "subversion/0002-Fix-linking-for-Cygwin.patch",
+              "sha256": "cf25ba474942493328b2bbd46a902a6aa4e2737d85653a90451bd59bdca72ced",
+              "sha256FromRecipe": "cf25ba474942493328b2bbd46a902a6aa4e2737d85653a90451bd59bdca72ced"
+            },
+            {
+              "source": "0003-Fix-linking-for-perl.patch",
+              "entry": "subversion/0003-Fix-linking-for-perl.patch",
+              "sha256": "bbcb42b3dc1b24fb219e5cfca372ddfa2e90200013709d3fa4c87b4c8ec9da48",
+              "sha256FromRecipe": "bbcb42b3dc1b24fb219e5cfca372ddfa2e90200013709d3fa4c87b4c8ec9da48"
+            },
+            {
+              "source": "0004-Fix-a-switch-test-that-expects-to-an-error-due-to-re.patch",
+              "entry": "subversion/0004-Fix-a-switch-test-that-expects-to-an-error-due-to-re.patch",
+              "sha256": "6cbeb96595565d8158da62838380e0c460b95c77359287d7f430f6db87296c04",
+              "sha256FromRecipe": "6cbeb96595565d8158da62838380e0c460b95c77359287d7f430f6db87296c04"
+            },
+            {
+              "source": "0005-Use-WIN32-retry-loop-on-Cygwin-too.patch",
+              "entry": "subversion/0005-Use-WIN32-retry-loop-on-Cygwin-too.patch",
+              "sha256": "6fd3214fb6545d07c165372622c7edd642946f2bc2e3f8ac27347a693face132",
+              "sha256FromRecipe": "6fd3214fb6545d07c165372622c7edd642946f2bc2e3f8ac27347a693face132"
+            },
+            {
+              "source": "0006-Use-binary-mode-for-svnadmin-dump-load.patch",
+              "entry": "subversion/0006-Use-binary-mode-for-svnadmin-dump-load.patch",
+              "sha256": "2cb0cee50391bedce01d65203d40d080ca2b9e03d34f9de309fc0710c5f55b7e",
+              "sha256FromRecipe": "2cb0cee50391bedce01d65203d40d080ca2b9e03d34f9de309fc0710c5f55b7e"
+            },
+            {
+              "source": "0007-Don-t-support-DOS-paths-for-Cygwin.patch",
+              "entry": "subversion/0007-Don-t-support-DOS-paths-for-Cygwin.patch",
+              "sha256": "87c3132ece7fc926c8d8b0179bde86c22a0658a0a5550f2278556c430a8f4380",
+              "sha256FromRecipe": "87c3132ece7fc926c8d8b0179bde86c22a0658a0a5550f2278556c430a8f4380"
+            },
+            {
+              "source": "0008-Fix-ruby-tests.patch",
+              "entry": "subversion/0008-Fix-ruby-tests.patch",
+              "sha256": "eb105e6d6b7dc39912f93e99287600caa3ab704e261a8121f525ee876512550a",
+              "sha256FromRecipe": "eb105e6d6b7dc39912f93e99287600caa3ab704e261a8121f525ee876512550a"
+            },
+            {
+              "source": "0009-Support-wincrypt-for-password-encryption-on-Cygwin.patch",
+              "entry": "subversion/0009-Support-wincrypt-for-password-encryption-on-Cygwin.patch",
+              "sha256": "8ffa2e5e18a65c994762358a1f8f0adeaa36656b0c9c3e27cfcf3d915ef75f43",
+              "sha256FromRecipe": "8ffa2e5e18a65c994762358a1f8f0adeaa36656b0c9c3e27cfcf3d915ef75f43"
+            },
+            {
+              "source": "0010-Install-perl-modules-into-vendors.patch",
+              "entry": "subversion/0010-Install-perl-modules-into-vendors.patch",
+              "sha256": "b22a4f8549640c2b6eba36856457da18aa49168265890ea9067954b92b6743a5",
+              "sha256FromRecipe": "b22a4f8549640c2b6eba36856457da18aa49168265890ea9067954b92b6743a5"
+            },
+            {
+              "source": "0011-XFAIL-some-case-sensitive-rename-and-move-tests.patch",
+              "entry": "subversion/0011-XFAIL-some-case-sensitive-rename-and-move-tests.patch",
+              "sha256": "e1c18d14529f8e966630e06c0dd343d627cee7fa40b52bd0230ab8cf001f0981",
+              "sha256FromRecipe": "e1c18d14529f8e966630e06c0dd343d627cee7fa40b52bd0230ab8cf001f0981"
+            },
+            {
+              "source": "0012-Fix-svnlook_tests.py-so-it-sets-PATH-in-the-python-h.patch",
+              "entry": "subversion/0012-Fix-svnlook_tests.py-so-it-sets-PATH-in-the-python-h.patch",
+              "sha256": "afeefd521ee0421b2591bdb2346223c5d0eaf0c30f51d7eff8396532f49cf614",
+              "sha256FromRecipe": "afeefd521ee0421b2591bdb2346223c5d0eaf0c30f51d7eff8396532f49cf614"
+            },
+            {
+              "source": "0013-Fix-DSO-open-specifically-for-auth-modules-like-GNOM.patch",
+              "entry": "subversion/0013-Fix-DSO-open-specifically-for-auth-modules-like-GNOM.patch",
+              "sha256": "4dbf50209f7ce8b46e268eb5b6bbb03b1a288cc08168450f6fc72774c4a2a83e",
+              "sha256FromRecipe": "4dbf50209f7ce8b46e268eb5b6bbb03b1a288cc08168450f6fc72774c4a2a83e"
+            },
+            {
+              "source": "0014-Fix-svnauthz_tests.py-by-adding-usr-bin-to-PATH.patch",
+              "entry": "subversion/0014-Fix-svnauthz_tests.py-by-adding-usr-bin-to-PATH.patch",
+              "sha256": "24268c8ccc11f6253a905d692e3b3ab22216bc0abdb65dc70ded594095aeb361",
+              "sha256FromRecipe": "24268c8ccc11f6253a905d692e3b3ab22216bc0abdb65dc70ded594095aeb361"
+            },
+            {
+              "source": "0015-Mark-basic_test.py-rm_missing_with_case_clashing_ond.patch",
+              "entry": "subversion/0015-Mark-basic_test.py-rm_missing_with_case_clashing_ond.patch",
+              "sha256": "db8a8a397c1a5984b79d1ccbfc5d816e6122f4f27c3649ddf46438c95896cfe7",
+              "sha256FromRecipe": "db8a8a397c1a5984b79d1ccbfc5d816e6122f4f27c3649ddf46438c95896cfe7"
+            },
+            {
+              "source": "0016-Fix-serf-config.patch",
+              "entry": "subversion/0016-Fix-serf-config.patch",
+              "sha256": "25badf2d24709e4a0f24b3b6f0894f2f0515213bace58cda649020bd86b0eadd",
+              "sha256FromRecipe": "25badf2d24709e4a0f24b3b6f0894f2f0515213bace58cda649020bd86b0eadd"
+            },
+            {
+              "source": "0017-Remove-contrib.patch",
+              "entry": "subversion/0017-Remove-contrib.patch",
+              "sha256": "15339d04c7947a97440519ca240a4217fc19eebb95f45ab65b2e46b9a22aaeb5",
+              "sha256FromRecipe": "15339d04c7947a97440519ca240a4217fc19eebb95f45ab65b2e46b9a22aaeb5"
+            },
+            {
+              "source": "0018-subversion-1.9.1-msys2.patch",
+              "entry": "subversion/0018-subversion-1.9.1-msys2.patch",
+              "sha256": "84c34178b522d03e555b39f4573bf6a65f14f3c23fa015bb2208a999b520b595",
+              "sha256FromRecipe": "84c34178b522d03e555b39f4573bf6a65f14f3c23fa015bb2208a999b520b595"
+            },
+            {
+              "source": "0019-remove-checking-symlink.patch",
+              "entry": "subversion/0019-remove-checking-symlink.patch",
+              "sha256": "4644c63f9214107c893f79922b3f784c187e643272a708262b1f4c64d6e792f4",
+              "sha256FromRecipe": "4644c63f9214107c893f79922b3f784c187e643272a708262b1f4c64d6e792f4"
+            },
+            {
+              "source": "0020-90-use-copy-instead-symlink.patch",
+              "entry": "subversion/0020-90-use-copy-instead-symlink.patch",
+              "sha256": "9041fca325dd21499e1e6000b854d1c410b035338a30649d504e63b987054640",
+              "sha256FromRecipe": "9041fca325dd21499e1e6000b854d1c410b035338a30649d504e63b987054640"
+            },
+            {
+              "source": "0021-Avoid-inadvertently-blocking-files-during-svnadmin-c.patch",
+              "entry": "subversion/0021-Avoid-inadvertently-blocking-files-during-svnadmin-c.patch",
+              "sha256": "a1561f3198d46a91d8250fc323d605a18dd03e698d47889ecc6dbc0c58db3978",
+              "sha256FromRecipe": "a1561f3198d46a91d8250fc323d605a18dd03e698d47889ecc6dbc0c58db3978"
+            },
+            {
+              "source": "0022-subversion-backport-patch-to-build-with-SWIG-4.patch",
+              "entry": "subversion/0022-subversion-backport-patch-to-build-with-SWIG-4.patch",
+              "sha256": "dca0bd19fb6c957a6d9104a1cbc9ccdef65ea400c05be92b680e5f1bdda8737a",
+              "sha256FromRecipe": "dca0bd19fb6c957a6d9104a1cbc9ccdef65ea400c05be92b680e5f1bdda8737a"
+            },
+            {
+              "source": "0023-Allow-ra-tests-to-spawn-svnserve.exe-successfully.patch",
+              "entry": "subversion/0023-Allow-ra-tests-to-spawn-svnserve.exe-successfully.patch",
+              "sha256": "1dca7ce5d73127554154da24d796d5f01d641f665a95586acd6ad381ab184b41",
+              "sha256FromRecipe": "1dca7ce5d73127554154da24d796d5f01d641f665a95586acd6ad381ab184b41"
+            },
+            {
+              "source": "0024-XFAIL-tests-that-fail-due-to-Cygwin-MSYS2-platform-l.patch",
+              "entry": "subversion/0024-XFAIL-tests-that-fail-due-to-Cygwin-MSYS2-platform-l.patch",
+              "sha256": "efa21bcf159541bce33183f196cf3d21d8ae158241901e94d7acdcc09841dfca",
+              "sha256FromRecipe": "efa21bcf159541bce33183f196cf3d21d8ae158241901e94d7acdcc09841dfca"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "apr",
+      "version": "1.7.6-3",
+      "license": "Apache-2.0",
+      "packageDeclaredLicense": [
+        "spdx:Apache-2.0"
+      ],
+      "upstream": "https://apr.apache.org/",
+      "binaryPackage": {
+        "filename": "apr-1.7.6-3-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/apr-1.7.6-3-x86_64.pkg.tar.zst",
+        "sha256": "d70acf6679ea736abfb1fd82665982141c3e176a570d5980821f5b8487086a2e"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-apr-1-0.dll",
+          "sha256": "2d7e454767190290b4f5c0fc3a65ce9bd08a3a8bdeadb7e0a2799d75c4113009",
+          "archiveEntry": "usr/bin/msys-apr-1-0.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "msys-uuid-1.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/apr/PKGBUILD",
+          "sha256": "391c5d3a038266f7326d8ad09aad741f6622de4e93945547424f5184bb63cbe8"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr/.SRCINFO",
+          "sha256": "bb664fcedf98073cd9f1b9b635229e72976f55ed9b992a173e04949e2e4ddd7f"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr/PKGINFO",
+          "sha256": "305ef5628daaecf838abac1f9988d83abf2f3c426f37df057869f0e085467d39"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr/BUILDINFO",
+          "sha256": "8497fa6a82daba9b8bb8fa543143da41894472a5580d3610147702636a6dae01"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr/source-notices/apr-1.7.6/LICENSE",
+          "sha256": "f854aeef66ecd55a126226e82b3f26793fc3b1c584647f6a0edc5639974c38ad"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr/source-notices/apr-1.7.6/NOTICE",
+          "sha256": "252c3a65e94f29e17e3e21a850aee2419990fe269ea7bde8329906a3fdf4f5a1"
+        },
+        {
+          "path": "licenses/native/msys2/sources/apr-1.7.6-3.src.tar.zst",
+          "sha256": "f3f6df6a15cffe43b6600982f8ad11ae6aba132b4d0fb12aafc55aa7ff5bf260"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "apr",
+          "base": "apr",
+          "version": "1.7.6-3",
+          "url": "https://mirror.msys2.org/msys/sources/apr-1.7.6-3.src.tar.zst",
+          "path": "licenses/native/msys2/sources/apr-1.7.6-3.src.tar.zst",
+          "sha256": "f3f6df6a15cffe43b6600982f8ad11ae6aba132b4d0fb12aafc55aa7ff5bf260",
+          "bytes": 901975,
+          "inputVerification": [
+            {
+              "source": "https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2",
+              "entry": "apr/apr-1.7.6.tar.bz2",
+              "sha256": "49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32",
+              "sha256FromRecipe": "49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32"
+            },
+            {
+              "source": "0001-fixes-building-with-gcc-15.patch",
+              "entry": "apr/0001-fixes-building-with-gcc-15.patch",
+              "sha256": "672e5807eded9d26cfb6774e4d02bc104ce5fd36ddbfc357c835b7faf04e2c36",
+              "sha256FromRecipe": "672e5807eded9d26cfb6774e4d02bc104ce5fd36ddbfc357c835b7faf04e2c36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "msys2-runtime",
+      "version": "3.6.12-1",
+      "license": "LGPL-3.0-or-later WITH Cygwin-exception AND BSD/Newlib notices",
+      "packageDeclaredLicense": [
+        "spdx:GPL-3.0-or-later"
+      ],
+      "upstream": "https://www.cygwin.com/",
+      "binaryPackage": {
+        "filename": "msys2-runtime-3.6.12-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.12-1-x86_64.pkg.tar.zst",
+        "sha256": "c0dbaa624e29be6d08cf5c65609dca6c749431109e4572bf446a3ca9b4c4fd7c"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-2.0.dll",
+          "sha256": "d5983eccf5ac3340bc35774f68e576ea1735eb01e7a7578d9bfb30e8b065a5e2",
+          "archiveEntry": "usr/bin/msys-2.0.dll",
+          "imports": [
+            "KERNEL32.dll",
+            "ntdll.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/PKGBUILD",
+          "sha256": "ed0f048baebb2a2d0591af37d23c48151dec8128ccae73b909afe6ed4ad486b5"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/.SRCINFO",
+          "sha256": "7a0f6c74516ee7ad069230574e700ebf18002be989a36c7ea9a6854611799348"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/PKGINFO",
+          "sha256": "0e746a3e5e2d336f3bbb36fe05d49cebed1bf85beb0ec7c42f98b78d868997b4"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/BUILDINFO",
+          "sha256": "2dd48a4f5d719fc655cef6dec6f6057311953ff8a89774796bf7ba322c2ea47b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/binary-notices/usr/share/doc/Cygwin/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/binary-notices/usr/share/doc/Cygwin/CYGWIN_LICENSE",
+          "sha256": "794433752103cf4bbb4a84a1bdb8fbc150abb1762704bb35fecc9f7f820be984"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/PKGBUILD.offline",
+          "sha256": "e1dd6a2e51918c468c35695ac3336ce04270f6188606f9a0bd65ca4c1aecb18c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/.SRCINFO.offline",
+          "sha256": "db4d005e157fb7dd7e15292deb70eac50e68ef9e393e4e5782fab33b23a772c9"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/COPYING.LIB",
+          "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/COPYING.LIBGLOSS",
+          "sha256": "bdaffd5fff30cb5fc7a239a4fa0b95f703590f7b3813ca7f4e76ff46437aeb81"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/COPYING.NEWLIB",
+          "sha256": "fcfb5ec69b6ab52676dcc4dab7cf4338c8000ef97812dadd35b8592a640a8419"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/include/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/newlib/libc/posix/COPYRIGHT",
+          "sha256": "b4f217294d6910b752eb4d85c1bf1540c475911efaf4b6f86227149d2bc69efe"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/winsup/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/winsup/COPYING.LIB",
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/winsup/CYGWIN_LICENSE",
+          "sha256": "794433752103cf4bbb4a84a1bdb8fbc150abb1762704bb35fecc9f7f820be984"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/winsup/cygwin/include/sys/copying.dj",
+          "sha256": "3a4ef55b77484d8789ebde243a5a7b259bb8d824e1a30aa4f33b11e2e6b08170"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/winsup/cygwin/regex/COPYRIGHT",
+          "sha256": "3be175b44ed4ee963d61a34296b3ec8517d82322e9ee77bf365d29d454a497d4"
+        },
+        {
+          "path": "licenses/native/msys2/packages/msys2-runtime/source-notices/msys2-runtime/winsup/utils/COPYING.dumper",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "licenses/native/msys2/sources/msys2-runtime-3.6.12-1-corresponding.tar.gz",
+          "sha256": "1b3353079231ce068c9c89171bd4a6ac847ce24eb3d59a4909a6faab8cccabb6"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "msys2-runtime",
+          "base": "msys2-runtime",
+          "version": "3.6.12-1",
+          "url": "https://mirror.msys2.org/msys/sources/msys2-runtime-3.6.12-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/msys2-runtime-3.6.12-1-corresponding.tar.gz",
+          "sha256": "1b3353079231ce068c9c89171bd4a6ac847ce24eb3d59a4909a6faab8cccabb6",
+          "bytes": 12215514,
+          "originalSourceArchive": {
+            "url": "https://mirror.msys2.org/msys/sources/msys2-runtime-3.6.12-1.src.tar.zst",
+            "sha256": "345868a2f280ea124152cb5f202a604e47bed90bfc9518d98a2c30ef2c61a751",
+            "bytes": 128963330
+          },
+          "upstreamGitTag": "cygwin-3.6.12",
+          "upstreamGitCommit": "ed54dcfd953ac0798802d3ef9deec5ff11edb47b",
+          "upstreamArchiveSha256": "49d76685a1521332f6d2bcd05b33ca6aeb72cf9e1e306843b04e4e563200f161",
+          "kind": "source-without-vcs-metadata",
+          "inputVerification": [
+            {
+              "source": "msys2-runtime::git://sourceware.org/git/newlib-cygwin.git#tag=cygwin-3.6.12",
+              "kind": "git",
+              "sha256FromRecipe": "1cd1ce016e93d918a1aefa1de76d13512bc2f85de656ba0c068a6983dc80aaa5",
+              "resolvedCommit": "ed54dcfd953ac0798802d3ef9deec5ff11edb47b",
+              "exportedSourceSha256": "49d76685a1521332f6d2bcd05b33ca6aeb72cf9e1e306843b04e4e563200f161"
+            },
+            {
+              "source": "msys2-runtime.commit",
+              "entry": "msys2-runtime/msys2-runtime.commit",
+              "sha256": "86cf3de8639bb17d8e100aadd5fdeacdef1fd29149ef0b86bc68add0c6a2324b",
+              "sha256FromRecipe": "86cf3de8639bb17d8e100aadd5fdeacdef1fd29149ef0b86bc68add0c6a2324b"
+            },
+            {
+              "source": "0001-Cygwin-Adjust-CWD-magic-to-accommodate-for-the-lates.patch",
+              "entry": "msys2-runtime/0001-Cygwin-Adjust-CWD-magic-to-accommodate-for-the-lates.patch",
+              "sha256": "dbd17907ea3d62c306590874a5527603360b87dcf3829098bcea64a47a64d4a1",
+              "sha256FromRecipe": "dbd17907ea3d62c306590874a5527603360b87dcf3829098bcea64a47a64d4a1"
+            },
+            {
+              "source": "0002-Cygwin-Fix-segfault-when-XSAVE-area-sizes-are-unalig.patch",
+              "entry": "msys2-runtime/0002-Cygwin-Fix-segfault-when-XSAVE-area-sizes-are-unalig.patch",
+              "sha256": "5f0ca179a559d0206641b24f9f8ed78dd79c3aa35c279287ebfd611e1ddd4024",
+              "sha256FromRecipe": "5f0ca179a559d0206641b24f9f8ed78dd79c3aa35c279287ebfd611e1ddd4024"
+            },
+            {
+              "source": "0003-Cygwin-console-Set-console-mode-only-if-std-in-out-e.patch",
+              "entry": "msys2-runtime/0003-Cygwin-console-Set-console-mode-only-if-std-in-out-e.patch",
+              "sha256": "0be93b93843442521ee402925ffd521ec0e29ec4ceaeaf7e9e412b69ac789ba3",
+              "sha256FromRecipe": "0be93b93843442521ee402925ffd521ec0e29ec4ceaeaf7e9e412b69ac789ba3"
+            },
+            {
+              "source": "0004-Cygwin-testsuite-cover-console-mode-preservation-wit.patch",
+              "entry": "msys2-runtime/0004-Cygwin-testsuite-cover-console-mode-preservation-wit.patch",
+              "sha256": "2333a6ba75be2e5ecc6a397470c22a576781a9f9558a7528366e94195b501ed1",
+              "sha256FromRecipe": "2333a6ba75be2e5ecc6a397470c22a576781a9f9558a7528366e94195b501ed1"
+            },
+            {
+              "source": "0005-Cygwin-Guard-XSAVE-allocation-against-broken-CPUID-e.patch",
+              "entry": "msys2-runtime/0005-Cygwin-Guard-XSAVE-allocation-against-broken-CPUID-e.patch",
+              "sha256": "1798038807b4ac4e5b1a63db2793ddde0b191af574937631917957fde98c122b",
+              "sha256FromRecipe": "1798038807b4ac4e5b1a63db2793ddde0b191af574937631917957fde98c122b"
+            },
+            {
+              "source": "0006-Cygwin-fix-build-under-ISO-C-20.patch",
+              "entry": "msys2-runtime/0006-Cygwin-fix-build-under-ISO-C-20.patch",
+              "sha256": "d66bb7356cdb401c68afca40582fb9d831844a6fee32ef905b3b890509309635",
+              "sha256FromRecipe": "d66bb7356cdb401c68afca40582fb9d831844a6fee32ef905b3b890509309635"
+            },
+            {
+              "source": "0007-Cygwin-tls-keep-incyg-updates-compatible-with-C-20.patch",
+              "entry": "msys2-runtime/0007-Cygwin-tls-keep-incyg-updates-compatible-with-C-20.patch",
+              "sha256": "89deb319efbcc2aed26bdb99202fd05c596810191610cb788448469973d68739",
+              "sha256FromRecipe": "89deb319efbcc2aed26bdb99202fd05c596810191610cb788448469973d68739"
+            },
+            {
+              "source": "0008-Cygwin-fork-avoid-deprecated-volatile-parameters.patch",
+              "entry": "msys2-runtime/0008-Cygwin-fork-avoid-deprecated-volatile-parameters.patch",
+              "sha256": "dc8ac874b136f9a7a3973c5f8fca95bccf8e83d1ac6e590c11574b5e5fe183d6",
+              "sha256FromRecipe": "dc8ac874b136f9a7a3973c5f8fca95bccf8e83d1ac6e590c11574b5e5fe183d6"
+            },
+            {
+              "source": "0009-Cygwin-cygcheck-respect-const-input-when-scanning-ar.patch",
+              "entry": "msys2-runtime/0009-Cygwin-cygcheck-respect-const-input-when-scanning-ar.patch",
+              "sha256": "205788e29731cda9b295c75fe853f8484eebc6cd56ef3d6066b343b94148bd37",
+              "sha256FromRecipe": "205788e29731cda9b295c75fe853f8484eebc6cd56ef3d6066b343b94148bd37"
+            },
+            {
+              "source": "0010-Cygwin-strace-keep-argument-scanning-const-correct.patch",
+              "entry": "msys2-runtime/0010-Cygwin-strace-keep-argument-scanning-const-correct.patch",
+              "sha256": "f81c9d3cab37165831143c554c69b33fae379b93a341e8a20fe6ccadcd0e6161",
+              "sha256FromRecipe": "f81c9d3cab37165831143c554c69b33fae379b93a341e8a20fe6ccadcd0e6161"
+            },
+            {
+              "source": "0011-Cygwin-cygcheck-preserve-constness-when-scanning-ext.patch",
+              "entry": "msys2-runtime/0011-Cygwin-cygcheck-preserve-constness-when-scanning-ext.patch",
+              "sha256": "a5c7fd714bd023aa187357981db1ed144e4015ee6b14d9fe3f3ad1a5901496df",
+              "sha256FromRecipe": "a5c7fd714bd023aa187357981db1ed144e4015ee6b14d9fe3f3ad1a5901496df"
+            },
+            {
+              "source": "0012-Cygwin-cygcheck-keep-application-path-separator-scan.patch",
+              "entry": "msys2-runtime/0012-Cygwin-cygcheck-keep-application-path-separator-scan.patch",
+              "sha256": "e94d3381cc659480e339b6f3875d180fa0a8f221f7b2e701b793a43a04002682",
+              "sha256FromRecipe": "e94d3381cc659480e339b6f3875d180fa0a8f221f7b2e701b793a43a04002682"
+            },
+            {
+              "source": "0013-.gitattributes-enforce-Unix-line-endings-in-.sh-scri.patch",
+              "entry": "msys2-runtime/0013-.gitattributes-enforce-Unix-line-endings-in-.sh-scri.patch",
+              "sha256": "035f09f9a4b77e714eb8403f33e54f7cba955bb410f401b094953f7652c92aec",
+              "sha256FromRecipe": "035f09f9a4b77e714eb8403f33e54f7cba955bb410f401b094953f7652c92aec"
+            },
+            {
+              "source": "0014-Fix-msys-library-name-in-import-libraries.patch",
+              "entry": "msys2-runtime/0014-Fix-msys-library-name-in-import-libraries.patch",
+              "sha256": "a970bdf4dd7b1b74276083c132faa64190c03a6a00f1b7cb469bdd814edf3038",
+              "sha256FromRecipe": "a970bdf4dd7b1b74276083c132faa64190c03a6a00f1b7cb469bdd814edf3038"
+            },
+            {
+              "source": "0015-Rename-dll-from-cygwin-to-msys.patch",
+              "entry": "msys2-runtime/0015-Rename-dll-from-cygwin-to-msys.patch",
+              "sha256": "6bd1926ac7d265f269a98a7d605a00aa74d392ab268e375a333438122218316a",
+              "sha256FromRecipe": "6bd1926ac7d265f269a98a7d605a00aa74d392ab268e375a333438122218316a"
+            },
+            {
+              "source": "0016-Convert-Unix-paths-in-args-env-to-Windows-form-for-n.patch",
+              "entry": "msys2-runtime/0016-Convert-Unix-paths-in-args-env-to-Windows-form-for-n.patch",
+              "sha256": "76159a7637eb69d61e63b2aef8f4acb4b09bd3d7f1e6cc4ada3570ad68b8c8b5",
+              "sha256FromRecipe": "76159a7637eb69d61e63b2aef8f4acb4b09bd3d7f1e6cc4ada3570ad68b8c8b5"
+            },
+            {
+              "source": "0017-Add-functionality-for-changing-OS-name-via-MSYSTEM-e.patch",
+              "entry": "msys2-runtime/0017-Add-functionality-for-changing-OS-name-via-MSYSTEM-e.patch",
+              "sha256": "e52fab6d3eb13cec3195d102d00dcfb0f7dd13ec0d8500cc2f9048a055d50259",
+              "sha256FromRecipe": "e52fab6d3eb13cec3195d102d00dcfb0f7dd13ec0d8500cc2f9048a055d50259"
+            },
+            {
+              "source": "0018-Move-root-to-usr.-Change-sorting-mount-points.-By-de.patch",
+              "entry": "msys2-runtime/0018-Move-root-to-usr.-Change-sorting-mount-points.-By-de.patch",
+              "sha256": "a0aefcb47d48e3079c171b550772ae99fb5bf55f1aedc6836ae39fdd5fc0a2e0",
+              "sha256FromRecipe": "a0aefcb47d48e3079c171b550772ae99fb5bf55f1aedc6836ae39fdd5fc0a2e0"
+            },
+            {
+              "source": "0019-Instead-of-creating-Cygwin-symlinks-use-deep-copy-by.patch",
+              "entry": "msys2-runtime/0019-Instead-of-creating-Cygwin-symlinks-use-deep-copy-by.patch",
+              "sha256": "14470ff25e149b26974c51d6730f81f5bbfaf9b501aa8a87d0e322bbad539392",
+              "sha256FromRecipe": "14470ff25e149b26974c51d6730f81f5bbfaf9b501aa8a87d0e322bbad539392"
+            },
+            {
+              "source": "0020-Automatically-rewrite-TERM-msys-to-TERM-cygwin.patch",
+              "entry": "msys2-runtime/0020-Automatically-rewrite-TERM-msys-to-TERM-cygwin.patch",
+              "sha256": "8ce46d6cfad1d094dc1e7817b4ccf353674f9036faac475195aec32655b40004",
+              "sha256FromRecipe": "8ce46d6cfad1d094dc1e7817b4ccf353674f9036faac475195aec32655b40004"
+            },
+            {
+              "source": "0021-Do-not-convert-environment-for-strace.patch",
+              "entry": "msys2-runtime/0021-Do-not-convert-environment-for-strace.patch",
+              "sha256": "d86d1049810de12c13c2246f29212f03fd22c4f3f1de81d8c2e42e7a5d306cd9",
+              "sha256FromRecipe": "d86d1049810de12c13c2246f29212f03fd22c4f3f1de81d8c2e42e7a5d306cd9"
+            },
+            {
+              "source": "0022-strace.cc-Don-t-set-MSYS-noglob.patch",
+              "entry": "msys2-runtime/0022-strace.cc-Don-t-set-MSYS-noglob.patch",
+              "sha256": "1a3aba2dae59001d0dc05288305adbdcd84c5136db549cdfe1856c74d2c99063",
+              "sha256FromRecipe": "1a3aba2dae59001d0dc05288305adbdcd84c5136db549cdfe1856c74d2c99063"
+            },
+            {
+              "source": "0023-Add-debugging-for-strace-make_command_line.patch",
+              "entry": "msys2-runtime/0023-Add-debugging-for-strace-make_command_line.patch",
+              "sha256": "236a68e1404aea5acbf1cef86c0b7c8744d86d3aa45f0ca38522dc84043a0a72",
+              "sha256FromRecipe": "236a68e1404aea5acbf1cef86c0b7c8744d86d3aa45f0ca38522dc84043a0a72"
+            },
+            {
+              "source": "0024-strace-quiet-be-really-quiet.patch",
+              "entry": "msys2-runtime/0024-strace-quiet-be-really-quiet.patch",
+              "sha256": "dffb2c90f0a89dd53cce040d6cb7dab64ffc61141cbb86a5b3b07f0b476ec2e0",
+              "sha256FromRecipe": "dffb2c90f0a89dd53cce040d6cb7dab64ffc61141cbb86a5b3b07f0b476ec2e0"
+            },
+            {
+              "source": "0025-path_conv-special-case-root-directory-to-have-traili.patch",
+              "entry": "msys2-runtime/0025-path_conv-special-case-root-directory-to-have-traili.patch",
+              "sha256": "bec475d12f0614ceba29463cdd6698862019c5c512ba349606dddea7d5aa3667",
+              "sha256FromRecipe": "bec475d12f0614ceba29463cdd6698862019c5c512ba349606dddea7d5aa3667"
+            },
+            {
+              "source": "0026-When-converting-to-a-Unix-path-avoid-double-trailing.patch",
+              "entry": "msys2-runtime/0026-When-converting-to-a-Unix-path-avoid-double-trailing.patch",
+              "sha256": "0dbfb27df6c3f18586afc35000e4b774de498d19ae35afedb9e096880edb0f00",
+              "sha256FromRecipe": "0dbfb27df6c3f18586afc35000e4b774de498d19ae35afedb9e096880edb0f00"
+            },
+            {
+              "source": "0027-dcrt0.cc-Untangle-allow_glob-from-winshell.patch",
+              "entry": "msys2-runtime/0027-dcrt0.cc-Untangle-allow_glob-from-winshell.patch",
+              "sha256": "bdc2aea18d5292962cbc3e6b5fd78c3cccc5301a8e81f2b7d214dd8a1c763a9d",
+              "sha256FromRecipe": "bdc2aea18d5292962cbc3e6b5fd78c3cccc5301a8e81f2b7d214dd8a1c763a9d"
+            },
+            {
+              "source": "0028-dcrt0.cc-globify-Don-t-quote-literal-strings-differe.patch",
+              "entry": "msys2-runtime/0028-dcrt0.cc-globify-Don-t-quote-literal-strings-differe.patch",
+              "sha256": "6f875f70e968f5fd201b8a451907b0d0b12b72b43ffe34030fcbef53a8996596",
+              "sha256FromRecipe": "6f875f70e968f5fd201b8a451907b0d0b12b72b43ffe34030fcbef53a8996596"
+            },
+            {
+              "source": "0029-Add-debugging-for-build_argv.patch",
+              "entry": "msys2-runtime/0029-Add-debugging-for-build_argv.patch",
+              "sha256": "8c0412043cbe8c5b99a152982585c7747b151bd84fa72a258316a362473f0a96",
+              "sha256FromRecipe": "8c0412043cbe8c5b99a152982585c7747b151bd84fa72a258316a362473f0a96"
+            },
+            {
+              "source": "0030-environ.cc-New-facility-environment-variable-MSYS2_E.patch",
+              "entry": "msys2-runtime/0030-environ.cc-New-facility-environment-variable-MSYS2_E.patch",
+              "sha256": "bc888c49a00e7a84f34c1acae5f8aa5cd843ec01dd3cf2a7f1c4a1780b4261a1",
+              "sha256FromRecipe": "bc888c49a00e7a84f34c1acae5f8aa5cd843ec01dd3cf2a7f1c4a1780b4261a1"
+            },
+            {
+              "source": "0031-Introduce-the-enable_pcon-value-for-MSYS.patch",
+              "entry": "msys2-runtime/0031-Introduce-the-enable_pcon-value-for-MSYS.patch",
+              "sha256": "907f4322e29fad2f93770c2baa9a2fe581da24694f695dcfa13953024b9339ca",
+              "sha256FromRecipe": "907f4322e29fad2f93770c2baa9a2fe581da24694f695dcfa13953024b9339ca"
+            },
+            {
+              "source": "0032-popen-call-usr-bin-sh-instead-of-bin-sh.patch",
+              "entry": "msys2-runtime/0032-popen-call-usr-bin-sh-instead-of-bin-sh.patch",
+              "sha256": "a9bb4ddc4c53aa10b3c0c274f464a411bcf0463b2bb9b85fa890bbaa11b584d1",
+              "sha256FromRecipe": "a9bb4ddc4c53aa10b3c0c274f464a411bcf0463b2bb9b85fa890bbaa11b584d1"
+            },
+            {
+              "source": "0033-Expose-full-command-lines-to-other-Win32-processes-b.patch",
+              "entry": "msys2-runtime/0033-Expose-full-command-lines-to-other-Win32-processes-b.patch",
+              "sha256": "5d1ef088e1984c0d34c54a345e318591f444d5f1ec428aff75ed5ff6fbc81797",
+              "sha256FromRecipe": "5d1ef088e1984c0d34c54a345e318591f444d5f1ec428aff75ed5ff6fbc81797"
+            },
+            {
+              "source": "0034-Add-a-helper-to-obtain-a-function-s-address-in-kerne.patch",
+              "entry": "msys2-runtime/0034-Add-a-helper-to-obtain-a-function-s-address-in-kerne.patch",
+              "sha256": "72aab3f05d962198eb0f6d30d82b713153ec46161f0e5e95c3c9bbfd1ef12899",
+              "sha256FromRecipe": "72aab3f05d962198eb0f6d30d82b713153ec46161f0e5e95c3c9bbfd1ef12899"
+            },
+            {
+              "source": "0035-Emulate-GenerateConsoleCtrlEvent-upon-Ctrl-C.patch",
+              "entry": "msys2-runtime/0035-Emulate-GenerateConsoleCtrlEvent-upon-Ctrl-C.patch",
+              "sha256": "5136c9517484f184cf266f7ef23a3c3f8f7fc8d8bd4ef6515e47954cd5a300bb",
+              "sha256FromRecipe": "5136c9517484f184cf266f7ef23a3c3f8f7fc8d8bd4ef6515e47954cd5a300bb"
+            },
+            {
+              "source": "0036-kill-kill-Win32-processes-more-gently.patch",
+              "entry": "msys2-runtime/0036-kill-kill-Win32-processes-more-gently.patch",
+              "sha256": "15e9a823e294b4daaeba04bfd02e5d8c4bdf9b9388a2e995cc68d1d276505c1d",
+              "sha256FromRecipe": "15e9a823e294b4daaeba04bfd02e5d8c4bdf9b9388a2e995cc68d1d276505c1d"
+            },
+            {
+              "source": "0037-Cygwin-make-option-for-native-inner-link-handling.patch",
+              "entry": "msys2-runtime/0037-Cygwin-make-option-for-native-inner-link-handling.patch",
+              "sha256": "c3a9792a1634a3bf422984a1a957d87d549ec5cd2b4eada1cdf021e17c406088",
+              "sha256FromRecipe": "c3a9792a1634a3bf422984a1a957d87d549ec5cd2b4eada1cdf021e17c406088"
+            },
+            {
+              "source": "0038-docs-skip-building-texinfo-and-PDF-files.patch",
+              "entry": "msys2-runtime/0038-docs-skip-building-texinfo-and-PDF-files.patch",
+              "sha256": "7fa3d77e25cba20f6824ead02a75844891316ff6db74c5b4bcaa3be1f2ae2ae8",
+              "sha256FromRecipe": "7fa3d77e25cba20f6824ead02a75844891316ff6db74c5b4bcaa3be1f2ae2ae8"
+            },
+            {
+              "source": "0039-install-libs-depend-on-the-toollibs.patch",
+              "entry": "msys2-runtime/0039-install-libs-depend-on-the-toollibs.patch",
+              "sha256": "8b1cead84c7347ac4df5e2fb82cbdb9f607b0e8bb235e0a40011495f9933d6ac",
+              "sha256FromRecipe": "8b1cead84c7347ac4df5e2fb82cbdb9f607b0e8bb235e0a40011495f9933d6ac"
+            },
+            {
+              "source": "0040-POSIX-ify-the-SHELL-variable.patch",
+              "entry": "msys2-runtime/0040-POSIX-ify-the-SHELL-variable.patch",
+              "sha256": "3cb36a637f4f608a00119a66b8e0bb632e820d43eabc998c0bb3d71935357f45",
+              "sha256FromRecipe": "3cb36a637f4f608a00119a66b8e0bb632e820d43eabc998c0bb3d71935357f45"
+            },
+            {
+              "source": "0041-Handle-ORIGINAL_PATH-just-like-PATH.patch",
+              "entry": "msys2-runtime/0041-Handle-ORIGINAL_PATH-just-like-PATH.patch",
+              "sha256": "d8e7c3dc2fe67f0771b4d59ba39aae73969d4de8355208176eb8fa1ff3ef0007",
+              "sha256FromRecipe": "d8e7c3dc2fe67f0771b4d59ba39aae73969d4de8355208176eb8fa1ff3ef0007"
+            },
+            {
+              "source": "0042-uname-allow-setting-the-system-name-to-CYGWIN.patch",
+              "entry": "msys2-runtime/0042-uname-allow-setting-the-system-name-to-CYGWIN.patch",
+              "sha256": "787f9fa5d5b4626fd13282fd99fcc8e282722ea3905abd900c4c2609eb720fb2",
+              "sha256FromRecipe": "787f9fa5d5b4626fd13282fd99fcc8e282722ea3905abd900c4c2609eb720fb2"
+            },
+            {
+              "source": "0043-Pass-environment-variables-with-empty-values.patch",
+              "entry": "msys2-runtime/0043-Pass-environment-variables-with-empty-values.patch",
+              "sha256": "9d0eb84609b21988546585e716a1d15a2ed540dced49d9c9c11bf82f92180958",
+              "sha256FromRecipe": "9d0eb84609b21988546585e716a1d15a2ed540dced49d9c9c11bf82f92180958"
+            },
+            {
+              "source": "0044-Optionally-disallow-empty-environment-values-again.patch",
+              "entry": "msys2-runtime/0044-Optionally-disallow-empty-environment-values-again.patch",
+              "sha256": "0ac49b56337b90650c01ad572cba3a4d28bdd66a6f0340d1c52fc48b914e83c7",
+              "sha256FromRecipe": "0ac49b56337b90650c01ad572cba3a4d28bdd66a6f0340d1c52fc48b914e83c7"
+            },
+            {
+              "source": "0045-build_env-respect-the-MSYS-environment-variable.patch",
+              "entry": "msys2-runtime/0045-build_env-respect-the-MSYS-environment-variable.patch",
+              "sha256": "0f45c7580e09ca0993586c835ecb9c123d297ee09b4652fc02ace474a268d098",
+              "sha256FromRecipe": "0f45c7580e09ca0993586c835ecb9c123d297ee09b4652fc02ace474a268d098"
+            },
+            {
+              "source": "0046-Avoid-sharing-cygheaps-across-Cygwin-versions.patch",
+              "entry": "msys2-runtime/0046-Avoid-sharing-cygheaps-across-Cygwin-versions.patch",
+              "sha256": "3ba600c18528839b175fc639f682bc23925f2495868d7e64541cad887071f4e3",
+              "sha256FromRecipe": "3ba600c18528839b175fc639f682bc23925f2495868d7e64541cad887071f4e3"
+            },
+            {
+              "source": "0047-uname-report-msys2-runtime-commit-hash-too.patch",
+              "entry": "msys2-runtime/0047-uname-report-msys2-runtime-commit-hash-too.patch",
+              "sha256": "8391702822c51232c5760a2303f938f455eb5af98e77b5b6b16501541c67880b",
+              "sha256FromRecipe": "8391702822c51232c5760a2303f938f455eb5af98e77b5b6b16501541c67880b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "apr-util",
+      "version": "1.6.5-2",
+      "license": "Apache-2.0",
+      "packageDeclaredLicense": [
+        "spdx:Apache-2.0"
+      ],
+      "upstream": "https://apr.apache.org/",
+      "binaryPackage": {
+        "filename": "apr-util-1.6.5-2-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/apr-util-1.6.5-2-x86_64.pkg.tar.zst",
+        "sha256": "ea8863fa59f51357c3cfd71961f0f9ebcb03fda136b1c7575630d205cde812a3"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-aprutil-1-0.dll",
+          "sha256": "3280cd29b9b3a565c54282bc436f82d138f0e1bb0363213d440f0a7ef10ef1aa",
+          "archiveEntry": "usr/bin/msys-aprutil-1-0.dll",
+          "imports": [
+            "msys-apr-1-0.dll",
+            "msys-crypt-2.dll",
+            "msys-expat-1.dll",
+            "msys-iconv-2.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/apr-util/PKGBUILD",
+          "sha256": "cdb6ea6649087fc2307500e14fd4da5253a7ca0468161df68a03399c2488a358"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr-util/.SRCINFO",
+          "sha256": "ee9615aa429f88d86305db7dadc1c4f5df3ca6c8af27298b4ff1652db44e0255"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr-util/PKGINFO",
+          "sha256": "7c307505bbef9b4ea0d2d75638fb9d35e6459d8dc1b28c873fd33a7629cad810"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr-util/BUILDINFO",
+          "sha256": "f60773a8bf947619b1137b3419327475ac6a1fb0a29abf8859fadbfa1b4ff8f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr-util/source-notices/apr-util-1.6.5/LICENSE",
+          "sha256": "ef5609d18601645ad6fe22c6c122094be40e976725c1d0490778abacc836e7a2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/apr-util/source-notices/apr-util-1.6.5/NOTICE",
+          "sha256": "ae9ea247e33f1b4fcb49b697241e3f95df9ea0e770eedb189a0ab5fd10ced4c1"
+        },
+        {
+          "path": "licenses/native/msys2/sources/apr-util-1.6.5-2.src.tar.zst",
+          "sha256": "56baef005a849eb3b15f3c879f4d03ca368803179b2bc564ee4a7a9909d14ed2"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "apr-util",
+          "base": "apr-util",
+          "version": "1.6.5-2",
+          "url": "https://mirror.msys2.org/msys/sources/apr-util-1.6.5-2.src.tar.zst",
+          "path": "licenses/native/msys2/sources/apr-util-1.6.5-2.src.tar.zst",
+          "sha256": "56baef005a849eb3b15f3c879f4d03ca368803179b2bc564ee4a7a9909d14ed2",
+          "bytes": 443747,
+          "inputVerification": [
+            {
+              "source": "https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2",
+              "entry": "apr-util/apr-util-1.6.5.tar.bz2",
+              "sha256": "96de1dd6f6a0476d2d2e7964926d8c1ddc3bb0e210e1b1812d3ba5a454a392e2",
+              "sha256FromRecipe": "96de1dd6f6a0476d2d2e7964926d8c1ddc3bb0e210e1b1812d3ba5a454a392e2"
+            },
+            {
+              "source": "plugins.patch",
+              "entry": "apr-util/plugins.patch",
+              "sha256": "3280d6ed8e577b626e60d495856d16f6944c3144c495fe9ed8cad6b39332824c",
+              "sha256FromRecipe": "3280d6ed8e577b626e60d495856d16f6944c3144c495fe9ed8cad6b39332824c"
+            },
+            {
+              "source": "0001-fix-parallel-module-build.patch",
+              "entry": "apr-util/0001-fix-parallel-module-build.patch",
+              "sha256": "af734c9b00e7728ed3c7c3c37772f9942fe8afead2a892789efa4a9ecfdfc58e",
+              "sha256FromRecipe": "af734c9b00e7728ed3c7c3c37772f9942fe8afead2a892789efa4a9ecfdfc58e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libexpat",
+      "version": "2.10.0-1",
+      "license": "MIT",
+      "packageDeclaredLicense": [
+        "spdx:MIT"
+      ],
+      "upstream": "https://libexpat.github.io/",
+      "binaryPackage": {
+        "filename": "libexpat-2.10.0-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libexpat-2.10.0-1-x86_64.pkg.tar.zst",
+        "sha256": "e999d88a6927fb0c8a165f0cd279b10a9f0adfba8bfb245d4352a7a9c2bbc3a8"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-expat-1.dll",
+          "sha256": "5039a8ae9c4e408f5fbdaf0d3570b33d80d757c7b71f0ff6ef78204410f272f2",
+          "archiveEntry": "usr/bin/msys-expat-1.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libexpat/PKGBUILD",
+          "sha256": "b8daeaa5fb6993c337a0e550f57ac7eacd208e4ce87aa838cc29472af1266725"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libexpat/.SRCINFO",
+          "sha256": "262f6ad0075c2d0f4b0a4d4d46985e086c0808940269310f24d2975fe495dfab"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libexpat/PKGINFO",
+          "sha256": "d4c51fe0dec63f402097b10cd5816e75633dba3e3e5205cfc503815eba20bc6d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libexpat/BUILDINFO",
+          "sha256": "c717f4a06def901aa3ec33fe702d49e531e0db36a1d84fb57732d20b011a0a79"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libexpat/source-notices/expat-2.10.0/COPYING",
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+        },
+        {
+          "path": "licenses/native/msys2/sources/expat-2.10.0-1.src.tar.zst",
+          "sha256": "4245919c2a7c39b8bf85981a535c42cb5e9969cb2a2cbd6741873f91098079c9"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libexpat",
+          "base": "expat",
+          "version": "2.10.0-1",
+          "url": "https://mirror.msys2.org/msys/sources/expat-2.10.0-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/expat-2.10.0-1.src.tar.zst",
+          "sha256": "4245919c2a7c39b8bf85981a535c42cb5e9969cb2a2cbd6741873f91098079c9",
+          "bytes": 545766,
+          "inputVerification": [
+            {
+              "source": "https://github.com/libexpat/libexpat/releases/download/R_2_10_0/expat-2.10.0.tar.xz",
+              "entry": "expat/expat-2.10.0.tar.xz",
+              "sha256": "c624ba2998fc65df1163a49641ff3f9ab73138b11641d92c86bee0fb01b1bc7f",
+              "sha256FromRecipe": "c624ba2998fc65df1163a49641ff3f9ab73138b11641d92c86bee0fb01b1bc7f"
+            },
+            {
+              "source": "https://github.com/libexpat/libexpat/releases/download/R_2_10_0/expat-2.10.0.tar.xz.asc",
+              "entry": "expat/expat-2.10.0.tar.xz.asc",
+              "sha256": "1944af90d9e7abe645ec7b27847038ca7ddb6b1d2a25ac82c1565d50c2ee08af",
+              "sha256FromRecipe": "SKIP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "liblz4",
+      "version": "1.11.1-1",
+      "license": "BSD-2-Clause",
+      "packageDeclaredLicense": [
+        "spdx:GPL-2.0-or-later"
+      ],
+      "upstream": "https://lz4.github.io/lz4/",
+      "binaryPackage": {
+        "filename": "liblz4-1.11.1-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/liblz4-1.11.1-1-x86_64.pkg.tar.zst",
+        "sha256": "b35db1392281429746698daaee05934d3eaa437a585f723b1723bca409189742"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-lz4-1.dll",
+          "sha256": "8d1ee7f6af24c8058cdf1de65c1e8e14ff2693dc7c3f8e6f32bb267fac1d9719",
+          "archiveEntry": "usr/bin/msys-lz4-1.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/liblz4/PKGBUILD",
+          "sha256": "019a38ad1a94f793616c96b2e3ae81c50bc9f9768cb948f3ec1d468ce5bb17b9"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/.SRCINFO",
+          "sha256": "5c92a6a7040cb1c154438574738a2d128624f988a96db4aba2dcdbd8a6d2df17"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/PKGINFO",
+          "sha256": "5807b2d88cc9e2b52033547b369ed48d717eef117fe776ea8c68c1e96e2427d4"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/BUILDINFO",
+          "sha256": "d5e5f3c74c622553487533f5e6a0f547003f5ce2d4bd3be6fb7a041e96bc87db"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/source-notices/lz4-1.11.1/LICENSE",
+          "sha256": "4bc9c403f6b679cc076dee210e0e21c27b4e8f6d3fb43d85364c76657bfaaac5"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/source-notices/lz4-1.11.1/contrib/djgpp/LICENSE",
+          "sha256": "d011d1e02cb32b71c1ce2922ab41a2e2ad30f4ecf8de22c078d53618205abc05"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/source-notices/lz4-1.11.1/examples/COPYING",
+          "sha256": "609b910ef05c9c855ecc1da155a36ed0f57514eac452cf93446530b5ea4b3bc3"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/source-notices/lz4-1.11.1/lib/LICENSE",
+          "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/source-notices/lz4-1.11.1/programs/COPYING",
+          "sha256": "609b910ef05c9c855ecc1da155a36ed0f57514eac452cf93446530b5ea4b3bc3"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblz4/source-notices/lz4-1.11.1/tests/data/COPYING",
+          "sha256": "609b910ef05c9c855ecc1da155a36ed0f57514eac452cf93446530b5ea4b3bc3"
+        },
+        {
+          "path": "licenses/native/msys2/sources/lz4-1.11.1-1.src.tar.zst",
+          "sha256": "98f33a047074d2262545d1fc4de03825c071ce2cdc163b8e4d63cd10f52842d9"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "liblz4",
+          "base": "lz4",
+          "version": "1.11.1-1",
+          "url": "https://mirror.msys2.org/msys/sources/lz4-1.11.1-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/lz4-1.11.1-1.src.tar.zst",
+          "sha256": "98f33a047074d2262545d1fc4de03825c071ce2cdc163b8e4d63cd10f52842d9",
+          "bytes": 554666,
+          "inputVerification": [
+            {
+              "source": "lz4-1.11.1.tar.gz::https://github.com/lz4/lz4/archive/v1.11.1.tar.gz",
+              "entry": "lz4/lz4-1.11.1.tar.gz",
+              "sha256": "683fed08a844ad012196381e40badf80c0bbe4962959761416d41c9e67d77ec7",
+              "sha256FromRecipe": "683fed08a844ad012196381e40badf80c0bbe4962959761416d41c9e67d77ec7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "file",
+      "version": "5.48-2",
+      "license": "BSD-2-Clause",
+      "packageDeclaredLicense": [
+        "spdx:BSD-2-Clause"
+      ],
+      "upstream": "https://www.darwinsys.com/file/",
+      "binaryPackage": {
+        "filename": "file-5.48-2-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/file-5.48-2-x86_64.pkg.tar.zst",
+        "sha256": "2e02f9057d63801e02f877ea62bd45914e2aa65698e70e09f808684c2669f8a5"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-magic-1.dll",
+          "sha256": "9353b804cf831e30e017aadfa99f6967c6c13d402a2d1d5504c214b9e63922f2",
+          "archiveEntry": "usr/bin/msys-magic-1.dll",
+          "imports": [
+            "msys-bz2-1.dll",
+            "msys-lzma-5.dll",
+            "msys-2.0.dll",
+            "msys-z.dll",
+            "msys-zstd-1.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/file/PKGBUILD",
+          "sha256": "d86b0113336187ea1333e54d0cef11d2f3bf3cb861ab85f33f0eab71abf85b16"
+        },
+        {
+          "path": "licenses/native/msys2/packages/file/.SRCINFO",
+          "sha256": "ea8697e8dd497a17a0862c7b466232e4585d51daf65bd1dd1912505d5812bdbc"
+        },
+        {
+          "path": "licenses/native/msys2/packages/file/PKGINFO",
+          "sha256": "37cf25b81f7edf4a49eea56edac140dd47d570eed3957d4af59fa462f06c53e2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/file/BUILDINFO",
+          "sha256": "9583906ecaf60d891bd2bea419c84dd13d186cd7653841acaf0a8ddf49a1ed39"
+        },
+        {
+          "path": "licenses/native/msys2/packages/file/binary-notices/usr/share/licenses/file/COPYING",
+          "sha256": "0bfa856a9930bddadbef95d1be1cf4e163c0be618e76ea3275caaf255283e274"
+        },
+        {
+          "path": "licenses/native/msys2/packages/file/source-notices/file-5.48/COPYING",
+          "sha256": "0bfa856a9930bddadbef95d1be1cf4e163c0be618e76ea3275caaf255283e274"
+        },
+        {
+          "path": "licenses/native/msys2/packages/file/source-notices/file-5.48/python/LICENSE",
+          "sha256": "9d402e401ecfd65d9c600cf84ecb317aba1c5c6fcb788dd79af94fd1fdc527a8"
+        },
+        {
+          "path": "licenses/native/msys2/sources/file-5.48-2.src.tar.zst",
+          "sha256": "7a4a7eb759581d20c24a5764f92cdebb4facf5813d62757a83f9c63b74df7087"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "file",
+          "base": "file",
+          "version": "5.48-2",
+          "url": "https://mirror.msys2.org/msys/sources/file-5.48-2.src.tar.zst",
+          "path": "licenses/native/msys2/sources/file-5.48-2.src.tar.zst",
+          "sha256": "7a4a7eb759581d20c24a5764f92cdebb4facf5813d62757a83f9c63b74df7087",
+          "bytes": 2694790,
+          "inputVerification": [
+            {
+              "source": "https://astron.com/pub/file/file-5.48.tar.gz",
+              "entry": "file/file-5.48.tar.gz",
+              "sha256": "ed14656883b23a364b4057c05595d93252da9bc473d30106519519d0da141283",
+              "sha256FromRecipe": "ed14656883b23a364b4057c05595d93252da9bc473d30106519519d0da141283"
+            },
+            {
+              "source": "https://astron.com/pub/file/file-5.48.tar.gz.asc",
+              "entry": "file/file-5.48.tar.gz.asc",
+              "sha256": "6c33f4d62f06ba79dad8edb9a36ea5079f43e1715f38f5e3e0d849d085a30585",
+              "sha256FromRecipe": "SKIP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libsqlite",
+      "version": "3.54.1-1",
+      "license": "LicenseRef-Sqlite",
+      "packageDeclaredLicense": [
+        "spdx:LicenseRef-Sqlite"
+      ],
+      "upstream": "https://www.sqlite.org/",
+      "binaryPackage": {
+        "filename": "libsqlite-3.54.1-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libsqlite-3.54.1-1-x86_64.pkg.tar.zst",
+        "sha256": "745dc29666363a9e8b888531418ef0687c6572808ff10d860750121d4a5257c6"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-sqlite3-0.dll",
+          "sha256": "c4f82bcab59a2bc8bf0abb94bd66e9dd1ae45e04af583a63b72bc2d53603215c",
+          "archiveEntry": "usr/bin/msys-sqlite3-0.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/PKGBUILD",
+          "sha256": "ecebf8522229fd20b7bb4794af22adb5d9097097ac467f5e912c34d173755fb1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/.SRCINFO",
+          "sha256": "b588f80eabfa60be5a1c0c4db982297a2e59aadc8221e0f3b254a0d4b6b71bfa"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/PKGINFO",
+          "sha256": "b97c22912ec427f1fcf7dfd1ce946a2d7f1a9e194520586c23dde4fafed2d943"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/BUILDINFO",
+          "sha256": "f97f0f39b8dee09b1c00670e5fd608b5d9e98007cc96edeb359d293874684a3b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/binary-notices/usr/share/licenses/libsqlite/LICENSE",
+          "sha256": "0b76663a90e034f3d7f2af5bfada4cedec5ebc275361899eccc5c18e6f01ff1f"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/source-notices/sqlite-doc-3540100/copyright.html",
+          "sha256": "44ca9f793055c8e32fc65f65a4f5bcf813a33f5bdaaa084067dd617a4ed3cc70"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/source-notices/sqlite-doc-3540100/copyright-release.pdf",
+          "sha256": "a403fc07d4c4810555623f89bde45b41fb0d5e0c4d6db4250d9e30b0f0800a2d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/source-notices/sqlite-doc-3540100/copyright-release.html",
+          "sha256": "5c412b62178e71d3f50d5c1f8bee2be49bed70e04473772d4979ae7759f04b02"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/source-notices/sqlite-src-3540100/LICENSE.md",
+          "sha256": "ee6af51062b30d532991face5164136ae6f84e265ecf8abe89dc69dac45ca1e7"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/source-notices/sqlite-src-3540100/autosetup/LICENSE",
+          "sha256": "679b9208e67df09977456d1d2ae4d885b9badf02c47b45a28cf95ee27c14cb18"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsqlite/source-notices/sqlite-src-3540100/autoconf/tea/license.terms",
+          "sha256": "66e056b6e8687f32af30d5187611b98b12a8f46f07aaf62f43585f276e8f0ac9"
+        },
+        {
+          "path": "licenses/native/msys2/sources/sqlite-3.54.1-1.src.tar.zst",
+          "sha256": "386fa610bb4e4b1ea934fe25e2ab99c1059e5eb5f7cd0a08bd0428d930e3cf36"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libsqlite",
+          "base": "sqlite",
+          "version": "3.54.1-1",
+          "url": "https://mirror.msys2.org/msys/sources/sqlite-3.54.1-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/sqlite-3.54.1-1.src.tar.zst",
+          "sha256": "386fa610bb4e4b1ea934fe25e2ab99c1059e5eb5f7cd0a08bd0428d930e3cf36",
+          "bytes": 25799983,
+          "inputVerification": [
+            {
+              "source": "https://www.sqlite.org/2026/sqlite-src-3540100.zip",
+              "entry": "sqlite/sqlite-src-3540100.zip",
+              "sha256": "387e7f6cad4797b17848c07d453dc6606917bb356a6cfe5a3abafd38c240c71b",
+              "sha256FromRecipe": "387e7f6cad4797b17848c07d453dc6606917bb356a6cfe5a3abafd38c240c71b"
+            },
+            {
+              "source": "https://www.sqlite.org/2026/sqlite-doc-3540100.zip",
+              "entry": "sqlite/sqlite-doc-3540100.zip",
+              "sha256": "e9f634ac28a4c7b48f5c389e4b08c039654ec1487512092b330ccfcfdc0816e0",
+              "sha256FromRecipe": "e9f634ac28a4c7b48f5c389e4b08c039654ec1487512092b330ccfcfdc0816e0"
+            },
+            {
+              "source": "LICENSE",
+              "entry": "sqlite/LICENSE",
+              "sha256": "0b76663a90e034f3d7f2af5bfada4cedec5ebc275361899eccc5c18e6f01ff1f",
+              "sha256FromRecipe": "0b76663a90e034f3d7f2af5bfada4cedec5ebc275361899eccc5c18e6f01ff1f"
+            },
+            {
+              "source": "0001-sqlite-pcachetrace-include-sqlite3.patch",
+              "entry": "sqlite/0001-sqlite-pcachetrace-include-sqlite3.patch",
+              "sha256": "6518119034ceb2820d058afcb099d11f636271f55a41ffae22855af66a369166",
+              "sha256FromRecipe": "6518119034ceb2820d058afcb099d11f636271f55a41ffae22855af66a369166"
+            },
+            {
+              "source": "0002-sqlite3.32.3-Makefile.in-fix-rule-compiling-rbu.exe.patch",
+              "entry": "sqlite/0002-sqlite3.32.3-Makefile.in-fix-rule-compiling-rbu.exe.patch",
+              "sha256": "2a3be75d6a0e8f7ea1a53f0434a9e1823fcb5965069f482083694388c7564f1c",
+              "sha256FromRecipe": "2a3be75d6a0e8f7ea1a53f0434a9e1823fcb5965069f482083694388c7564f1c"
+            },
+            {
+              "source": "0031-use-packaged-lempar.c.patch",
+              "entry": "sqlite/0031-use-packaged-lempar.c.patch",
+              "sha256": "9d51e267719f48454627860cf0529928b6711c053e3b930344d897e95a0810fa",
+              "sha256FromRecipe": "9d51e267719f48454627860cf0529928b6711c053e3b930344d897e95a0810fa"
+            },
+            {
+              "source": "Makefile.ext.in",
+              "entry": "sqlite/Makefile.ext.in",
+              "sha256": "8c169857b1c449fb7f4e31aaedccdb15435b2f8a83f0f4e744569894a86d8bbd",
+              "sha256FromRecipe": "8c169857b1c449fb7f4e31aaedccdb15435b2f8a83f0f4e744569894a86d8bbd"
+            },
+            {
+              "source": "README.md.in",
+              "entry": "sqlite/README.md.in",
+              "sha256": "ef3a1faa02a88e05539d160d51679f164dfa23cc5a637ff36bc504bf04d6d7a6",
+              "sha256FromRecipe": "ef3a1faa02a88e05539d160d51679f164dfa23cc5a637ff36bc504bf04d6d7a6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "zlib",
+      "version": "1.4-1",
+      "license": "Zlib",
+      "packageDeclaredLicense": [
+        "spdx:Zlib"
+      ],
+      "upstream": "https://www.zlib.net/",
+      "binaryPackage": {
+        "filename": "zlib-1.4-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/zlib-1.4-1-x86_64.pkg.tar.zst",
+        "sha256": "bafd3abf8b773ec28b6571d465a53a4e7afed4824cc1eec52f3bfbd6fa556ab9"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-z.dll",
+          "sha256": "8b74060f4f22944933e0ef41023109d95e594d7678a4bd666da7e78bcc6a6a82",
+          "archiveEntry": "usr/bin/msys-z.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/zlib/PKGBUILD",
+          "sha256": "1914950ea2fdb5b015117f9757e84ff91bb94e49b510e3cee44e8587768b1505"
+        },
+        {
+          "path": "licenses/native/msys2/packages/zlib/.SRCINFO",
+          "sha256": "32e8f70d191a4ac00d698f396b16898934f67fdc01266556c076140059ee8730"
+        },
+        {
+          "path": "licenses/native/msys2/packages/zlib/PKGINFO",
+          "sha256": "d2ea3d974a8b48b30b5ed9fabb378e6545eb4046e06c20f015f5b86040f855c1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/zlib/BUILDINFO",
+          "sha256": "a360837835d4e167af70c1b62eb053d0da83df744de35f3ddcf510295dacb8fc"
+        },
+        {
+          "path": "licenses/native/msys2/packages/zlib/binary-notices/usr/share/licenses/zlib/LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/zlib/source-notices/zlib-1.4/LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/zlib/source-notices/zlib-1.4/contrib/minizip/LICENSE.Info-Zip",
+          "sha256": "fc686023047ce5ce3a18a9b8a777156f0e475929d3de06bac279f3c025d2b2ca"
+        },
+        {
+          "path": "licenses/native/msys2/sources/zlib-1.4-1.src.tar.zst",
+          "sha256": "5c1d02fab7856be5df5e13c8397f215c19d80b6afa125a627f11993d2a84d730"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "zlib",
+          "base": "zlib",
+          "version": "1.4-1",
+          "url": "https://mirror.msys2.org/msys/sources/zlib-1.4-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/zlib-1.4-1.src.tar.zst",
+          "sha256": "5c1d02fab7856be5df5e13c8397f215c19d80b6afa125a627f11993d2a84d730",
+          "bytes": 1322778,
+          "inputVerification": [
+            {
+              "source": "https://github.com/madler/zlib/releases/download/v1.4/zlib-1.4.tar.xz",
+              "entry": "zlib/zlib-1.4.tar.xz",
+              "sha256": "4f11c512053d7bab8d9e9b89bde3575add3e4c50a383b42ef6cb837035fc5a7c",
+              "sha256FromRecipe": "4f11c512053d7bab8d9e9b89bde3575add3e4c50a383b42ef6cb837035fc5a7c"
+            },
+            {
+              "source": "https://github.com/madler/zlib/releases/download/v1.4/zlib-1.4.tar.xz.asc",
+              "entry": "zlib/zlib-1.4.tar.xz.asc",
+              "sha256": "d9e83b6fb915d0bbe81e6b54e3321367caa9df5f1d18e55fa1a0feeb9397ac59",
+              "sha256FromRecipe": "SKIP"
+            },
+            {
+              "source": "zlib-1.2.13-configure.patch",
+              "entry": "zlib/zlib-1.2.13-configure.patch",
+              "sha256": "43726a2170b298059391c0faec0c893aa7ca59b1201afd9f807c49d39ce25527",
+              "sha256FromRecipe": "43726a2170b298059391c0faec0c893aa7ca59b1201afd9f807c49d39ce25527"
+            },
+            {
+              "source": "zlib-1.2.13-gzopen_w.patch",
+              "entry": "zlib/zlib-1.2.13-gzopen_w.patch",
+              "sha256": "3c5186940741cf380ab598362c564c792965e9d25906ef75087e9e7389becbc5",
+              "sha256FromRecipe": "3c5186940741cf380ab598362c564c792965e9d25906ef75087e9e7389becbc5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libutil-linux",
+      "version": "2.42.4-1",
+      "license": "BSD-3-Clause (libuuid only)",
+      "packageDeclaredLicense": [
+        "spdx:GPL-2.0-or-later"
+      ],
+      "upstream": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "binaryPackage": {
+        "filename": "libutil-linux-2.42.4-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libutil-linux-2.42.4-1-x86_64.pkg.tar.zst",
+        "sha256": "2047341b34c7dfb1231615446c7ba7d9d43f57cc5e1b2b2e89376f67c3965e9b"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-uuid-1.dll",
+          "sha256": "2c8f9985b82c1ee5c5f211f342ef343673c08e469ccca6c6bb09aa035aa15174",
+          "archiveEntry": "usr/bin/msys-uuid-1.dll",
+          "imports": [
+            "msys-intl-8.dll",
+            "msys-2.0.dll",
+            "msys-gcc_s-seh-1.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/PKGBUILD",
+          "sha256": "50ebce81f53d2a1d053c4ba6984d87dd544600f6629d693cca63aa5f989f8274"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/.SRCINFO",
+          "sha256": "f5e67a68629215819f6702d3cff93daf505421ecf094b0871c95d942c3bc1e86"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/PKGINFO",
+          "sha256": "c5377725b20e762fe24ca3433ae7b0fcbda6d1e209bb4e853ad44bedf65fb69b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/BUILDINFO",
+          "sha256": "56002b4f22b74505004ed5a45469eedfbaa3bf1af8633cc3b0d691f63d67aedd"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.BSD-2-Clause",
+          "sha256": "527f738966ca396cd5a68c1509390de2a780c6b614d9ee57f7544a6161938ed1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.BSD-3-Clause",
+          "sha256": "9b718a9460fed5952466421235bc79eb49d4e9eacc920d7a9dd6285ab8fd6c6d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.BSD-4-Clause-UC",
+          "sha256": "ba7640f00d93e72e92b94b9d71f25ec53bac2f1682f5c4adcccb0018359f60f8"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.EUPL-1.2",
+          "sha256": "6fc9e709ccbfe0d77fbffa2427a983282be2eb88e47b1cdb49f21a83b4d1e665"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.GPL-2.0-only",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.GPL-2.0-or-later",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.GPL-3.0-or-later",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.ISC",
+          "sha256": "e53348ce276358e9997014071c5294b36a18c4b34f32f00ee57b9acce0aafd63"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.LGPL-2.1-or-later",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/Documentation/licenses/COPYING.MIT",
+          "sha256": "8555341619542abb48c102afd954e42d4478e5be16ad3d5af7b0ff71009e7348"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/libblkid/COPYING",
+          "sha256": "f03b01c1251bc3bfee959aea99ed7906a0b08a2ff132d55a1ece18ee573a52a1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/libfdisk/COPYING",
+          "sha256": "f03b01c1251bc3bfee959aea99ed7906a0b08a2ff132d55a1ece18ee573a52a1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/liblastlog2/COPYING",
+          "sha256": "d0a359f02d74adc85263c88a1f2e9911e96619fef67067e832ef7936b0606863"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/libmount/COPYING",
+          "sha256": "5f12c2408a84be40fbff8ad7e281aa4e884fb92ee3f9a61aedf886a9503d3500"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/libsmartcols/COPYING",
+          "sha256": "f03b01c1251bc3bfee959aea99ed7906a0b08a2ff132d55a1ece18ee573a52a1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/libuuid/COPYING",
+          "sha256": "5068749ee9c2f2c545af4a4de9fde3c39dc8d90af47cc0b3a42700116f9b7e71"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/pam_lastlog2/COPYING",
+          "sha256": "d0a359f02d74adc85263c88a1f2e9911e96619fef67067e832ef7936b0606863"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libutil-linux/source-notices/util-linux-2.42.4/COPYING",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "licenses/native/msys2/sources/util-linux-2.42.4-1.src.tar.zst",
+          "sha256": "187ffb6a70b69564ecbe96384c6dc4e73eb409b26e7c98a9995cfc1533dc8462"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libutil-linux",
+          "base": "util-linux",
+          "version": "2.42.4-1",
+          "url": "https://mirror.msys2.org/msys/sources/util-linux-2.42.4-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/util-linux-2.42.4-1.src.tar.zst",
+          "sha256": "187ffb6a70b69564ecbe96384c6dc4e73eb409b26e7c98a9995cfc1533dc8462",
+          "bytes": 10738289,
+          "inputVerification": [
+            {
+              "source": "https://www.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.4.tar.xz",
+              "entry": "util-linux/util-linux-2.42.4.tar.xz",
+              "sha256": "fbd62a100ab7bb8746ba0661255c3c48185b1e9021507c624da01fbc696330ec",
+              "sha256FromRecipe": "fbd62a100ab7bb8746ba0661255c3c48185b1e9021507c624da01fbc696330ec"
+            },
+            {
+              "source": "2.24.2-libintl.patch",
+              "entry": "util-linux/2.24.2-libintl.patch",
+              "sha256": "b4388b8cae49c9bd297d9f028d669c5e60f0e7eea90c128790da2e92af04d4e6",
+              "sha256FromRecipe": "b4388b8cae49c9bd297d9f028d669c5e60f0e7eea90c128790da2e92af04d4e6"
+            },
+            {
+              "source": "2.25.1-relocate-sbin-to-usr-bin.patch",
+              "entry": "util-linux/2.25.1-relocate-sbin-to-usr-bin.patch",
+              "sha256": "5f722c3482ac2546363632330c77def85710026875eeec15b6388dc7e185e036",
+              "sha256FromRecipe": "5f722c3482ac2546363632330c77def85710026875eeec15b6388dc7e185e036"
+            },
+            {
+              "source": "2.33.1-cygwin-cpuset.patch",
+              "entry": "util-linux/2.33.1-cygwin-cpuset.patch",
+              "sha256": "78c2fd6988a220fa84fcfc8dbcfb102d3f99583eb9f95aada19e20a321b922d5",
+              "sha256FromRecipe": "78c2fd6988a220fa84fcfc8dbcfb102d3f99583eb9f95aada19e20a321b922d5"
+            },
+            {
+              "source": "2.39.3-cygwin-fallocate.patch",
+              "entry": "util-linux/2.39.3-cygwin-fallocate.patch",
+              "sha256": "720419068fd65d787d5c737e780a31926e556db6cce037ceb397d7aea4d039c7",
+              "sha256FromRecipe": "720419068fd65d787d5c737e780a31926e556db6cce037ceb397d7aea4d039c7"
+            },
+            {
+              "source": "2.39.3-cygwin-include.patch",
+              "entry": "util-linux/2.39.3-cygwin-include.patch",
+              "sha256": "eec5b06c995fd272096ae4a11743744aff06048395dff2d41c462a40e4f82cc4",
+              "sha256FromRecipe": "eec5b06c995fd272096ae4a11743744aff06048395dff2d41c462a40e4f82cc4"
+            },
+            {
+              "source": "2.39.3-testsuite.patch",
+              "entry": "util-linux/2.39.3-testsuite.patch",
+              "sha256": "a4362e067c2fffddea738da22b266305b877598cf0e8acc9b05c8b963c4f13b9",
+              "sha256FromRecipe": "a4362e067c2fffddea738da22b266305b877598cf0e8acc9b05c8b963c4f13b9"
+            },
+            {
+              "source": "2.40.2-agetty.patch",
+              "entry": "util-linux/2.40.2-agetty.patch",
+              "sha256": "5cd9ab3a9ad08cff0780fb5a50c5cc3b65dd938e09f187c32d6bc170088567f7",
+              "sha256FromRecipe": "5cd9ab3a9ad08cff0780fb5a50c5cc3b65dd938e09f187c32d6bc170088567f7"
+            },
+            {
+              "source": "2.40.2-col.patch",
+              "entry": "util-linux/2.40.2-col.patch",
+              "sha256": "9b4c7d5da5bdb39790f13219cb8f3bf1b57ab97f6bbf2b69c930d0b34e5c49e3",
+              "sha256FromRecipe": "9b4c7d5da5bdb39790f13219cb8f3bf1b57ab97f6bbf2b69c930d0b34e5c49e3"
+            },
+            {
+              "source": "2.40.2-libblkid-topology.patch",
+              "entry": "util-linux/2.40.2-libblkid-topology.patch",
+              "sha256": "ba9608766ececdebe8ae2dc4c3acf3b9325b6abd4ba09f47a2803be76ac093d4",
+              "sha256FromRecipe": "ba9608766ececdebe8ae2dc4c3acf3b9325b6abd4ba09f47a2803be76ac093d4"
+            },
+            {
+              "source": "2.40.2-probe.patch",
+              "entry": "util-linux/2.40.2-probe.patch",
+              "sha256": "09073123cbd7177c395da35784846917b1482a22238330d490c5496837f3c5e9",
+              "sha256FromRecipe": "09073123cbd7177c395da35784846917b1482a22238330d490c5496837f3c5e9"
+            },
+            {
+              "source": "2.40.2-setsid.patch",
+              "entry": "util-linux/2.40.2-setsid.patch",
+              "sha256": "7b77f80a998ea2716b1ae53aff2804bf21aaa93c68045f898a212497e7c423a7",
+              "sha256FromRecipe": "7b77f80a998ea2716b1ae53aff2804bf21aaa93c68045f898a212497e7c423a7"
+            },
+            {
+              "source": "2.40.2-uuid_time.patch",
+              "entry": "util-linux/2.40.2-uuid_time.patch",
+              "sha256": "76f76b46373fb08bea62c87457bc9ac7a5562729038c0e213a22bdf6a8eb442a",
+              "sha256FromRecipe": "76f76b46373fb08bea62c87457bc9ac7a5562729038c0e213a22bdf6a8eb442a"
+            },
+            {
+              "source": "msys2-2.40.2-taskset.patch",
+              "entry": "util-linux/msys2-2.40.2-taskset.patch",
+              "sha256": "0487ef07847fb17c69a236e0735e3cf0672444a5325aea3f044cffa8a7569b33",
+              "sha256FromRecipe": "0487ef07847fb17c69a236e0735e3cf0672444a5325aea3f044cffa8a7569b33"
+            },
+            {
+              "source": "msys2-2.40.2-fallocate.patch",
+              "entry": "util-linux/msys2-2.40.2-fallocate.patch",
+              "sha256": "0574bea33d937ec90efd2168d632f9d58dd0384ea3b8dd00a0f0034a4395b399",
+              "sha256FromRecipe": "0574bea33d937ec90efd2168d632f9d58dd0384ea3b8dd00a0f0034a4395b399"
+            },
+            {
+              "source": "msys2-2.42.4-fix-test.patch",
+              "entry": "util-linux/msys2-2.42.4-fix-test.patch",
+              "sha256": "a993458a489a9bb231f44a5078b623dac89c74b1dc50b0890deb2398e4b40a5a",
+              "sha256FromRecipe": "a993458a489a9bb231f44a5078b623dac89c74b1dc50b0890deb2398e4b40a5a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libserf",
+      "version": "1.3.10-4",
+      "license": "Apache-2.0",
+      "packageDeclaredLicense": [
+        "spdx:Apache-2.0"
+      ],
+      "upstream": "https://serf.apache.org/",
+      "binaryPackage": {
+        "filename": "libserf-1.3.10-4-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libserf-1.3.10-4-x86_64.pkg.tar.zst",
+        "sha256": "4bd9aa33d4bd37360e1fe57bca488e59f3b2cea4eb2090958a7d8404472093a4"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-serf-1-0.dll",
+          "sha256": "3152b1a8f8501429ea8d9c9f8032fe6363b7f199f8ca6c02ca1efb301876a1c7",
+          "archiveEntry": "usr/bin/msys-serf-1-0.dll",
+          "imports": [
+            "msys-apr-1-0.dll",
+            "msys-aprutil-1-0.dll",
+            "msys-crypto-4.dll",
+            "msys-2.0.dll",
+            "msys-ssl-4.dll",
+            "msys-z.dll",
+            "KERNEL32.dll",
+            "Secur32.dll"
+          ],
+          "builtFromSource": true
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libserf/PKGBUILD",
+          "sha256": "bfe0b7fa368d1ca0e114ca49c757c95262fc38ee707744a33e54c627f6b1ca3d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libserf/.SRCINFO",
+          "sha256": "e264ab0b53f19404c4afafec977f2b128727bd3440ed522af2f5dd3fb41bf1bc"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libserf/PKGINFO",
+          "sha256": "b5cf2321254d5948b14324f69a9d290a3b2201e98c60768e9488e97122a85c0b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libserf/BUILDINFO",
+          "sha256": "045866149cb5646249b059cc7277e82cb82e064d38975bcacf31319ed0645441"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libserf/source-notices/serf-1.3.10/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libserf/source-notices/serf-1.3.10/NOTICE",
+          "sha256": "015a541e5321866eabace13cb71957b7a80257cb6d298c6339ab25dea731595e"
+        },
+        {
+          "path": "licenses/native/msys2/sources/serf-1.3.10-4.src.tar.zst",
+          "sha256": "45df5eef0fcd52da2fe9747800592c886b4e1942bd08d49b7b31433b714e0f8e"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        },
+        {
+          "path": "licenses/native/msys2/build/serf-empty-peek.patch",
+          "sha256": "68bdf68bc0e2f38d5b35ad9296eeb3ca115a0b519d71ed0d0b1a4e60d0c04ede"
+        },
+        {
+          "path": "licenses/native/msys2/build/tool-packages.json",
+          "sha256": "8503575e393ecb87fa579cfa99176f7f8f8c050eac4a1cb584d7c4d3cd0328ad"
+        },
+        {
+          "path": "scripts/build-svn-serf.py",
+          "sha256": "a521e9e362e4fc46d13d50d2a4dca791b2ddcf3d190c32a1926bb294a283b5b3"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libserf",
+          "base": "serf",
+          "version": "1.3.10-4",
+          "url": "https://mirror.msys2.org/msys/sources/serf-1.3.10-4.src.tar.zst",
+          "path": "licenses/native/msys2/sources/serf-1.3.10-4.src.tar.zst",
+          "sha256": "45df5eef0fcd52da2fe9747800592c886b4e1942bd08d49b7b31433b714e0f8e",
+          "bytes": 151802,
+          "inputVerification": [
+            {
+              "source": "https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2",
+              "entry": "serf/serf-1.3.10.tar.bz2",
+              "sha256": "be81ef08baa2516ecda76a77adf7def7bc3227eeb578b9a33b45f7b41dc064e6",
+              "sha256FromRecipe": "be81ef08baa2516ecda76a77adf7def7bc3227eeb578b9a33b45f7b41dc064e6"
+            },
+            {
+              "source": "03-destdir.patch",
+              "entry": "serf/03-destdir.patch",
+              "sha256": "87767cd9b5e568a10f234df46f413a408613965e9d1b8cde1c0145f7eb20f0f1",
+              "sha256FromRecipe": "87767cd9b5e568a10f234df46f413a408613965e9d1b8cde1c0145f7eb20f0f1"
+            },
+            {
+              "source": "05-disable-SHLIBVERSION.patch",
+              "entry": "serf/05-disable-SHLIBVERSION.patch",
+              "sha256": "8057f20b42f5ca49c886aecc33b0686f3505f0d75918a8ec552424c10fd69e35",
+              "sha256FromRecipe": "8057f20b42f5ca49c886aecc33b0686f3505f0d75918a8ec552424c10fd69e35"
+            },
+            {
+              "source": "06-strcasecmp.patch",
+              "entry": "serf/06-strcasecmp.patch",
+              "sha256": "313b272609729d80dedf608f9f1939526e687fdf4a1b50e1a66505c93c2ee56f",
+              "sha256FromRecipe": "313b272609729d80dedf608f9f1939526e687fdf4a1b50e1a66505c93c2ee56f"
+            },
+            {
+              "source": "07-sspi-auth.patch",
+              "entry": "serf/07-sspi-auth.patch",
+              "sha256": "84a43b3b6d3024195fdc69d215898ac426286329025bfa239ebe27a5c7507bc0",
+              "sha256FromRecipe": "84a43b3b6d3024195fdc69d215898ac426286329025bfa239ebe27a5c7507bc0"
+            },
+            {
+              "source": "08-openssl4.patch",
+              "entry": "serf/08-openssl4.patch",
+              "sha256": "09649037c9ff17e282ffae0fa0d65f0376b55d341359ba45a1df3f666615e193",
+              "sha256FromRecipe": "09649037c9ff17e282ffae0fa0d65f0376b55d341359ba45a1df3f666615e193"
+            }
+          ]
+        }
+      ],
+      "sourceModification": {
+        "patch": "licenses/native/msys2/build/serf-empty-peek.patch",
+        "license": "Apache-2.0",
+        "buildScript": "scripts/build-svn-serf.py",
+        "description": "Treat successful zero-length peek as no data before request setup; preserve EOF/errors and address fallback."
+      }
+    },
+    {
+      "name": "libsasl",
+      "version": "2.1.28-7",
+      "license": "LicenseRef-cyrus-sasl",
+      "packageDeclaredLicense": [
+        "spdx:LicenseRef-cyrus-sasl"
+      ],
+      "upstream": "https://www.cyrusimap.org/sasl/",
+      "binaryPackage": {
+        "filename": "libsasl-2.1.28-7-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libsasl-2.1.28-7-x86_64.pkg.tar.zst",
+        "sha256": "193d293a9bed6c7cf09899c9ccb384e05440ed36d43da24f7bcb2bf78c13cb9e"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-sasl2-3.dll",
+          "sha256": "8ddeb5711f90fd5fe5d5737ec4a3e9d67582861f4c5b7522543013432ef17d14",
+          "archiveEntry": "usr/bin/msys-sasl2-3.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libsasl/PKGBUILD",
+          "sha256": "dc07a50b31a6ea3002e39516ad6960b8ed14fa04357e93702ac52d1537aced99"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/.SRCINFO",
+          "sha256": "6da31e28ffd477cc59693fed213a840d43b5203af995ddca9e517ad4c1d9fec9"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/PKGINFO",
+          "sha256": "83010c12ecc9040d6196fc725fe34be2efde87502d26bfe6ec9666132f12037d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/BUILDINFO",
+          "sha256": "ad654566036ac7d871024be8f1deb665cbce533407ba107a94d5173ce1b08bea"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/binary-notices/usr/share/licenses/libsasl/COPYING",
+          "sha256": "9d6e5d1632140a6c135b251260953650d17d87cd1124f87aaf72192aa4580d4b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/source-notices/cyrus-sasl-2.1.28/mac/libdes/src/COPYRIGHT",
+          "sha256": "421f4d629f9f89662af2e0bda6b1ab1d149ff7f9d9dcefb0bc6d817a359d7e42"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/source-notices/cyrus-sasl-2.1.28/saslauthd/COPYING",
+          "sha256": "331d1ea802ff1643aa00ff1304844f52b1696ca9c90d1e89610654acadee875b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libsasl/source-notices/cyrus-sasl-2.1.28/COPYING",
+          "sha256": "9d6e5d1632140a6c135b251260953650d17d87cd1124f87aaf72192aa4580d4b"
+        },
+        {
+          "path": "licenses/native/msys2/sources/cyrus-sasl-2.1.28-7.src.tar.zst",
+          "sha256": "286f9f3fa2cd1f9991449fd93b3b68358e247be156672cb7abb56ca8282d241c"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libsasl",
+          "base": "cyrus-sasl",
+          "version": "2.1.28-7",
+          "url": "https://mirror.msys2.org/msys/sources/cyrus-sasl-2.1.28-7.src.tar.zst",
+          "path": "licenses/native/msys2/sources/cyrus-sasl-2.1.28-7.src.tar.zst",
+          "sha256": "286f9f3fa2cd1f9991449fd93b3b68358e247be156672cb7abb56ca8282d241c",
+          "bytes": 3715301,
+          "inputVerification": [
+            {
+              "source": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz",
+              "entry": "cyrus-sasl/cyrus-sasl-2.1.28.tar.gz",
+              "sha256": "7ccfc6abd01ed67c1a0924b353e526f1b766b21f42d4562ee635a8ebfc5bb38c",
+              "sha256FromRecipe": "7ccfc6abd01ed67c1a0924b353e526f1b766b21f42d4562ee635a8ebfc5bb38c"
+            },
+            {
+              "source": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz.sig",
+              "entry": "cyrus-sasl/cyrus-sasl-2.1.28.tar.gz.sig",
+              "sha256": "e6169548f42234eb2b1af9719415016a57116835b8ea494596f52743b49971fd",
+              "sha256FromRecipe": "SKIP"
+            },
+            {
+              "source": "01-fix-plugin-ext.patch",
+              "entry": "cyrus-sasl/01-fix-plugin-ext.patch",
+              "sha256": "3567f22ee5f4dc4174c4d47b10287f84992fb3dee8fd5fa9e5cbb34541b99b9f",
+              "sha256FromRecipe": "3567f22ee5f4dc4174c4d47b10287f84992fb3dee8fd5fa9e5cbb34541b99b9f"
+            },
+            {
+              "source": "03-fix-plugins.patch",
+              "entry": "cyrus-sasl/03-fix-plugins.patch",
+              "sha256": "62fca7407d288e021fac6fed47d8a94ef2775c257ddcb79071428fe7719485f5",
+              "sha256FromRecipe": "62fca7407d288e021fac6fed47d8a94ef2775c257ddcb79071428fe7719485f5"
+            },
+            {
+              "source": "09-digest-md5-Remove-annoying-debug-message.patch",
+              "entry": "cyrus-sasl/09-digest-md5-Remove-annoying-debug-message.patch",
+              "sha256": "8eec9903e048bf01633df93cea505a8f77aceb933dd5609fd85602c0c0baa5c0",
+              "sha256FromRecipe": "8eec9903e048bf01633df93cea505a8f77aceb933dd5609fd85602c0c0baa5c0"
+            },
+            {
+              "source": "https://github.com/cyrusimap/cyrus-sasl/commit/c3ccead6ee3773f624708ca22be41292cd5ce557.patch",
+              "entry": "cyrus-sasl/c3ccead6ee3773f624708ca22be41292cd5ce557.patch",
+              "sha256": "d15cf4009ecb9930749494bbe23a140a72add3a9d7d923df9af9012c6bccc194",
+              "sha256FromRecipe": "d15cf4009ecb9930749494bbe23a140a72add3a9d7d923df9af9012c6bccc194"
+            },
+            {
+              "source": "https://github.com/cyrusimap/cyrus-sasl/commit/79bce416883cab6dc45151575f2a66dc181c67e4.patch",
+              "entry": "cyrus-sasl/79bce416883cab6dc45151575f2a66dc181c67e4.patch",
+              "sha256": "31cc772fead1e5741db10b911a4d6202714388c35ed20e1e5c0d61364b584275",
+              "sha256FromRecipe": "31cc772fead1e5741db10b911a4d6202714388c35ed20e1e5c0d61364b584275"
+            },
+            {
+              "source": "https://github.com/cyrusimap/cyrus-sasl/commit/5e4395aaf4d91aba66649c9915e38d343d000ef7.patch",
+              "entry": "cyrus-sasl/5e4395aaf4d91aba66649c9915e38d343d000ef7.patch",
+              "sha256": "2018809e3f19b4abd3aba8eeb9048d14935015486890a1c44009679471324bbe",
+              "sha256FromRecipe": "2018809e3f19b4abd3aba8eeb9048d14935015486890a1c44009679471324bbe"
+            },
+            {
+              "source": "https://github.com/cyrusimap/cyrus-sasl/commit/899522d8d8b72ce2d22a767784dd939bb7771671.patch",
+              "entry": "cyrus-sasl/899522d8d8b72ce2d22a767784dd939bb7771671.patch",
+              "sha256": "349000752ca37276232fc908b55a401e92d8cf53af2a3148b6c59062a6e131a7",
+              "sha256FromRecipe": "349000752ca37276232fc908b55a401e92d8cf53af2a3148b6c59062a6e131a7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libxcrypt",
+      "version": "4.5.2-1",
+      "license": "LGPL-2.1-or-later",
+      "packageDeclaredLicense": [
+        "spdx:LGPL-2.1-or-later"
+      ],
+      "upstream": "https://github.com/besser82/libxcrypt/",
+      "binaryPackage": {
+        "filename": "libxcrypt-4.5.2-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libxcrypt-4.5.2-1-x86_64.pkg.tar.zst",
+        "sha256": "e63db0aa2b708359e25f61f506e2d2c92c315febf5f88cc9f386e4ec0bdf4fa5"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-crypt-2.dll",
+          "sha256": "9a06bdbd7a934847bc0c50c3a19a7cf2b036a86ef9960fbe22984dd2ac18d608",
+          "archiveEntry": "usr/bin/msys-crypt-2.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libxcrypt/PKGBUILD",
+          "sha256": "bc4971d32ad680d097d3d3248def2f3454331de428829325d41afb342de28436"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libxcrypt/.SRCINFO",
+          "sha256": "a89e43a4f650b640e9109d7dd326891323fb3987e0ae25aac6eb9a11d0cda19e"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libxcrypt/PKGINFO",
+          "sha256": "961352b24974f6edb510d362489dd83ba8f319cdcee3cf2edc342b6f0faa8205"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libxcrypt/BUILDINFO",
+          "sha256": "8bb9c31af42b998f5e596a7bfd0dc8699209256b0941a4ebd54b928a3a6fd713"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libxcrypt/source-notices/libxcrypt-4.5.2/COPYING.LIB",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "licenses/native/msys2/sources/libxcrypt-4.5.2-1.src.tar.zst",
+          "sha256": "dc3e44cea067417ff61c25c981d7d58bb0f343b824ba10fd2a0a3b8badc55746"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libxcrypt",
+          "base": "libxcrypt",
+          "version": "4.5.2-1",
+          "url": "https://mirror.msys2.org/msys/sources/libxcrypt-4.5.2-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/libxcrypt-4.5.2-1.src.tar.zst",
+          "sha256": "dc3e44cea067417ff61c25c981d7d58bb0f343b824ba10fd2a0a3b8badc55746",
+          "bytes": 672527,
+          "inputVerification": [
+            {
+              "source": "https://github.com/besser82/libxcrypt//releases/download/v4.5.2/libxcrypt-4.5.2.tar.xz",
+              "entry": "libxcrypt/libxcrypt-4.5.2.tar.xz",
+              "sha256": "71513a31c01a428bccd5367a32fd95f115d6dac50fb5b60c779d5c7942aec071",
+              "sha256FromRecipe": "71513a31c01a428bccd5367a32fd95f115d6dac50fb5b60c779d5c7942aec071"
+            },
+            {
+              "source": "https://github.com/besser82/libxcrypt//releases/download/v4.5.2/libxcrypt-4.5.2.tar.xz.asc",
+              "entry": "libxcrypt/libxcrypt-4.5.2.tar.xz.asc",
+              "sha256": "11df2b889929d4923eed6298ba44c6e746c9ca5b9de41bd9b1b1a694a2aea65e",
+              "sha256FromRecipe": "SKIP"
+            },
+            {
+              "source": "4.4.2-cygwin-no-undefined.patch",
+              "entry": "libxcrypt/4.4.2-cygwin-no-undefined.patch",
+              "sha256": "85ad8bd0478710f4035ae2d655370cbeef4eb5999a624a21f6786a52a9cdea5b",
+              "sha256FromRecipe": "85ad8bd0478710f4035ae2d655370cbeef4eb5999a624a21f6786a52a9cdea5b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libiconv",
+      "version": "1.19-1",
+      "license": "LGPL-2.1-or-later",
+      "packageDeclaredLicense": [
+        "LGPL"
+      ],
+      "upstream": "https://www.gnu.org/software/libiconv/",
+      "binaryPackage": {
+        "filename": "libiconv-1.19-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libiconv-1.19-1-x86_64.pkg.tar.zst",
+        "sha256": "0fa55ea2a6ccf97cf8c58b24b2615815e15e16e6e4e888091c263c2c83c5313d"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-iconv-2.dll",
+          "sha256": "50012969ed96a5232220185d2fc1ac1e3abe5790f6b3027f4fc3c4cad3fd38f0",
+          "archiveEntry": "usr/bin/msys-iconv-2.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libiconv/PKGBUILD",
+          "sha256": "3c7cfd90420b139d59e4846296aa7fa6d15a65d940fd2b720f39129242e7a898"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libiconv/.SRCINFO",
+          "sha256": "a9bf492bfe324ac464f70b0cb9e6c102b1d4a736dd6f14e6aaa32f89be239dcb"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libiconv/PKGINFO",
+          "sha256": "3091295c9dd5cda6b8e6a5a1903e385caa086594acf2852e6c69cb7b8f3a7485"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libiconv/BUILDINFO",
+          "sha256": "413ee1e75d7340ad1be31a955c74204ff2395b8bc34118cec9b67d35a0606ee4"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libiconv/source-notices/libiconv-1.19/COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libiconv/source-notices/libiconv-1.19/libcharset/COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libiconv/source-notices/libiconv-1.19/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "licenses/native/msys2/sources/libiconv-1.19-1.src.tar.zst",
+          "sha256": "5a8bcd3242e2be94fffd9f03fadcda8d9fd64047430050c5cbd214cd3bf7f0a7"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libiconv",
+          "base": "libiconv",
+          "version": "1.19-1",
+          "url": "https://mirror.msys2.org/msys/sources/libiconv-1.19-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/libiconv-1.19-1.src.tar.zst",
+          "sha256": "5a8bcd3242e2be94fffd9f03fadcda8d9fd64047430050c5cbd214cd3bf7f0a7",
+          "bytes": 5133707,
+          "inputVerification": [
+            {
+              "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz",
+              "entry": "libiconv/libiconv-1.19.tar.gz",
+              "sha256": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6",
+              "sha256FromRecipe": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6"
+            },
+            {
+              "source": "1.16-aliases.patch",
+              "entry": "libiconv/1.16-aliases.patch",
+              "sha256": "d447b5467867b72041737d0d35720c30e4edf4845b9bcd1858b0f44e126a179d",
+              "sha256FromRecipe": "d447b5467867b72041737d0d35720c30e4edf4845b9bcd1858b0f44e126a179d"
+            },
+            {
+              "source": "1.16-cross-install.patch",
+              "entry": "libiconv/1.16-cross-install.patch",
+              "sha256": "1e24e990d67fd8fbb9ece6318880127ff06b84d2d278dd18b0643044e64e5edf",
+              "sha256FromRecipe": "1e24e990d67fd8fbb9ece6318880127ff06b84d2d278dd18b0643044e64e5edf"
+            },
+            {
+              "source": "1.16-wchar.patch",
+              "entry": "libiconv/1.16-wchar.patch",
+              "sha256": "c2f4b2d0ce0cd7d2dc98aa1d5e2db31c3b88c1b399d3706dbdacfaef3c13d70c",
+              "sha256FromRecipe": "c2f4b2d0ce0cd7d2dc98aa1d5e2db31c3b88c1b399d3706dbdacfaef3c13d70c"
+            },
+            {
+              "source": "libiconv-1.16-msysize.patch",
+              "entry": "libiconv/libiconv-1.16-msysize.patch",
+              "sha256": "8a43391e9402e99f70ef3f5dfbb8dda7ab7a30d91c00189ce5ab38c1bc6352d8",
+              "sha256FromRecipe": "8a43391e9402e99f70ef3f5dfbb8dda7ab7a30d91c00189ce5ab38c1bc6352d8"
+            },
+            {
+              "source": "0001-fixes-building-with-gcc-15.patch",
+              "entry": "libiconv/0001-fixes-building-with-gcc-15.patch",
+              "sha256": "126065bc77421edfe0eb01ca50c2920742f0ddddb5860f8eec06d0e497cbcd20",
+              "sha256FromRecipe": "126065bc77421edfe0eb01ca50c2920742f0ddddb5860f8eec06d0e497cbcd20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libbz2",
+      "version": "1.0.8-4",
+      "license": "custom",
+      "packageDeclaredLicense": [
+        "custom"
+      ],
+      "upstream": "http://www.bzip.org",
+      "binaryPackage": {
+        "filename": "libbz2-1.0.8-4-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libbz2-1.0.8-4-x86_64.pkg.tar.zst",
+        "sha256": "89fb0e1478b22b80effda55ab4ae7549388d01245d3841a096d8a2d63236c2a1"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-bz2-1.dll",
+          "sha256": "1082896c71da5e62dfd8e421fba35fa3123e6e1e2782381c08258917117b51cd",
+          "archiveEntry": "usr/bin/msys-bz2-1.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libbz2/PKGBUILD",
+          "sha256": "c6967e91e9c8ba61bf1f74e5a63f132464cc436b75317c76451948de72491f08"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libbz2/.SRCINFO",
+          "sha256": "8734b6bb929658ac96f523166a5113993c10b945c1bccc3c06ad02bce2f1608b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libbz2/PKGINFO",
+          "sha256": "d1ccf9fe1f500eb1b33265591e98d545e07417c973ac7d4d3e8d031451a94cf7"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libbz2/BUILDINFO",
+          "sha256": "9fa4be21f5626635cca6cd54715127910e469e279f547d18446a010f85ce2976"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libbz2/source-notices/bzip2-1.0.8/LICENSE",
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+        },
+        {
+          "path": "licenses/native/msys2/sources/bzip2-1.0.8-4.src.tar.zst",
+          "sha256": "a7e9ea6335ef2902508de0bbbb70e2e9909b6b7b6d05fc207f8fdf0cf44ad053"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libbz2",
+          "base": "bzip2",
+          "version": "1.0.8-4",
+          "url": "https://mirror.msys2.org/msys/sources/bzip2-1.0.8-4.src.tar.zst",
+          "path": "licenses/native/msys2/sources/bzip2-1.0.8-4.src.tar.zst",
+          "sha256": "a7e9ea6335ef2902508de0bbbb70e2e9909b6b7b6d05fc207f8fdf0cf44ad053",
+          "bytes": 842603,
+          "inputVerification": [
+            {
+              "source": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+              "entry": "bzip2/bzip2-1.0.8.tar.gz",
+              "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+              "sha256FromRecipe": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269"
+            },
+            {
+              "source": "bzip2-1.0.6-msys-dll.patch",
+              "entry": "bzip2/bzip2-1.0.6-msys-dll.patch",
+              "sha256": "a14e3ef3108fe843f5bd4bdf0943cc22c0a1581c382706dbd3f42ad7dc097c88",
+              "sha256FromRecipe": "a14e3ef3108fe843f5bd4bdf0943cc22c0a1581c382706dbd3f42ad7dc097c88"
+            },
+            {
+              "source": "bzip2-1.0.6-msys2.patch",
+              "entry": "bzip2/bzip2-1.0.6-msys2.patch",
+              "sha256": "b499532b538ae1faa9b07933013671fd8f34431bfaa802f9099a96a6a4135e80",
+              "sha256FromRecipe": "b499532b538ae1faa9b07933013671fd8f34431bfaa802f9099a96a6a4135e80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "liblzma",
+      "version": "5.8.4-1",
+      "license": "0BSD (liblzma only)",
+      "packageDeclaredLicense": [
+        "spdx:LGPL-2.1-or-later"
+      ],
+      "upstream": "https://tukaani.org/xz/",
+      "binaryPackage": {
+        "filename": "liblzma-5.8.4-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/liblzma-5.8.4-1-x86_64.pkg.tar.zst",
+        "sha256": "4b7d61656e72a5651a797680b66186338dce4f8fbc62a637ab3b59922dd01074"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-lzma-5.dll",
+          "sha256": "d143b2318af5234c78333070972d860b65333a54d1b4383258b989913eb353ae",
+          "archiveEntry": "usr/bin/msys-lzma-5.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/liblzma/PKGBUILD",
+          "sha256": "c2ada17ce55e35e17139c605fd14466e7dcbdaf5a438f36c2afcad88e86f3d4d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/.SRCINFO",
+          "sha256": "137beea2143e109360a3d1b4a1f9eea2da196bda6d38152a0fb6c42310da92cb"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/PKGINFO",
+          "sha256": "f0025dde294eed9f0cdbbf6593222d6f747c335a7a450b75c57b485d3e83033e"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/BUILDINFO",
+          "sha256": "90136e886e76609941ad3cd00365853d0ed2b9797f4b7be45ab4118334aa3d31"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/source-notices/xz-5.8.4/COPYING",
+          "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/source-notices/xz-5.8.4/COPYING.0BSD",
+          "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/source-notices/xz-5.8.4/COPYING.GPLv2",
+          "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/source-notices/xz-5.8.4/COPYING.GPLv3",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/source-notices/xz-5.8.4/COPYING.LGPLv2.1",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "licenses/native/msys2/packages/liblzma/source-notices/xz-5.8.4/build-aux/license-check.sh",
+          "sha256": "2b3fa1d23cb2ab084f3d919908159473cc0e1eed059d106e2a2857c0ec8af98a"
+        },
+        {
+          "path": "licenses/native/msys2/sources/xz-5.8.4-1.src.tar.zst",
+          "sha256": "dedeb89e94779cdf4a90ce6f6422ac218b7b1ac1e11766dcb915a823e1c4d8ee"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "liblzma",
+          "base": "xz",
+          "version": "5.8.4-1",
+          "url": "https://mirror.msys2.org/msys/sources/xz-5.8.4-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/xz-5.8.4-1.src.tar.zst",
+          "sha256": "dedeb89e94779cdf4a90ce6f6422ac218b7b1ac1e11766dcb915a823e1c4d8ee",
+          "bytes": 1669697,
+          "inputVerification": [
+            {
+              "source": "https://github.com/tukaani-project/xz/archive/refs/tags/v5.8.4.tar.gz",
+              "entry": "xz/v5.8.4.tar.gz",
+              "sha256": "b6b34c52e672e810d339db14e0c10b5b6f5f67a30d8d05cdac5d8cb4d82f78d5",
+              "sha256FromRecipe": "b6b34c52e672e810d339db14e0c10b5b6f5f67a30d8d05cdac5d8cb4d82f78d5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libzstd",
+      "version": "1.5.7-1",
+      "license": "BSD",
+      "packageDeclaredLicense": [
+        "BSD"
+      ],
+      "upstream": "https://facebook.github.io/zstd/",
+      "binaryPackage": {
+        "filename": "libzstd-1.5.7-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libzstd-1.5.7-1-x86_64.pkg.tar.zst",
+        "sha256": "5e370b2e725a0a7e5ff58d84653c9a0cd5a10b9cfe930f2d949a28ad2a11c1f2"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-zstd-1.dll",
+          "sha256": "0ebf082dc73962688a14bd26465e05972a51a3ac5ef11fdf8cc71b93b89cea8d",
+          "archiveEntry": "usr/bin/msys-zstd-1.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libzstd/PKGBUILD",
+          "sha256": "5d2191a8e54e3f9cba2bc2c663735ca9d746add79459281677eaf38105b7c950"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libzstd/.SRCINFO",
+          "sha256": "b971a0ac19edb252121227fcf3152af882455e768e4026a9095bb07773da97c6"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libzstd/PKGINFO",
+          "sha256": "18790c1e06ddf04b858bfe86297a34d67c97c045a9938ef47c442a1f999e9c19"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libzstd/BUILDINFO",
+          "sha256": "a186f6f16e3ed6966eba6fc63676f1d041c044960d26451571bfe601143b8d6d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libzstd/source-notices/zstd-1.5.7/COPYING",
+          "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libzstd/source-notices/zstd-1.5.7/LICENSE",
+          "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libzstd/source-notices/zstd-1.5.7/build/LICENSE",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "licenses/native/msys2/sources/zstd-1.5.7-1.src.tar.zst",
+          "sha256": "19e11d517b005cba22d0f04969a74ffa08443429ff9dc80596d323b9483534f5"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libzstd",
+          "base": "zstd",
+          "version": "1.5.7-1",
+          "url": "https://mirror.msys2.org/msys/sources/zstd-1.5.7-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/zstd-1.5.7-1.src.tar.zst",
+          "sha256": "19e11d517b005cba22d0f04969a74ffa08443429ff9dc80596d323b9483534f5",
+          "bytes": 2401343,
+          "inputVerification": [
+            {
+              "source": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+              "entry": "zstd/zstd-1.5.7.tar.gz",
+              "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+              "sha256FromRecipe": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+            },
+            {
+              "source": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz.sig",
+              "entry": "zstd/zstd-1.5.7.tar.gz.sig",
+              "sha256": "24425933fb954f4608ae9383bc37ad8398e50364c1ec30bbdb5adbfe88209fb1",
+              "sha256FromRecipe": "SKIP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libintl",
+      "version": "0.22.5-1",
+      "license": "LGPL-2.1-or-later (libintl only)",
+      "packageDeclaredLicense": [
+        "GPL"
+      ],
+      "upstream": "https://www.gnu.org/software/gettext/",
+      "binaryPackage": {
+        "filename": "libintl-0.22.5-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libintl-0.22.5-1-x86_64.pkg.tar.zst",
+        "sha256": "336d66b9d95cf9c1804958f8e260762a3e83bf158ed5981f783bc772a31073cf"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-intl-8.dll",
+          "sha256": "50f7de0c712d867ddca2c9eb8562ca6ee2d69e120e798ec6126ad29dd1ed5402",
+          "archiveEntry": "usr/bin/msys-intl-8.dll",
+          "imports": [
+            "msys-iconv-2.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libintl/PKGBUILD",
+          "sha256": "86adbd786e7fd8b4cf04cf6275fd876a9574dc65d79c6cf28e56e21ab398df0f"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/.SRCINFO",
+          "sha256": "ace8cf31c1b03f7ee95b3aef06cffc9df16dde556fec51abea685292d6d9b259"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/PKGINFO",
+          "sha256": "4bb594a3549b30fbcdff6c82692ac356827840c39afe00d82406a1d98b79bbdb"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/BUILDINFO",
+          "sha256": "d89625873082dc0bba46ddd0b83183f6385d7e1ad9131c6c960b589a6a30230e"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/COPYING",
+          "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gettext-runtime/COPYING",
+          "sha256": "7ef2cdfe58e0c0460657b6598b49af29d4e03c1e41cbaf0e1da1eb8ad74b95d0"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gettext-runtime/intl/COPYING.LIB",
+          "sha256": "3fe5361f24b7c49ba12911c08f5a33f9cb18871d95d9fb881f5b8a4793e04288"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gettext-runtime/libasprintf/COPYING",
+          "sha256": "03133addae5b99a6148c538300e6d97074453089be1423b741bd081f18e2b298"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gettext-runtime/libasprintf/COPYING.LIB",
+          "sha256": "3fe5361f24b7c49ba12911c08f5a33f9cb18871d95d9fb881f5b8a4793e04288"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gettext-tools/COPYING",
+          "sha256": "5d4cff30d5038f82a0edc79798456049b61e1752fdb7e9ab1f4bfb9fae3a7303"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gettext-tools/gnulib-lib/libxml/COPYING",
+          "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/gnulib-local/lib/libxml/COPYING",
+          "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/libtextstyle/COPYING",
+          "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libintl/source-notices/gettext-0.22.5/libtextstyle/lib/libxml/COPYING",
+          "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd"
+        },
+        {
+          "path": "licenses/native/msys2/sources/gettext-0.22.5-1.src.tar.zst",
+          "sha256": "e07a0b3e6716aae86dc0edd2dcdc8864731d56051345592b53659a3840ccfbd8"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "libintl",
+          "base": "gettext",
+          "version": "0.22.5-1",
+          "url": "https://mirror.msys2.org/msys/sources/gettext-0.22.5-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/gettext-0.22.5-1.src.tar.zst",
+          "sha256": "e07a0b3e6716aae86dc0edd2dcdc8864731d56051345592b53659a3840ccfbd8",
+          "bytes": 21732949,
+          "inputVerification": [
+            {
+              "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz",
+              "entry": "gettext/gettext-0.22.5.tar.gz",
+              "sha256": "ec1705b1e969b83a9f073144ec806151db88127f5e40fe5a94cb6c8fa48996a0",
+              "sha256FromRecipe": "ec1705b1e969b83a9f073144ec806151db88127f5e40fe5a94cb6c8fa48996a0"
+            },
+            {
+              "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz.sig",
+              "entry": "gettext/gettext-0.22.5.tar.gz.sig",
+              "sha256": "5829b36cdf582df81ca2ec0919b9a671f5cab7bb09adb23c96ada32e9b20168f",
+              "sha256FromRecipe": "SKIP"
+            },
+            {
+              "source": "gettext-tools-tests-locale-ll-es.patch",
+              "entry": "gettext/gettext-tools-tests-locale-ll-es.patch",
+              "sha256": "a83c2e89aa799232847d120ce3da856fbee2fda87245233d336c5de044465321",
+              "sha256FromRecipe": "a83c2e89aa799232847d120ce3da856fbee2fda87245233d336c5de044465321"
+            },
+            {
+              "source": "gettext-0.21.1-autopoint-V.patch",
+              "entry": "gettext/gettext-0.21.1-autopoint-V.patch",
+              "sha256": "2a8ea083abf7278b3b6157e6f3eed4e6a90b803308396e30b1302085b840c8e9",
+              "sha256FromRecipe": "2a8ea083abf7278b3b6157e6f3eed4e6a90b803308396e30b1302085b840c8e9"
+            },
+            {
+              "source": "gettext-0.21.1-cygwin-ftm.patch",
+              "entry": "gettext/gettext-0.21.1-cygwin-ftm.patch",
+              "sha256": "62c0cf906df4c0196e2e3e4f79b91486f6a95d29bf9de8aed8c92b5075058497",
+              "sha256FromRecipe": "62c0cf906df4c0196e2e3e4f79b91486f6a95d29bf9de8aed8c92b5075058497"
+            },
+            {
+              "source": "gettext-0.22-no-woe32dll-gettext-tools-configure-ac.patch",
+              "entry": "gettext/gettext-0.22-no-woe32dll-gettext-tools-configure-ac.patch",
+              "sha256": "71f26d49ddabf400ee14ea574495a5d3b3055957d81fecfb4cb5cb99dab3cd47",
+              "sha256FromRecipe": "71f26d49ddabf400ee14ea574495a5d3b3055957d81fecfb4cb5cb99dab3cd47"
+            },
+            {
+              "source": "gettext-0.22-no-woe32dll-m4-woe32-dll-m4.patch",
+              "entry": "gettext/gettext-0.22-no-woe32dll-m4-woe32-dll-m4.patch",
+              "sha256": "d5b14b03ca609764f1c646efa9e85dedafe69f967f37b8db194fcddc199f2d97",
+              "sha256FromRecipe": "d5b14b03ca609764f1c646efa9e85dedafe69f967f37b8db194fcddc199f2d97"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-runtime-gnulib-lib-localcharset-c.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-runtime-gnulib-lib-localcharset-c.patch",
+              "sha256": "b65bbf78a55a3b8a048a89f8351b3daeff79058d8c45318f8642f07b7cb74f5a",
+              "sha256FromRecipe": "b65bbf78a55a3b8a048a89f8351b3daeff79058d8c45318f8642f07b7cb74f5a"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-runtime-gnulib-lib-localename-h.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-runtime-gnulib-lib-localename-h.patch",
+              "sha256": "e1e5a2e50d23d9e16b4f33dfeeab33f193d7f7678a560db9a84fcad81dd33369",
+              "sha256FromRecipe": "e1e5a2e50d23d9e16b4f33dfeeab33f193d7f7678a560db9a84fcad81dd33369"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-runtime-gnulib-lib-localename-unsafe-c.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-runtime-gnulib-lib-localename-unsafe-c.patch",
+              "sha256": "d05a8da45d4aa90e5c412554d198b84845d34c60aa5ae1fa1167b5a551828f3f",
+              "sha256FromRecipe": "d05a8da45d4aa90e5c412554d198b84845d34c60aa5ae1fa1167b5a551828f3f"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-runtime-intl-gnulib-lib-localcharset-c.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-runtime-intl-gnulib-lib-localcharset-c.patch",
+              "sha256": "9774ca475c280ba6641807063b79420a7a350a363154b7e20fb6307096f031ed",
+              "sha256FromRecipe": "9774ca475c280ba6641807063b79420a7a350a363154b7e20fb6307096f031ed"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-runtime-intl-gnulib-lib-localename-h.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-runtime-intl-gnulib-lib-localename-h.patch",
+              "sha256": "5060b449ac30fe3699e284bd633644d8a82faaa2b4e6516fb38b69b616972ca9",
+              "sha256FromRecipe": "5060b449ac30fe3699e284bd633644d8a82faaa2b4e6516fb38b69b616972ca9"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-runtime-intl-gnulib-lib-localename-unsafe-c.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-runtime-intl-gnulib-lib-localename-unsafe-c.patch",
+              "sha256": "d15bd9341df9653603b6cb7de962ce47eff3a557368508c7f57240acca7057e1",
+              "sha256FromRecipe": "d15bd9341df9653603b6cb7de962ce47eff3a557368508c7f57240acca7057e1"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-tools-gnulib-lib-localcharset-c.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-tools-gnulib-lib-localcharset-c.patch",
+              "sha256": "b43e41f10e123ce449b0fc7224dfde18da122cb95897198f54175fe30f41f05e",
+              "sha256FromRecipe": "b43e41f10e123ce449b0fc7224dfde18da122cb95897198f54175fe30f41f05e"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-tools-gnulib-lib-localename-h.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-tools-gnulib-lib-localename-h.patch",
+              "sha256": "082edeacdea36bad6f8901e276ee38876667ed79366d6745264cf905f1031042",
+              "sha256FromRecipe": "082edeacdea36bad6f8901e276ee38876667ed79366d6745264cf905f1031042"
+            },
+            {
+              "source": "gettext-0.22.5-gettext-tools-gnulib-lib-localename-unsafe-c.patch",
+              "entry": "gettext/gettext-0.22.5-gettext-tools-gnulib-lib-localename-unsafe-c.patch",
+              "sha256": "5a5ee0d8a72eb056489c1881c8e2b183e128e96a6dc5cc9619286626223c226e",
+              "sha256FromRecipe": "5a5ee0d8a72eb056489c1881c8e2b183e128e96a6dc5cc9619286626223c226e"
+            },
+            {
+              "source": "gettext-0.22-disable-libtextstyle.patch",
+              "entry": "gettext/gettext-0.22-disable-libtextstyle.patch",
+              "sha256": "a28a27192f336f0b0908bdbf840d3b19d7b587c4ac52cad635cb43e95eb3c78d",
+              "sha256FromRecipe": "a28a27192f336f0b0908bdbf840d3b19d7b587c4ac52cad635cb43e95eb3c78d"
+            },
+            {
+              "source": "gettext-0.19.8.1-msys2.patch",
+              "entry": "gettext/gettext-0.19.8.1-msys2.patch",
+              "sha256": "1f6d2a340676543f1565416307ecf00d0c4ce68b2b3519f4ba9499d37c045a91",
+              "sha256FromRecipe": "1f6d2a340676543f1565416307ecf00d0c4ce68b2b3519f4ba9499d37c045a91"
+            },
+            {
+              "source": "gettext-0.19.7-archive.patch",
+              "entry": "gettext/gettext-0.19.7-archive.patch",
+              "sha256": "5e0851e372d78aac8ec20be40b13b2c010e45c1703d676711d793ae86ca82fd5",
+              "sha256FromRecipe": "5e0851e372d78aac8ec20be40b13b2c010e45c1703d676711d793ae86ca82fd5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gcc-libs",
+      "version": "16.2.0-1",
+      "license": "GPL-3.0-or-later WITH GCC-exception-3.1 (libgcc only)",
+      "packageDeclaredLicense": [
+        "spdx:LGPL-2.1-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later"
+      ],
+      "upstream": "https://gcc.gnu.org/",
+      "binaryPackage": {
+        "filename": "gcc-libs-16.2.0-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/gcc-libs-16.2.0-1-x86_64.pkg.tar.zst",
+        "sha256": "50e1bbbb1b4186ba1ed8c08cdbb5c0a8c2343e4b5747bace24273e26fb148471"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-gcc_s-seh-1.dll",
+          "sha256": "38118e2bb6231318025efdfd8fc836baa6697e0e9ec9f9ac25deddcdda4bd136",
+          "archiveEntry": "usr/bin/msys-gcc_s-seh-1.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/PKGBUILD",
+          "sha256": "a494b4f9140e5b7dca46c04503979e8efab7ae3d6dbca76beb2ffa5567c5bb3b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/.SRCINFO",
+          "sha256": "cc2698963a9b9c03e4542e19b0c4f1a74f96c8005aac88aead1ed6a44993eb32"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/PKGINFO",
+          "sha256": "41844c725f008793fc618802575bd164170d635cb45806a76661aed79b7966ee"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/BUILDINFO",
+          "sha256": "11c37087c435bd1e6810c082b9ba15510be28671a1ef33fdc2af7d903ba54673"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/binary-notices/usr/share/licenses/gcc-libs/COPYING.LIB",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/binary-notices/usr/share/licenses/gcc-libs/COPYING3",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/binary-notices/usr/share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION",
+          "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/include/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libffi/LICENSE-BUILDTOOLS",
+          "sha256": "e67978cd18816c0cb7d29aaaacde7b7447402c2fb321a051698890a8eaedda94"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libffi/LICENSE",
+          "sha256": "a61d06e8f7be57928e71e800eb9273b05cb8868c484108afe41e4305bb320dde"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/zlib/LICENSE",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libsanitizer/LICENSE.TXT",
+          "sha256": "74c2b24539a53c34abddb559266d89cb653b0198cd2faf9c04763d3223db7f6d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/COPYING.RUNTIME",
+          "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libphobos/libdruntime/LICENSE.txt",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgo/LICENSE",
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgo/go/golang.org/x/xerrors/LICENSE",
+          "sha256": "84d554e7a5d139b7c7b5d6ef0670ae556c4cdcfa354eaad72a1c07c08012c96f"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgo/go/golang.org/x/tools/LICENSE",
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgo/go/golang.org/x/sync/LICENSE",
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgo/go/golang.org/x/mod/LICENSE",
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/rustc-hash/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/rustc-hash/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/datafrog/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/datafrog/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/log/LICENSE-MIT",
+          "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/log/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/rust/checks/errors/feature/contrib/copyright-stub.h",
+          "sha256": "0fb317cfe0260cc7dc89216bd69f38117a37636eb9aabe68a7dfa03c854e2360"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/COPYING.LIB",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/testsuite/gcc.dg/vect/tsvc/license.txt",
+          "sha256": "0bf700c6654f3e72308035d7ebb60abcc486e673ee8a72d19101f80812288f1c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/testsuite/gcc.dg/params/LICENSE",
+          "sha256": "4919cfb14a73cd64fcef67b107613970cf1659a09aa675dba31314f373bc7204"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/m2/COPYING.RUNTIME",
+          "sha256": "145aeebbfd1eda3e31353158311b12478aad06bce8bffc22184f33ce2ffce64f"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/m2/COPYING.FDL",
+          "sha256": "4887b107e3d1ace106aa293fe73b4aa9be52edbc5b96e5a9b672c8916fede722"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/m2/images/LICENSE.IMG",
+          "sha256": "e234bf4bc7276b6f48a0ee9efcbc652ef3072573d996dd590287110adc2f1922"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/ada/doc/share/copyright.tex",
+          "sha256": "c0a2678e14049ef3d4ba0d9dd7abf8b0dbb8335d6e2311b2d2f568035321f2b7"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/go/gofrontend/LICENSE",
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/gcc/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/COPYING.LIB",
+          "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgcobol/LICENSE",
+          "sha256": "685fba36bb54ab016d4665e3a7eea9807509b091c27f4e3172ad5b45d9f8ee64"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libstdc++-v3/include/pstl/LICENSE.txt",
+          "sha256": "0ca8cbe9219a841f9bc8fbb1f8ecdf5e39b1b0e23ee10fb6b0c090d8987dd1eb"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libstdc++-v3/doc/html/manual/license.html",
+          "sha256": "6ef2606fad7fce5ba388fef9d8d137178d0135f3d2c538b664229b58eae5ce06"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/stdarch/crates/core_arch/LICENSE-MIT",
+          "sha256": "29662666b44dff84977b46e05642cdef910bc3a93a17b5fd86e632bafa59cf21"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/stdarch/crates/core_arch/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/stdarch/crates/std_detect/LICENSE-MIT",
+          "sha256": "29662666b44dff84977b46e05642cdef910bc3a93a17b5fd86e632bafa59cf21"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/stdarch/crates/std_detect/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/stdarch/LICENSE-MIT",
+          "sha256": "29662666b44dff84977b46e05642cdef910bc3a93a17b5fd86e632bafa59cf21"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/stdarch/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/rustc-lib/LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/libformat_parser/vendor/libc/LICENSE-MIT",
+          "sha256": "a8d47ff51ca256f56a8932dba07660672dbfe3004257ca8de708aac1415937a1"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/libformat_parser/vendor/libc/LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/libformat_parser/vendor/unicode-xid/LICENSE-MIT",
+          "sha256": "7b63ecd5f1902af1b63729947373683c32745c16a10e8e6292e2e2dcd7e90ae0"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/libformat_parser/vendor/unicode-xid/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libgrust/libformat_parser/vendor/unicode-xid/COPYRIGHT",
+          "sha256": "23860c2a7b5d96b21569afedf033469bab9fe14a1b24a35068b8641c578ce24d"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libiberty/copying-lib.texi",
+          "sha256": "048be075e2f6468c1f32840499d9970240306fd401570d876aafc4f81327b4d3"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libiberty/COPYING.LIB",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libquadmath/COPYING.LIB",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/libcody/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "licenses/native/msys2/packages/gcc-libs/source-notices/gcc-16.2.0/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst.part01",
+          "sha256": "8c0c6e869567b47d292eeb1f642b7c4793043e90792bc581a886cf9c5121fb92",
+          "bytes": 41943040
+        },
+        {
+          "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst.part02",
+          "sha256": "8b2d6320fc6d983d8eccc206e3ed5abaa284a9bf671235d13e0c4223ed73081d",
+          "bytes": 41943040
+        },
+        {
+          "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst.part03",
+          "sha256": "088b3b2c65590c4c604ed4021c08897f9e16dd2a07cb84dd02060ee943ab086b",
+          "bytes": 23353539
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        }
+      ],
+      "sources": [
+        {
+          "name": "gcc-libs",
+          "base": "gcc",
+          "version": "16.2.0-1",
+          "url": "https://mirror.msys2.org/msys/sources/gcc-16.2.0-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst",
+          "sha256": "19c927f27da78aad25a449a4e6e3bfe8650541cc09ac2e701a4ec4d7e61137b9",
+          "bytes": 107239619,
+          "inputVerification": [
+            {
+              "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+              "entry": "gcc/gcc-16.2.0.tar.xz",
+              "sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+              "sha256FromRecipe": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e"
+            },
+            {
+              "source": "0001-Always-define-WIN32_LEAN_AND_MEAN-before-windows.h.patch",
+              "entry": "gcc/0001-Always-define-WIN32_LEAN_AND_MEAN-before-windows.h.patch",
+              "sha256": "ae993ebe11402172611a9fa1550e0611dfc212ab9250a3eaff1022342c9bde71",
+              "sha256FromRecipe": "ae993ebe11402172611a9fa1550e0611dfc212ab9250a3eaff1022342c9bde71"
+            },
+            {
+              "source": "0002-add-m-no-align-vector-insn-option-for-i386.patch",
+              "entry": "gcc/0002-add-m-no-align-vector-insn-option-for-i386.patch",
+              "sha256": "707faae90300f04fc48949f74af51f47f7505f44f9813bfc26660511ae93b6c1",
+              "sha256FromRecipe": "707faae90300f04fc48949f74af51f47f7505f44f9813bfc26660511ae93b6c1"
+            },
+            {
+              "source": "0003-Cygwin-use-SysV-ABI-on-x86_64.patch",
+              "entry": "gcc/0003-Cygwin-use-SysV-ABI-on-x86_64.patch",
+              "sha256": "40871b6750e393b7627dc039c3460b39894fb7bb2514c71b39a1f163fe8e3f30",
+              "sha256FromRecipe": "40871b6750e393b7627dc039c3460b39894fb7bb2514c71b39a1f163fe8e3f30"
+            },
+            {
+              "source": "0004-Cygwin-add-dummy-pthread-tsaware-and-large-address-a.patch",
+              "entry": "gcc/0004-Cygwin-add-dummy-pthread-tsaware-and-large-address-a.patch",
+              "sha256": "de93958671c8230c2df79f7da7c406d4e0dfc53e119e9cb04ca44b8a02806671",
+              "sha256FromRecipe": "de93958671c8230c2df79f7da7c406d4e0dfc53e119e9cb04ca44b8a02806671"
+            },
+            {
+              "source": "0005-Cygwin-handle-dllimport-properly-in-medium-model-V2.patch",
+              "entry": "gcc/0005-Cygwin-handle-dllimport-properly-in-medium-model-V2.patch",
+              "sha256": "10365122aa55cdc32c4ff502a14229cb50ddf2b6a4b70521665ef2d6cb182c5a",
+              "sha256FromRecipe": "10365122aa55cdc32c4ff502a14229cb50ddf2b6a4b70521665ef2d6cb182c5a"
+            },
+            {
+              "source": "0006-Cygwin-fix-some-implicit-declaration-warnings-and-re.patch",
+              "entry": "gcc/0006-Cygwin-fix-some-implicit-declaration-warnings-and-re.patch",
+              "sha256": "a843c038042811265d6ce5917b0c76b709e2591822e5cab53a32b7e9c806da29",
+              "sha256FromRecipe": "a843c038042811265d6ce5917b0c76b709e2591822e5cab53a32b7e9c806da29"
+            },
+            {
+              "source": "0007-Cygwin-define-RTS_CONTROL_ENABLE-and-DTR_CONTROL_ENA.patch",
+              "entry": "gcc/0007-Cygwin-define-RTS_CONTROL_ENABLE-and-DTR_CONTROL_ENA.patch",
+              "sha256": "6e9d2575d9897a9b996c3049b1d1dc1176d33e1373a81bee33c04e3954319124",
+              "sha256FromRecipe": "6e9d2575d9897a9b996c3049b1d1dc1176d33e1373a81bee33c04e3954319124"
+            },
+            {
+              "source": "0008-Cygwin-__cxa-atexit.patch",
+              "entry": "gcc/0008-Cygwin-__cxa-atexit.patch",
+              "sha256": "d9706816609b0154c369b3b8130f2af3e54be8a3e3463aca7eb6060b06cf476c",
+              "sha256FromRecipe": "d9706816609b0154c369b3b8130f2af3e54be8a3e3463aca7eb6060b06cf476c"
+            },
+            {
+              "source": "0009-Cygwin-libgomp-soname.patch",
+              "entry": "gcc/0009-Cygwin-libgomp-soname.patch",
+              "sha256": "efb1189f6b6da8ad8a345c567f1f9fe52f76c96a11912f3fc76dfe54cdd189e4",
+              "sha256FromRecipe": "efb1189f6b6da8ad8a345c567f1f9fe52f76c96a11912f3fc76dfe54cdd189e4"
+            },
+            {
+              "source": "0010-Cygwin-g-time.patch",
+              "entry": "gcc/0010-Cygwin-g-time.patch",
+              "sha256": "205cf51c9327f249dc11b20785f0ada2204c1112d5123d6debd124e30f6bf9c7",
+              "sha256FromRecipe": "205cf51c9327f249dc11b20785f0ada2204c1112d5123d6debd124e30f6bf9c7"
+            },
+            {
+              "source": "0011-Cygwin-newlib-ftm.patch",
+              "entry": "gcc/0011-Cygwin-newlib-ftm.patch",
+              "sha256": "1f6203d53cb9b4957acfa132f0238bd1e5d9670a53efb4d626ec80fc5cee6646",
+              "sha256FromRecipe": "1f6203d53cb9b4957acfa132f0238bd1e5d9670a53efb4d626ec80fc5cee6646"
+            },
+            {
+              "source": "0012-Cygwin-define-STD_UNIX.patch",
+              "entry": "gcc/0012-Cygwin-define-STD_UNIX.patch",
+              "sha256": "6d037a2da5e1314c6aa76a97bdfdbc6e72d980e62b9e49e947feb70d9346faaa",
+              "sha256FromRecipe": "6d037a2da5e1314c6aa76a97bdfdbc6e72d980e62b9e49e947feb70d9346faaa"
+            },
+            {
+              "source": "0101-Cygwin-enable-libgccjit-not-just-for-MingW.patch",
+              "entry": "gcc/0101-Cygwin-enable-libgccjit-not-just-for-MingW.patch",
+              "sha256": "0280c4f52abaf9e09bee41962e46f2955b2467bcf2e88aa34a0274e9f50619be",
+              "sha256FromRecipe": "0280c4f52abaf9e09bee41962e46f2955b2467bcf2e88aa34a0274e9f50619be"
+            },
+            {
+              "source": "0102-Cygwin-testsuite-fixes-for-libgccjit.patch",
+              "entry": "gcc/0102-Cygwin-testsuite-fixes-for-libgccjit.patch",
+              "sha256": "b5fa45f9f131db2b1d1d064fcb2c459a1f6baa118e406f6cc7d5fa4aae24c707",
+              "sha256FromRecipe": "b5fa45f9f131db2b1d1d064fcb2c459a1f6baa118e406f6cc7d5fa4aae24c707"
+            },
+            {
+              "source": "0301-libstdc-Implement-most-of-locale-features-for-newlib.patch",
+              "entry": "gcc/0301-libstdc-Implement-most-of-locale-features-for-newlib.patch",
+              "sha256": "8abcf5ee41507d2814eaf0c0bbfca1a200ccb71833887966ba38378b917fc319",
+              "sha256FromRecipe": "8abcf5ee41507d2814eaf0c0bbfca1a200ccb71833887966ba38378b917fc319"
+            },
+            {
+              "source": "0401-fix-build-stage1-now-depends-on-libintl-libiconv.patch",
+              "entry": "gcc/0401-fix-build-stage1-now-depends-on-libintl-libiconv.patch",
+              "sha256": "4c637318e3cecc7ef6f05c03ec69444b255ee003f745ba3bdd6ca10780426195",
+              "sha256FromRecipe": "4c637318e3cecc7ef6f05c03ec69444b255ee003f745ba3bdd6ca10780426195"
+            },
+            {
+              "source": "0403-fix-build-pretty-print.patch",
+              "entry": "gcc/0403-fix-build-pretty-print.patch",
+              "sha256": "2a48b2a29652d7dee5578aed9e56dcd448d9f50b19387dfa462fc2ffb4ad5d9e",
+              "sha256FromRecipe": "2a48b2a29652d7dee5578aed9e56dcd448d9f50b19387dfa462fc2ffb4ad5d9e"
+            },
+            {
+              "source": "0404-fix-build-opts.patch",
+              "entry": "gcc/0404-fix-build-opts.patch",
+              "sha256": "25d1b2d4cd985cdf3e140b9724fd0c10590a7d06519aef6391c3f3029bffd6eb",
+              "sha256FromRecipe": "25d1b2d4cd985cdf3e140b9724fd0c10590a7d06519aef6391c3f3029bffd6eb"
+            },
+            {
+              "source": "0950-11.2.0-configure-msys2.patch",
+              "entry": "gcc/0950-11.2.0-configure-msys2.patch",
+              "sha256": "646b6e802e46f932fa793e0e9348c7c98064e46a9bac76f4ad258b66b2b3bba9",
+              "sha256FromRecipe": "646b6e802e46f932fa793e0e9348c7c98064e46a9bac76f4ad258b66b2b3bba9"
+            },
+            {
+              "source": "0951-11.2.0-msys2-spec.patch",
+              "entry": "gcc/0951-11.2.0-msys2-spec.patch",
+              "sha256": "82bc03f43fd7e103c1373433340d6654cbc771723db54430b18eff48a3935a45",
+              "sha256FromRecipe": "82bc03f43fd7e103c1373433340d6654cbc771723db54430b18eff48a3935a45"
+            }
+          ],
+          "parts": [
+            {
+              "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst.part01",
+              "sha256": "8c0c6e869567b47d292eeb1f642b7c4793043e90792bc581a886cf9c5121fb92",
+              "bytes": 41943040
+            },
+            {
+              "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst.part02",
+              "sha256": "8b2d6320fc6d983d8eccc206e3ed5abaa284a9bf671235d13e0c4223ed73081d",
+              "bytes": 41943040
+            },
+            {
+              "path": "licenses/native/msys2/sources/gcc-16.2.0-1.src.tar.zst.part03",
+              "sha256": "088b3b2c65590c4c604ed4021c08897f9e16dd2a07cb84dd02060ee943ab086b",
+              "bytes": 23353539
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "libopenssl",
+      "version": "4.1.0-1",
+      "license": "Apache-2.0",
+      "packageDeclaredLicense": [
+        "spdx:Apache-2.0"
+      ],
+      "upstream": "https://openssl-library.org",
+      "binaryPackage": {
+        "filename": "libopenssl-4.1.0-1-x86_64.pkg.tar.zst",
+        "url": "https://mirror.msys2.org/msys/x86_64/libopenssl-4.1.0-1-x86_64.pkg.tar.zst",
+        "sha256": "71f093de4a002913f39783b79d18da33b63ce8baf825434218cc1d8bd40304fb"
+      },
+      "files": [
+        {
+          "path": "native/windows-x86_64/bin/msys-crypto-4.dll",
+          "sha256": "f46e7ccd849771ca8f23abcf1c7b76bc6a68d9dfd1cbfa9535229a63d1b5ec47",
+          "archiveEntry": "usr/bin/msys-crypto-4.dll",
+          "imports": [
+            "msys-2.0.dll",
+            "CRYPT32.dll",
+            "KERNEL32.dll"
+          ]
+        },
+        {
+          "path": "native/windows-x86_64/bin/msys-ssl-4.dll",
+          "sha256": "be54ba28ce6c88993763e0fa0113103ad847efe0d508521f7d8b33805590b559",
+          "archiveEntry": "usr/bin/msys-ssl-4.dll",
+          "imports": [
+            "msys-crypto-4.dll",
+            "msys-2.0.dll",
+            "KERNEL32.dll"
+          ]
+        }
+      ],
+      "licenseFiles": [
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/PKGBUILD",
+          "sha256": "a8c73add23b7d30db135829e2ae247ac6f0a080692614e148894b7dd2a038445"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/.SRCINFO",
+          "sha256": "75649ac3ec83a06017d46b901eb9d69d796115b0689b9fec5729821ad2151de2"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/PKGINFO",
+          "sha256": "5c52367a6d565e37ad48a35e9aed523fdc5e0b17ca291442d77abada9697582f"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/BUILDINFO",
+          "sha256": "028b1fd2ec6b6472411b77b25b408edb14a459f2e420a0fbce062e8e5ecf4b51"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/binary-notices/usr/share/licenses/libopenssl/LICENSE.txt",
+          "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/source-notices/openssl-4.1.0/LICENSE.txt",
+          "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/source-notices/openssl-4.1.0/external/perl/Text-Template-1.56/LICENSE",
+          "sha256": "9837f05336ef3cbacb6a96e1672a0426d81ad01191f214b8d48e22ca62338181"
+        },
+        {
+          "path": "licenses/native/msys2/packages/libopenssl/source-notices/openssl-4.1.0/util/perl/OpenSSL/copyright.pm",
+          "sha256": "3bcbc1f6a60606607b9dfbd1694cafa603b1ba7dd62d21dde1466c131df7e06d"
+        },
+        {
+          "path": "licenses/native/DISTRIBUTION-NOTICES.txt",
+          "sha256": "9eee145f748bfbf0b9c30ca14cda82db6eae21fb83d1b96d475fd50e38d18d6d"
+        },
+        {
+          "path": "licenses/native/msys2/SOURCE-BUILD.md",
+          "sha256": "1ba1edbbc8c2c3b807e47de71481f9673a92ea204e9fef9e9905cf3305eeb9e8"
+        },
+        {
+          "path": "licenses/native/msys2/reassemble-source.py",
+          "sha256": "1931e4e72ccf3fd9ad9403df55dd34980d54c453cd7e4f6205a5a076cd47c0ef"
+        },
+        {
+          "path": "licenses/native/msys2/sources/openssl-4.1.0-1.src.tar.zst.part01",
+          "sha256": "18995015ac0d4cde768f2c2971bdcd63b21a647c49cc3b30966f8e224cddc3c6",
+          "bytes": 41943040
+        },
+        {
+          "path": "licenses/native/msys2/sources/openssl-4.1.0-1.src.tar.zst.part02",
+          "sha256": "682f0f1dbf3c5c96bbcbc9b03c5919bdcc5240653a1b683798c4bfc4bd54447a",
+          "bytes": 13687311
+        }
+      ],
+      "sources": [
+        {
+          "name": "libopenssl",
+          "base": "openssl",
+          "version": "4.1.0-1",
+          "url": "https://mirror.msys2.org/msys/sources/openssl-4.1.0-1.src.tar.zst",
+          "path": "licenses/native/msys2/sources/openssl-4.1.0-1.src.tar.zst",
+          "sha256": "1c8ef9b6efa27b2336059a18d4b8291c1224f30a0e9e6b4be69304061c2e1a65",
+          "bytes": 55630351,
+          "inputVerification": [
+            {
+              "source": "https://github.com/openssl/openssl/releases/download/openssl-4.1.0/openssl-4.1.0.tar.gz",
+              "entry": "openssl/openssl-4.1.0.tar.gz",
+              "sha256": "50c17baf54cb008f6ce42d50deb4b28050a1aad711636cabd4b241c7e90cc2fd",
+              "sha256FromRecipe": "50c17baf54cb008f6ce42d50deb4b28050a1aad711636cabd4b241c7e90cc2fd"
+            },
+            {
+              "source": "https://github.com/openssl/openssl/releases/download/openssl-4.1.0/openssl-4.1.0.tar.gz.asc",
+              "entry": "openssl/openssl-4.1.0.tar.gz.asc",
+              "sha256": "d66bbf4cb7810c1c3dcab2aa29b824c9f3793cd28288e7aa698ef848c0e6db33",
+              "sha256FromRecipe": "SKIP"
+            },
+            {
+              "source": "0001-Use-usr-ssl-as-ca-dir-instead-of-.-demoCA.patch",
+              "entry": "openssl/0001-Use-usr-ssl-as-ca-dir-instead-of-.-demoCA.patch",
+              "sha256": "7ff3213d8d085238695f076d254f16d15b16a9baca1f9393c1bed0057006da2c",
+              "sha256FromRecipe": "7ff3213d8d085238695f076d254f16d15b16a9baca1f9393c1bed0057006da2c"
+            },
+            {
+              "source": "0002-Support-MSYS2.patch",
+              "entry": "openssl/0002-Support-MSYS2.patch",
+              "sha256": "f643ea30404c7ff0f4984c23b7b868fc58318427bd9d5f8116aef4621a5ba592",
+              "sha256FromRecipe": "f643ea30404c7ff0f4984c23b7b868fc58318427bd9d5f8116aef4621a5ba592"
+            }
+          ],
+          "parts": [
+            {
+              "path": "licenses/native/msys2/sources/openssl-4.1.0-1.src.tar.zst.part01",
+              "sha256": "18995015ac0d4cde768f2c2971bdcd63b21a647c49cc3b30966f8e224cddc3c6",
+              "bytes": 41943040
+            },
+            {
+              "path": "licenses/native/msys2/sources/openssl-4.1.0-1.src.tar.zst.part02",
+              "sha256": "682f0f1dbf3c5c96bbcbc9b03c5919bdcc5240653a1b683798c4bfc4bd54447a",
+              "bytes": 13687311
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

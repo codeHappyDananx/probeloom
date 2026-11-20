@@ -1,0 +1,31 @@
+Source entries: com/jayway/jsonpath/PathNotFoundException.java, com/jayway/jsonpath/TypeRef.java, com/jayway/jsonpath/ReadContext.java, com/jayway/jsonpath/InvalidPathException.java, com/jayway/jsonpath/ValueCompareException.java, com/jayway/jsonpath/InvalidJsonException.java, com/jayway/jsonpath/ParseContext.java, com/jayway/jsonpath/Option.java, com/jayway/jsonpath/Configuration.java, com/jayway/jsonpath/internal/EvaluationContext.java, com/jayway/jsonpath/internal/path/PredicateContextImpl.java, com/jayway/jsonpath/internal/path/PathToken.java, com/jayway/jsonpath/internal/path/RootPathToken.java, com/jayway/jsonpath/internal/path/EvaluationContextImpl.java, com/jayway/jsonpath/internal/path/ArraySliceToken.java, com/jayway/jsonpath/internal/path/ScanPathToken.java, com/jayway/jsonpath/internal/path/CompiledPath.java, com/jayway/jsonpath/internal/path/PredicatePathToken.java, com/jayway/jsonpath/internal/path/WildcardPathToken.java, com/jayway/jsonpath/internal/path/ArrayIndexToken.java, com/jayway/jsonpath/internal/path/ArrayPathToken.java, com/jayway/jsonpath/internal/path/PropertyPathToken.java, com/jayway/jsonpath/internal/JsonContext.java, com/jayway/jsonpath/internal/Utils.java, com/jayway/jsonpath/internal/function/latebinding/PathLateBindingValue.java, com/jayway/jsonpath/internal/function/latebinding/JsonLateBindingValue.java, com/jayway/jsonpath/internal/function/latebinding/ILateBindingValue.java, com/jayway/jsonpath/internal/JsonFormatter.java, com/jayway/jsonpath/internal/Path.java, com/jayway/jsonpath/DocumentContext.java, com/jayway/jsonpath/Predicate.java, com/jayway/jsonpath/InvalidCriteriaException.java, com/jayway/jsonpath/spi/cache/LRUCache.java, com/jayway/jsonpath/spi/mapper/TapestryMappingProvider.java, com/jayway/jsonpath/spi/mapper/JsonSmartMappingProvider.java, com/jayway/jsonpath/spi/mapper/GsonMappingProvider.java, com/jayway/jsonpath/spi/mapper/MappingProvider.java, com/jayway/jsonpath/spi/mapper/MappingException.java, com/jayway/jsonpath/spi/mapper/JacksonMappingProvider.java, com/jayway/jsonpath/spi/json/JettisonProvider.java, com/jayway/jsonpath/spi/json/AbstractJsonProvider.java, com/jayway/jsonpath/spi/json/GsonJsonProvider.java, com/jayway/jsonpath/spi/json/JsonProvider.java, com/jayway/jsonpath/spi/json/JsonSmartJsonProvider.java, com/jayway/jsonpath/spi/json/JacksonJsonProvider.java, com/jayway/jsonpath/JsonPathException.java, com/jayway/jsonpath/InvalidModificationException.java, com/jayway/jsonpath/JsonPath.java, com/jayway/jsonpath/MapFunction.java, com/jayway/jsonpath/EvaluationListener.java, com/jayway/jsonpath/WriteContext.java, com/jayway/jsonpath/Filter.java, com/jayway/jsonpath/Criteria.java
+/*
+ * Copyright 2011 the original author or authors.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: com/jayway/jsonpath/spi/mapper/JakartaMappingProvider.java
+/*
+ * Copyright 2011 the original author or authors.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */

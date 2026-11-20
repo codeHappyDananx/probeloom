@@ -1,0 +1,120 @@
+{
+  "coordinate": "com.mysql:mysql-connector-j:8.0.33",
+  "releaseArchive": "licenses/sources/mysql-connector-j_8.0.33/mysql-connector-j-8.0.33.zip",
+  "driverSha256": "e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9",
+  "releaseCommit": "7d6b0800528b6b25c68b52dc10d6c1c8429c100c",
+  "driverModified": false,
+  "sourceJavaFiles": 682,
+  "licenseEntry": "mysql-connector-j-8.0.33/LICENSE",
+  "buildEntry": "mysql-connector-j-8.0.33/build.xml",
+  "files": [
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/mysql-connector-j-8.0.33.zip",
+      "sha256": "9378dfb7bb0cdb1adcf3c99d865b71b66f9265c4409fa07812f8253322725f86",
+      "url": "https://cdn.mysql.com/archives/mysql-connector-java-8.0/mysql-connector-j-8.0.33.zip"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/CMakeLists.txt",
+      "sha256": "76a69c74b03b3827a10dc1aef13d255a2bb06d82c8ff859c2e4927f2b74094dd",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/CMakeLists.txt",
+      "gitBlobSha1": "83c14e902f2f05298576f6e80373ca4f5a46ae83"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx.proto",
+      "sha256": "7523292b4303ff15c524d706cbdac91c25dbf25cc236fc4409ac883bea8fdbf6",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx.proto",
+      "gitBlobSha1": "55d7cd4c6befccef72fef65ea30f095186da1f97"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_connection.proto",
+      "sha256": "749b1aa501b9b2848e23ed6bab83a105e39f09a49c38a1665f13b4b5d8e0b453",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_connection.proto",
+      "gitBlobSha1": "8f00f33826fa0815c5af36c8b60fdc75a5129d60"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_crud.proto",
+      "sha256": "f703ea263cdc3e2643b462edd324e4aac2613e3d5cc212de5359846ca726343a",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_crud.proto",
+      "gitBlobSha1": "ca87071d8743d455850f0a8e3a4dabdf344a4284"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_cursor.proto",
+      "sha256": "1c3534a9d9b32aea6f59dc806d38db5f12b9b1222a9359d80eb0ae4868e9ee69",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_cursor.proto",
+      "gitBlobSha1": "f6b60de9fbad7b12e2701b07722202734eb4806d"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_datatypes.proto",
+      "sha256": "584b4848744c14c3d6bb578a91751c872ef31bb6a277503769cb1192a87d56b7",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_datatypes.proto",
+      "gitBlobSha1": "774804dc0c3b70646b1538a499517e0f143bcc84"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_expect.proto",
+      "sha256": "52630c0fb4a7b845d2c9d1684a10c1881403218bc715382d73afd013c48d898d",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_expect.proto",
+      "gitBlobSha1": "05982e6dfa3743764550e79db2d0dcfa253f3db5"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_expr.proto",
+      "sha256": "d1e6d526f8bef0e68826a7b3ed305860c1c01197b332933e6a04070162ac53bd",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_expr.proto",
+      "gitBlobSha1": "f0cbc0cba064b19c0859c57e181dc3dd5173ff7c"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_notice.proto",
+      "sha256": "fcd20779201e8acd7a6687406df4e9806962775c6771ee9c33cba7d9328d4aa8",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_notice.proto",
+      "gitBlobSha1": "0d5763d15f03b326cf14576bf294aa13d0f1aabc"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_prepare.proto",
+      "sha256": "fe87cca3acdf883a44922fbb5773b2a6ea5c2ecd7efa3d758bda3e78c1aab5c1",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_prepare.proto",
+      "gitBlobSha1": "dcba6689c2ed21fb2593d072a2cd79cb8a70ad08"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_resultset.proto",
+      "sha256": "0742beb0c0de147d00691e7b47f069254cddd74fdb3f33d832407db0057cc3c5",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_resultset.proto",
+      "gitBlobSha1": "148f5dbe4b780e131e118995599867334d9704ec"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_session.proto",
+      "sha256": "77050ca1bd6b8addd0e2abe886f734f77c47cc45ca62fbe2213a0943694f8f6a",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_session.proto",
+      "gitBlobSha1": "92357e8f1ba1fa122d0a813e7f0620f2476e5394"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/mysqlx_sql.proto",
+      "sha256": "efe1f41c81db0dbc62d40c101ad4967621aa45f7d5415c07d7caea81980e3ae4",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/mysqlx_sql.proto",
+      "gitBlobSha1": "f13e9b4b7cd345193597213fc47c0cc4308f242f"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/source_files.cmake",
+      "sha256": "9e9d8c4ed359b8031c66f0997eefe8969e1f66826fbb16ed57f8620cb1944b44",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/plugin/x/protocol/protobuf/source_files.cmake",
+      "gitBlobSha1": "f9fc5acc04659af88f413c811d47557fb4f1dc20"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/LICENSE",
+      "sha256": "e8fcfbf0d9c941404d8a34bcee49902832458fdc7948329e958252417f6be3ce",
+      "url": "https://raw.githubusercontent.com/mysql/mysql-server/mysql-8.0.33/LICENSE",
+      "gitBlobSha1": "4b260b588e4d0352b407b62accd7ea7ff216e954"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/source-entries.json",
+      "sha256": "8b900f63f7cc33e275c5d84fe290dea854bbed4a71bf2605a70746b1e15faf4a",
+      "kind": "Derived source matching evidence"
+    },
+    {
+      "path": "licenses/sources/mysql-connector-j_8.0.33/protocol/descriptor-review.json",
+      "sha256": "f47ff0f2c94b85f34e60714171826c8678c1d76ef44d64cbdbfa6d53e65f655d",
+      "kind": "Derived source matching evidence"
+    }
+  ],
+  "applicationLicenseStatus": "Apache-2.0; complete application source provided in the matching probeloom-source.zip alongside probeloom-runtime.zip; company code-ownership and public-release authorization remain separate requirements",
+  "interfaceSourceStatus": "12 original interface definitions from mysql-server/mysql-8.0.33 match the generated Connector Java descriptors; only protoc-added implicit json_name fields normalized, unknown/custom options retained",
+  "interfaceSourceLicense": "Original GPLv2 terms and linking permission in each source file; server LICENSE preserved separately; no blanket Universal FOSS exception is asserted for these source files"
+}

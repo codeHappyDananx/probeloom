@@ -1,0 +1,326 @@
+[
+  {
+    "name": "gcc",
+    "filename": "gcc-16.2.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/gcc-16.2.0-1-x86_64.pkg.tar.zst",
+    "sha256": "5a6a7a9bbfdb6ee9505cb3ca185f3d8eea328c05c0f49c354be70b416374c05c"
+  },
+  {
+    "name": "scons",
+    "filename": "scons-4.11.1-2-any.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/scons-4.11.1-2-any.pkg.tar.zst",
+    "sha256": "95828210809d6ba73c74368ea0c55f2fee90dc3890341279f1e8147597c33b6d"
+  },
+  {
+    "name": "apr-util-devel",
+    "filename": "apr-util-devel-1.6.5-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/apr-util-devel-1.6.5-2-x86_64.pkg.tar.zst",
+    "sha256": "03c963edc35b68841673800e51faa872e8cafc4f0b8341f2b2b32a3fe2f7e1cd"
+  },
+  {
+    "name": "heimdal-devel",
+    "filename": "heimdal-devel-7.8.0-9-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/heimdal-devel-7.8.0-9-x86_64.pkg.tar.zst",
+    "sha256": "ef9ba1bbf6d8cb0762d6494afe174472f90cc29a3c99a749dd59c5b224ae8ecb"
+  },
+  {
+    "name": "zlib-devel",
+    "filename": "zlib-devel-1.4-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/zlib-devel-1.4-1-x86_64.pkg.tar.zst",
+    "sha256": "16cc4a78e9b3be0925a39bffbf61d34306f24a71d47dd5051087110d3f2a586e"
+  },
+  {
+    "name": "openssl-devel",
+    "filename": "openssl-devel-4.1.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/openssl-devel-4.1.0-1-x86_64.pkg.tar.zst",
+    "sha256": "cadb9e417159bf643e36ac60a9b3c5136fed1cf8b6bee7f151cafd48459af3b0"
+  },
+  {
+    "name": "libiconv-devel",
+    "filename": "libiconv-devel-1.19-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libiconv-devel-1.19-1-x86_64.pkg.tar.zst",
+    "sha256": "b4836f02199a2ae02d5a836d5a6dc4a174a055da79c30e256635e638b52e2c5d"
+  },
+  {
+    "name": "bash",
+    "filename": "bash-5.3.20-3-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/bash-5.3.20-3-x86_64.pkg.tar.zst",
+    "sha256": "e7045fbbf82deb2551acd8386e1163236107c35952f0659bdbe4f5222269cd83"
+  },
+  {
+    "name": "patch",
+    "filename": "patch-2.8.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/patch-2.8.1-1-x86_64.pkg.tar.zst",
+    "sha256": "f2cf4b5ad0c87efd42f5c458ec9c1aba573980af4879a485590e153edc4eacf6"
+  },
+  {
+    "name": "make",
+    "filename": "make-4.4.1-3-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/make-4.4.1-3-x86_64.pkg.tar.zst",
+    "sha256": "af0bdba17f06fe037f0194069adaa31a8fe45f1a11381501896aea1fae37bd5d"
+  },
+  {
+    "name": "pkgconf",
+    "filename": "pkgconf-3.0.11-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/pkgconf-3.0.11-1-x86_64.pkg.tar.zst",
+    "sha256": "7a0ab528bac969e66d65f3a0a510cbc85dad3d8a201b421aab94c485a8eb9022"
+  },
+  {
+    "name": "binutils",
+    "filename": "binutils-2.47-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/binutils-2.47-1-x86_64.pkg.tar.zst",
+    "sha256": "b7ddaca6e8b63774cdb1f5ac2720963cd76f8f62ca7e2667b1b0f008ed7ecba2"
+  },
+  {
+    "name": "gcc-libs",
+    "filename": "gcc-libs-16.2.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/gcc-libs-16.2.0-1-x86_64.pkg.tar.zst",
+    "sha256": "50e1bbbb1b4186ba1ed8c08cdbb5c0a8c2343e4b5747bace24273e26fb148471"
+  },
+  {
+    "name": "gmp",
+    "filename": "gmp-6.3.0-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/gmp-6.3.0-2-x86_64.pkg.tar.zst",
+    "sha256": "f84536138e618d47a1df2da83916cfebbd449f159ffad52f994a71060a41cf34"
+  },
+  {
+    "name": "isl",
+    "filename": "isl-0.28-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/isl-0.28-1-x86_64.pkg.tar.zst",
+    "sha256": "20c8d3a623fe948c9175b236236ae31b09e77e66dc514f8467d35e81a8514f95"
+  },
+  {
+    "name": "libiconv",
+    "filename": "libiconv-1.19-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libiconv-1.19-1-x86_64.pkg.tar.zst",
+    "sha256": "0fa55ea2a6ccf97cf8c58b24b2615815e15e16e6e4e888091c263c2c83c5313d"
+  },
+  {
+    "name": "libintl",
+    "filename": "libintl-0.22.5-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libintl-0.22.5-1-x86_64.pkg.tar.zst",
+    "sha256": "336d66b9d95cf9c1804958f8e260762a3e83bf158ed5981f783bc772a31073cf"
+  },
+  {
+    "name": "mpc",
+    "filename": "mpc-1.4.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/mpc-1.4.1-1-x86_64.pkg.tar.zst",
+    "sha256": "0f5073ec2e8be265854ee3c7cb1079b5e8e02264d53e659d8414988c6c182f16"
+  },
+  {
+    "name": "mpfr",
+    "filename": "mpfr-4.2.2-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/mpfr-4.2.2-1-x86_64.pkg.tar.zst",
+    "sha256": "8f1b6c17c53e00494a488e03dfdf8fc742027ed03a5bd7b1b3a6a33f595a7498"
+  },
+  {
+    "name": "zlib",
+    "filename": "zlib-1.4-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/zlib-1.4-1-x86_64.pkg.tar.zst",
+    "sha256": "bafd3abf8b773ec28b6571d465a53a4e7afed4824cc1eec52f3bfbd6fa556ab9"
+  },
+  {
+    "name": "msys2-runtime-devel",
+    "filename": "msys2-runtime-devel-3.6.12-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/msys2-runtime-devel-3.6.12-1-x86_64.pkg.tar.zst",
+    "sha256": "fc4722edfc14b26969ba4ff76afb2fabdf1891cdee4a4dc97c5767e32f285711"
+  },
+  {
+    "name": "msys2-w32api-headers",
+    "filename": "msys2-w32api-headers-14.0.0.r0.g9b3dd0125-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/msys2-w32api-headers-14.0.0.r0.g9b3dd0125-1-x86_64.pkg.tar.zst",
+    "sha256": "fcadf735fb214d33c64e145f82490c8693aeb6cb6a20ee8479e9f408aa832613"
+  },
+  {
+    "name": "msys2-w32api-runtime",
+    "filename": "msys2-w32api-runtime-14.0.0.r0.g9b3dd0125-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/msys2-w32api-runtime-14.0.0.r0.g9b3dd0125-1-x86_64.pkg.tar.zst",
+    "sha256": "a9c5c922f5191f7e73333ea2d5392811282387986b9cb7f94a7c9156f717d4b3"
+  },
+  {
+    "name": "windows-default-manifest",
+    "filename": "windows-default-manifest-20260815-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/windows-default-manifest-20260815-2-x86_64.pkg.tar.zst",
+    "sha256": "d11ad907062b71c9db372f6d9a7bf1b73ebe097bdc4c6b71226ad6292df5a970"
+  },
+  {
+    "name": "python",
+    "filename": "python-3.14.10-3-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/python-3.14.10-3-x86_64.pkg.tar.zst",
+    "sha256": "f4dca146a4468869ba65c24c78832481749db3236928a920dc22ce2ad261e6d6"
+  },
+  {
+    "name": "apr-util",
+    "filename": "apr-util-1.6.5-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/apr-util-1.6.5-2-x86_64.pkg.tar.zst",
+    "sha256": "ea8863fa59f51357c3cfd71961f0f9ebcb03fda136b1c7575630d205cde812a3"
+  },
+  {
+    "name": "apr-devel",
+    "filename": "apr-devel-1.7.6-3-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/apr-devel-1.7.6-3-x86_64.pkg.tar.zst",
+    "sha256": "8f4d609e915ed61be5d18ea12fcf4d3410a225d8367c428ecc9f028b487f8310"
+  },
+  {
+    "name": "libexpat-devel",
+    "filename": "libexpat-devel-2.10.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libexpat-devel-2.10.0-1-x86_64.pkg.tar.zst",
+    "sha256": "5d627d9664797852db6f7a15e6a2a517c0147b4107895906df758698dd2db110"
+  },
+  {
+    "name": "libsqlite-devel",
+    "filename": "libsqlite-devel-3.54.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libsqlite-devel-3.54.1-1-x86_64.pkg.tar.zst",
+    "sha256": "b2e18f50e9cdade874ac3fd74e04f2c9954f762a6e1c339bf26ae26454c59d41"
+  },
+  {
+    "name": "heimdal-libs",
+    "filename": "heimdal-libs-7.8.0-9-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/heimdal-libs-7.8.0-9-x86_64.pkg.tar.zst",
+    "sha256": "3eec1380997532749af3c25e3ae527260fe31319bd0e6841167c0bcca66e5c25"
+  },
+  {
+    "name": "libxcrypt-devel",
+    "filename": "libxcrypt-devel-4.5.2-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libxcrypt-devel-4.5.2-1-x86_64.pkg.tar.zst",
+    "sha256": "f306ed59d4906a67a4757716f43da3484602285b390b0536a998ec393ff819ac"
+  },
+  {
+    "name": "libedit-devel",
+    "filename": "libedit-devel-20240808_3.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libedit-devel-20240808_3.1-1-x86_64.pkg.tar.zst",
+    "sha256": "13be16778855444b5ac58f90f4946a3d8c331b790a4ecc92423b48b596ca8f41"
+  },
+  {
+    "name": "libdb-devel",
+    "filename": "libdb-devel-6.2.32-6-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libdb-devel-6.2.32-6-x86_64.pkg.tar.zst",
+    "sha256": "b5f53e2233c7d56b87e4bdc311d45630b997e1625cfdd03213a6889d7e108964"
+  },
+  {
+    "name": "libopenssl",
+    "filename": "libopenssl-4.1.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libopenssl-4.1.0-1-x86_64.pkg.tar.zst",
+    "sha256": "71f093de4a002913f39783b79d18da33b63ce8baf825434218cc1d8bd40304fb"
+  },
+  {
+    "name": "iconv",
+    "filename": "iconv-1.19-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/iconv-1.19-1-x86_64.pkg.tar.zst",
+    "sha256": "f1916b4fa349612c7edde73c2f8f50b1371d5945e7503b29169f08310d033633"
+  },
+  {
+    "name": "zstd",
+    "filename": "zstd-1.5.7-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/zstd-1.5.7-1-x86_64.pkg.tar.zst",
+    "sha256": "7b8ab77828c5a1efe53ebc53e3ea9d719bfbd609bf4c810eaa88d626188ed407"
+  },
+  {
+    "name": "msys2-runtime",
+    "filename": "msys2-runtime-3.6.12-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.12-1-x86_64.pkg.tar.zst",
+    "sha256": "c0dbaa624e29be6d08cf5c65609dca6c749431109e4572bf446a3ca9b4c4fd7c"
+  },
+  {
+    "name": "libbz2",
+    "filename": "libbz2-1.0.8-4-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libbz2-1.0.8-4-x86_64.pkg.tar.zst",
+    "sha256": "89fb0e1478b22b80effda55ab4ae7549388d01245d3841a096d8a2d63236c2a1"
+  },
+  {
+    "name": "libexpat",
+    "filename": "libexpat-2.10.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libexpat-2.10.0-1-x86_64.pkg.tar.zst",
+    "sha256": "e999d88a6927fb0c8a165f0cd279b10a9f0adfba8bfb245d4352a7a9c2bbc3a8"
+  },
+  {
+    "name": "libffi",
+    "filename": "libffi-3.8.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libffi-3.8.1-1-x86_64.pkg.tar.zst",
+    "sha256": "9f0235d3b28b3e15df07f9490d8d64edac97afe4802d974f9ce6f4bfab2ec0c6"
+  },
+  {
+    "name": "liblzma",
+    "filename": "liblzma-5.8.4-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/liblzma-5.8.4-1-x86_64.pkg.tar.zst",
+    "sha256": "4b7d61656e72a5651a797680b66186338dce4f8fbc62a637ab3b59922dd01074"
+  },
+  {
+    "name": "ncurses",
+    "filename": "ncurses-6.6-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/ncurses-6.6-2-x86_64.pkg.tar.zst",
+    "sha256": "828c92f09b17f00d3b49362fcfa4affa58e5e50e238f290ea36eb7a690da3acb"
+  },
+  {
+    "name": "libreadline",
+    "filename": "libreadline-8.3.006-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libreadline-8.3.006-2-x86_64.pkg.tar.zst",
+    "sha256": "e6c44cca4dcfd3821a4bcfca36bfef244af184e6963076bfcb15727001bfe8d2"
+  },
+  {
+    "name": "mpdecimal",
+    "filename": "mpdecimal-4.0.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/mpdecimal-4.0.1-1-x86_64.pkg.tar.zst",
+    "sha256": "01ae3016641af4d499329c68e00a34664b7c7d9095dc6a859317441507132d41"
+  },
+  {
+    "name": "libsqlite",
+    "filename": "libsqlite-3.54.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libsqlite-3.54.1-1-x86_64.pkg.tar.zst",
+    "sha256": "745dc29666363a9e8b888531418ef0687c6572808ff10d860750121d4a5257c6"
+  },
+  {
+    "name": "libzstd",
+    "filename": "libzstd-1.5.7-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libzstd-1.5.7-1-x86_64.pkg.tar.zst",
+    "sha256": "5e370b2e725a0a7e5ff58d84653c9a0cd5a10b9cfe930f2d949a28ad2a11c1f2"
+  },
+  {
+    "name": "libxcrypt",
+    "filename": "libxcrypt-4.5.2-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libxcrypt-4.5.2-1-x86_64.pkg.tar.zst",
+    "sha256": "e63db0aa2b708359e25f61f506e2d2c92c315febf5f88cc9f386e4ec0bdf4fa5"
+  },
+  {
+    "name": "apr",
+    "filename": "apr-1.7.6-3-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/apr-1.7.6-3-x86_64.pkg.tar.zst",
+    "sha256": "d70acf6679ea736abfb1fd82665982141c3e176a570d5980821f5b8487086a2e"
+  },
+  {
+    "name": "expat",
+    "filename": "expat-2.10.0-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/expat-2.10.0-1-x86_64.pkg.tar.zst",
+    "sha256": "1aa594d593018923abc4e9f911443e4213c4f78e37d56deae34930f545a8456b"
+  },
+  {
+    "name": "libutil-linux-devel",
+    "filename": "libutil-linux-devel-2.42.4-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libutil-linux-devel-2.42.4-1-x86_64.pkg.tar.zst",
+    "sha256": "65d15586ed3cde61b286bbb131be1ea4915dca181ce5f2759182e9927b9c45c2"
+  },
+  {
+    "name": "libdb",
+    "filename": "libdb-6.2.32-6-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libdb-6.2.32-6-x86_64.pkg.tar.zst",
+    "sha256": "27a35786f3aab14e625c02df7bcd8a9dda0da782ce4f0549a427a21316b4d179"
+  },
+  {
+    "name": "libedit",
+    "filename": "libedit-20240808_3.1-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libedit-20240808_3.1-1-x86_64.pkg.tar.zst",
+    "sha256": "aada8ba7dfe41fdcac28d3706c0dc7c621b7667035a5e629cb5f3af7fb3f7de0"
+  },
+  {
+    "name": "ncurses-devel",
+    "filename": "ncurses-devel-6.6-2-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/ncurses-devel-6.6-2-x86_64.pkg.tar.zst",
+    "sha256": "d5bc13fcce30b33cbd83cfb2982db76f18bbb967cd399e4d2ece54c4968a33a1"
+  },
+  {
+    "name": "libutil-linux",
+    "filename": "libutil-linux-2.42.4-1-x86_64.pkg.tar.zst",
+    "url": "https://mirror.msys2.org/msys/x86_64/libutil-linux-2.42.4-1-x86_64.pkg.tar.zst",
+    "sha256": "2047341b34c7dfb1231615446c7ba7d9d43f57cc5e1b2b2e89376f67c3965e9b"
+  }
+]

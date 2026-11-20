@@ -1,0 +1,12 @@
+**/target/
+**/node_modules/
+**/dist/
+.build/
+data/
+logs/
+config/platform-ui.json
+*.log
+config/mcp-token
+.cache/
+__pycache__/
+*.pyc

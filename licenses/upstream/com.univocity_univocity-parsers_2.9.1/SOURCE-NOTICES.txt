@@ -1,0 +1,198 @@
+Source entries: com/univocity/parsers/csv/CsvRoutines.java, com/univocity/parsers/csv/CsvFormatDetector.java, com/univocity/parsers/annotations/EnumOptions.java, com/univocity/parsers/annotations/Headers.java, com/univocity/parsers/common/NoopProcessorErrorHandler.java, com/univocity/parsers/common/DataProcessingException.java, com/univocity/parsers/common/NoopRowProcessorErrorHandler.java, com/univocity/parsers/common/processor/core/AbstractConcurrentProcessor.java, com/univocity/parsers/common/processor/core/AbstractInputValueSwitch.java, com/univocity/parsers/common/processor/core/NoopProcessor.java, com/univocity/parsers/common/processor/ConcurrentRowProcessor.java, com/univocity/parsers/common/processor/OutputValueSwitch.java, com/univocity/parsers/common/processor/NoopRowProcessor.java, com/univocity/parsers/common/processor/InputValueSwitch.java, com/univocity/parsers/common/processor/RowWriterProcessorSwitch.java, com/univocity/parsers/common/routine/AbstractRoutines.java, com/univocity/parsers/common/LineReader.java, com/univocity/parsers/common/RowProcessorErrorHandler.java, com/univocity/parsers/common/input/InputAnalysisProcess.java, com/univocity/parsers/common/input/LineSeparatorDetector.java, com/univocity/parsers/common/input/LookaheadCharInputReader.java, com/univocity/parsers/common/ProcessorErrorHandler.java, com/univocity/parsers/common/record/RecordMetaData.java, com/univocity/parsers/common/record/MetaData.java, com/univocity/parsers/common/record/Record.java, com/univocity/parsers/common/AbstractException.java, com/univocity/parsers/common/DummyFormat.java, com/univocity/parsers/tsv/TsvRoutines.java, com/univocity/parsers/conversions/EnumSelector.java, com/univocity/parsers/conversions/EnumConversion.java, com/univocity/parsers/fixed/FieldAlignment.java, com/univocity/parsers/fixed/FixedWidthWriterSettings.java, com/univocity/parsers/fixed/Lookup.java, com/univocity/parsers/fixed/FixedWidthRoutines.java, com/univocity/parsers/fixed/FixedWidthFieldLengths.java
+/*******************************************************************************
+ * Copyright 2015 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+Source entries: com/univocity/parsers/csv/CsvFormat.java, com/univocity/parsers/csv/CsvParserSettings.java, com/univocity/parsers/csv/CsvWriter.java, com/univocity/parsers/csv/CsvWriterSettings.java, com/univocity/parsers/csv/CsvParser.java, com/univocity/parsers/annotations/UpperCase.java, com/univocity/parsers/annotations/Parsed.java, com/univocity/parsers/annotations/Replace.java, com/univocity/parsers/annotations/Trim.java, com/univocity/parsers/annotations/NullString.java, com/univocity/parsers/annotations/LowerCase.java, com/univocity/parsers/annotations/BooleanString.java, com/univocity/parsers/annotations/helpers/FieldMapping.java, com/univocity/parsers/annotations/helpers/AnnotationHelper.java, com/univocity/parsers/annotations/Convert.java, com/univocity/parsers/annotations/Format.java, com/univocity/parsers/common/fields/FieldIndexSelector.java, com/univocity/parsers/common/fields/FieldSelector.java, com/univocity/parsers/common/fields/ExcludeFieldNameSelector.java, com/univocity/parsers/common/fields/AllIndexesSelector.java, com/univocity/parsers/common/fields/FieldNameSelector.java, com/univocity/parsers/common/fields/FieldSet.java, com/univocity/parsers/common/fields/ExcludeFieldIndexSelector.java, com/univocity/parsers/common/fields/FieldConversionMapping.java, com/univocity/parsers/common/fields/ExcludeFieldEnumSelector.java, com/univocity/parsers/common/ColumnMap.java, com/univocity/parsers/common/ParserOutput.java, com/univocity/parsers/common/AbstractParser.java, com/univocity/parsers/common/processor/core/ColumnSplitter.java, com/univocity/parsers/common/processor/core/AbstractBatchedObjectColumnProcessor.java, com/univocity/parsers/common/processor/core/AbstractBeanListProcessor.java, com/univocity/parsers/common/processor/core/AbstractObjectListProcessor.java, com/univocity/parsers/common/processor/core/AbstractObjectColumnProcessor.java, com/univocity/parsers/common/processor/core/AbstractObjectProcessor.java, com/univocity/parsers/common/processor/core/AbstractMasterDetailProcessor.java, com/univocity/parsers/common/processor/core/AbstractColumnProcessor.java, com/univocity/parsers/common/processor/core/AbstractBatchedColumnProcessor.java, com/univocity/parsers/common/processor/core/Processor.java, com/univocity/parsers/common/processor/core/ColumnReader.java, com/univocity/parsers/common/processor/core/ColumnOrderDependent.java, com/univocity/parsers/common/processor/core/AbstractBeanProcessor.java, com/univocity/parsers/common/processor/core/AbstractListProcessor.java, com/univocity/parsers/common/processor/core/AbstractMasterDetailListProcessor.java, com/univocity/parsers/common/processor/core/AbstractProcessor.java, com/univocity/parsers/common/processor/core/BatchedColumnReader.java, com/univocity/parsers/common/processor/RowPlacement.java, com/univocity/parsers/common/processor/MasterDetailRecord.java, com/univocity/parsers/common/processor/BeanWriterProcessor.java, com/univocity/parsers/common/processor/MasterDetailProcessor.java, com/univocity/parsers/common/processor/BatchedObjectColumnProcessor.java, com/univocity/parsers/common/processor/RowListProcessor.java, com/univocity/parsers/common/processor/BatchedColumnProcessor.java, com/univocity/parsers/common/processor/AbstractRowProcessor.java, com/univocity/parsers/common/processor/BeanListProcessor.java, com/univocity/parsers/common/processor/ObjectColumnProcessor.java, com/univocity/parsers/common/processor/BeanProcessor.java, com/univocity/parsers/common/processor/MasterDetailListProcessor.java, com/univocity/parsers/common/processor/ObjectRowListProcessor.java, com/univocity/parsers/common/processor/RowProcessor.java, com/univocity/parsers/common/processor/ObjectRowProcessor.java, com/univocity/parsers/common/processor/RowWriterProcessor.java, com/univocity/parsers/common/processor/ColumnProcessor.java, com/univocity/parsers/common/processor/ObjectRowWriterProcessor.java, com/univocity/parsers/common/ContextWrapper.java, com/univocity/parsers/common/NoopParsingContext.java, com/univocity/parsers/common/AbstractWriter.java, com/univocity/parsers/common/input/NoopCharAppender.java, com/univocity/parsers/common/input/EOFException.java, com/univocity/parsers/common/input/concurrent/Entry.java, com/univocity/parsers/common/input/concurrent/ConcurrentCharInputReader.java, com/univocity/parsers/common/input/concurrent/ConcurrentCharLoader.java, com/univocity/parsers/common/input/concurrent/CharBucket.java, com/univocity/parsers/common/input/concurrent/FixedInstancePool.java, com/univocity/parsers/common/input/CharInputReader.java, com/univocity/parsers/common/input/AbstractCharInputReader.java, com/univocity/parsers/common/input/CharAppender.java, com/univocity/parsers/common/input/WriterCharAppender.java, com/univocity/parsers/common/input/DefaultCharInputReader.java, com/univocity/parsers/common/input/DefaultCharAppender.java, com/univocity/parsers/common/CommonWriterSettings.java, com/univocity/parsers/common/DefaultConversionProcessor.java, com/univocity/parsers/common/TextWritingException.java, com/univocity/parsers/common/Context.java, com/univocity/parsers/common/Format.java, com/univocity/parsers/common/ArgumentUtils.java, com/univocity/parsers/common/CommonSettings.java, com/univocity/parsers/common/CommonParserSettings.java, com/univocity/parsers/tsv/TsvParser.java, com/univocity/parsers/tsv/TsvParserSettings.java, com/univocity/parsers/tsv/TsvWriter.java, com/univocity/parsers/tsv/TsvWriterSettings.java, com/univocity/parsers/tsv/TsvFormat.java, com/univocity/parsers/conversions/UpperCaseConversion.java, com/univocity/parsers/conversions/BooleanConversion.java, com/univocity/parsers/conversions/TrimConversion.java, com/univocity/parsers/conversions/ByteConversion.java, com/univocity/parsers/conversions/DoubleConversion.java, com/univocity/parsers/conversions/Conversions.java, com/univocity/parsers/conversions/FormattedConversion.java, com/univocity/parsers/conversions/FloatConversion.java, com/univocity/parsers/conversions/ShortConversion.java, com/univocity/parsers/conversions/NumericConversion.java, com/univocity/parsers/conversions/DateConversion.java, com/univocity/parsers/conversions/LowerCaseConversion.java, com/univocity/parsers/conversions/IntegerConversion.java, com/univocity/parsers/conversions/FormattedBigDecimalConversion.java, com/univocity/parsers/conversions/LongConversion.java, com/univocity/parsers/conversions/BigDecimalConversion.java, com/univocity/parsers/conversions/CalendarConversion.java, com/univocity/parsers/conversions/RegexConversion.java, com/univocity/parsers/conversions/Conversion.java, com/univocity/parsers/conversions/ObjectConversion.java, com/univocity/parsers/conversions/CharacterConversion.java, com/univocity/parsers/conversions/NullStringConversion.java, com/univocity/parsers/conversions/BigIntegerConversion.java, com/univocity/parsers/fixed/FixedWidthParser.java, com/univocity/parsers/fixed/FixedWidthFormat.java, com/univocity/parsers/fixed/FixedWidthParserSettings.java, com/univocity/parsers/fixed/FixedWidthWriter.java
+/*******************************************************************************
+ * Copyright 2014 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+Source entries: com/univocity/parsers/csv/Csv.java, com/univocity/parsers/csv/UnescapedQuoteHandling.java, com/univocity/parsers/annotations/Copy.java, com/univocity/parsers/annotations/FixedWidth.java, com/univocity/parsers/common/RetryableErrorHandler.java, com/univocity/parsers/common/routine/InputDimension.java, com/univocity/parsers/common/ContextSnapshot.java, com/univocity/parsers/common/ParsingContextSnapshot.java, com/univocity/parsers/common/input/ExpandingCharAppender.java, com/univocity/parsers/common/input/CharInput.java, com/univocity/parsers/conversions/NullConversion.java, com/univocity/parsers/fixed/FixedWidthFields.java
+/*******************************************************************************
+ * Copyright 2016 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+Source entries: com/univocity/parsers/annotations/Validate.java, com/univocity/parsers/common/DefaultContext.java, com/univocity/parsers/common/DataValidationException.java, com/univocity/parsers/common/ParsingContextWrapper.java, com/univocity/parsers/common/processor/core/AbstractProcessorSwitch.java, com/univocity/parsers/common/processor/core/BeanConversionProcessor.java, com/univocity/parsers/common/processor/RowProcessorSwitch.java, com/univocity/parsers/common/ParsingContext.java, com/univocity/parsers/common/record/RecordMetaDataImpl.java, com/univocity/parsers/common/DefaultParsingContext.java, com/univocity/parsers/common/Internal.java, com/univocity/parsers/conversions/FormattedDateConversion.java, com/univocity/parsers/conversions/ValidatedConversion.java
+/*
+ * Copyright (c) 2018. Univocity Software Pty Ltd
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: com/univocity/parsers/annotations/Nested.java, com/univocity/parsers/annotations/helpers/TransformedHeader.java, com/univocity/parsers/annotations/helpers/MethodFilter.java, com/univocity/parsers/annotations/HeaderTransformer.java, com/univocity/parsers/common/iterators/ParserIterator.java, com/univocity/parsers/common/iterators/RowIterator.java, com/univocity/parsers/common/iterators/RecordIterator.java, com/univocity/parsers/common/IterableResult.java, com/univocity/parsers/common/processor/core/CompositeProcessor.java, com/univocity/parsers/common/processor/CompositeRowProcessor.java, com/univocity/parsers/common/input/BomInput.java, com/univocity/parsers/common/ResultIterator.java
+/*******************************************************************************
+ * Copyright 2017 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+Source entries: com/univocity/parsers/annotations/helpers/MethodDescriptor.java, com/univocity/parsers/common/fields/AbstractColumnMapping.java, com/univocity/parsers/common/fields/ColumnMapper.java, com/univocity/parsers/common/fields/ColumnMapping.java, com/univocity/parsers/common/NormalizedString.java, com/univocity/parsers/common/StringCache.java
+/*******************************************************************************
+ * Copyright 2019 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+Source entries: com/univocity/parsers/annotations/helpers/AnnotationRegistry.java, com/univocity/parsers/conversions/Validator.java
+/*******************************************************************************
+ * Copyright 2018 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+Source entries: com/univocity/parsers/common/TextParsingException.java
+/**
+ * ****************************************************************************
+ * Copyright 2014 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the
+ * License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+ * ****************************************************************************
+ */
+
+Source entries: com/univocity/parsers/common/fields/FieldEnumSelector.java, com/univocity/parsers/common/record/RecordFactory.java
+/*
+ * Copyright 2015 Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: com/univocity/parsers/common/processor/core/AbstractMultiBeanListProcessor.java, com/univocity/parsers/common/processor/core/AbstractMultiBeanProcessor.java, com/univocity/parsers/common/processor/core/AbstractMultiBeanRowProcessor.java, com/univocity/parsers/common/processor/MultiBeanProcessor.java, com/univocity/parsers/common/processor/MultiBeanListProcessor.java, com/univocity/parsers/common/processor/CustomMatcher.java, com/univocity/parsers/common/processor/MultiBeanRowProcessor.java, com/univocity/parsers/common/ConversionProcessor.java, com/univocity/parsers/conversions/ToStringConversion.java
+/*
+ * Copyright (c) 2015. Univocity Software Pty Ltd
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: com/univocity/parsers/common/beans/BeanHelper.java, com/univocity/parsers/common/beans/PropertyWrapper.java
+/*
+ * Copyright (c) 2015. Univocity Software Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: com/univocity/parsers/common/record/RecordImpl.java
+/*
+ * Copyright 2015 Univocity Software Pty Ltd
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */

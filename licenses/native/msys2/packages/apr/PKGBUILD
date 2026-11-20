@@ -1,0 +1,77 @@
+# Maintainer: Alexey Pavlov <alexpux@gmail.com>
+
+pkgname=('apr' 'apr-devel')
+pkgver=1.7.6
+pkgrel=3
+pkgdesc="The Apache Portable Runtime"
+arch=('i686' 'x86_64')
+url="https://apr.apache.org/"
+msys2_repository_url='https://github.com/apache/apr'
+msys2_references=(
+  "cpe: cpe:/a:apache:portable_runtime"
+)
+makedepends=('libxcrypt-devel' 'libutil-linux-devel' 'autotools' 'gcc')
+options=('!libtool')
+license=('spdx:Apache-2.0')
+
+_patches=(
+  0001-fixes-building-with-gcc-15.patch
+)
+
+source=(https://archive.apache.org/dist/apr/apr-${pkgver}.tar.bz2
+        ${_patches[@]})
+sha256sums=('49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32'
+            '672e5807eded9d26cfb6774e4d02bc104ce5fd36ddbfc357c835b7faf04e2c36')
+
+prepare() {
+  cd "${srcdir}/apr-${pkgver}"
+
+  for patch in "${_patches[@]}"; do
+    msg2 "Patching with ${patch}"
+    patch -Nbp1 -i "${srcdir}/${patch}"
+  done
+
+  autoreconf -fi
+}
+
+build() {
+  cd "${srcdir}/apr-${pkgver}"
+
+  export MSYSTEM=CYGWIN
+  ./configure \
+      --build=${CHOST} \
+      --prefix=/usr \
+      --libexecdir=/usr/lib/apr/modules \
+      --datadir=/usr/share/apr \
+      ac_cv_header_windows_h=no \
+      ac_cv_header_winsock2_h=no
+
+  make
+  make DESTDIR="${srcdir}/dest" install
+}
+
+check() {
+  cd "${srcdir}/apr-${pkgver}"
+  make -j1 check || true
+}
+
+package_apr() {
+  depends=('libxcrypt' 'libutil-linux')
+  groups=('libraries')
+
+  mkdir -p ${pkgdir}/usr/{bin,share}
+  cp -f ${srcdir}/dest/usr/bin/*.dll ${pkgdir}/usr/bin/
+}
+
+package_apr-devel() {
+  pkgdesc="Libapr headers and libraries"
+  groups=('development')
+  depends=("apr=${pkgver}" "libxcrypt-devel" "libutil-linux-devel")
+  options=('staticlibs')
+
+  mkdir -p ${pkgdir}/usr/{bin,share}
+  cp -f ${srcdir}/dest/usr/bin/*-config ${pkgdir}/usr/bin/
+  cp -rf ${srcdir}/dest/usr/include ${pkgdir}/usr/
+  cp -rf ${srcdir}/dest/usr/lib ${pkgdir}/usr/
+  cp -rf ${srcdir}/dest/usr/share/apr ${pkgdir}/usr/share/
+}

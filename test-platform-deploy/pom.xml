@@ -1,0 +1,11 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent><groupId>dev.probeloom</groupId><artifactId>probeloom</artifactId><version>1.0.0.0</version></parent>
+  <artifactId>test-platform-deploy</artifactId>
+  <dependencies><dependency><groupId>dev.probeloom</groupId><artifactId>test-platform-app</artifactId><version>${project.version}</version></dependency></dependencies>
+  <build>
+    <finalName>probeloom</finalName>
+    <plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId><configuration><forceCreation>true</forceCreation></configuration></plugin><plugin><groupId>org.springframework.boot</groupId><artifactId>spring-boot-maven-plugin</artifactId><version>${spring.boot.version}</version><configuration><mainClass>dev.probeloom.PlatformApplication</mainClass></configuration><executions><execution><goals><goal>repackage</goal></goals></execution></executions></plugin></plugins>
+    <resources><resource><directory>src/main/resources</directory></resource><resource><directory>../test-platform-ui/dist</directory><targetPath>static</targetPath></resource></resources>
+  </build>
+</project>

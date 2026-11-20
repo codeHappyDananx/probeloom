@@ -1,0 +1,17 @@
+Source entries: com/googlecode/javaewah32/BitmapStorage32.java, com/googlecode/javaewah32/Buffer32.java, com/googlecode/javaewah32/ClearIntIterator32.java, com/googlecode/javaewah32/EWAHCompressedBitmap32.java, com/googlecode/javaewah32/IteratorAggregation32.java, com/googlecode/javaewah32/IteratorUtil32.java, com/googlecode/javaewah32/ReverseIntIterator32.java, com/googlecode/javaewah32/NonEmptyVirtualStorage32.java, com/googlecode/javaewah32/BufferedIterator32.java, com/googlecode/javaewah32/BufferedRunningLengthWord32.java, com/googlecode/javaewah32/IteratingBufferedRunningLengthWord32.java, com/googlecode/javaewah32/ChunkIteratorImpl32.java, com/googlecode/javaewah32/IntBufferWrapper.java, com/googlecode/javaewah32/RunningLengthWord32.java, com/googlecode/javaewah32/BitCounter32.java, com/googlecode/javaewah32/IntArray.java, com/googlecode/javaewah32/EWAHIterator32.java, com/googlecode/javaewah32/IteratingRLW32.java, com/googlecode/javaewah32/IntIteratorOverIteratingRLW32.java, com/googlecode/javaewah32/ReverseEWAHIterator32.java, com/googlecode/javaewah32/FastAggregation32.java, com/googlecode/javaewah/RunningLengthWord.java, com/googlecode/javaewah/IntIterator.java, com/googlecode/javaewah/ChunkIterator.java, com/googlecode/javaewah/EWAHCompressedBitmap.java, com/googlecode/javaewah/EWAHIterator.java, com/googlecode/javaewah/ChunkIteratorImpl.java, com/googlecode/javaewah/FastAggregation.java, com/googlecode/javaewah/IteratingBufferedRunningLengthWord.java, com/googlecode/javaewah/BitmapStorage.java, com/googlecode/javaewah/ReverseIntIterator.java, com/googlecode/javaewah/BufferedIterator.java, com/googlecode/javaewah/IteratorAggregation.java, com/googlecode/javaewah/ReverseEWAHIterator.java, com/googlecode/javaewah/BitCounter.java, com/googlecode/javaewah/NonEmptyVirtualStorage.java, com/googlecode/javaewah/IteratorUtil.java, com/googlecode/javaewah/Buffer.java, com/googlecode/javaewah/LongBufferWrapper.java, com/googlecode/javaewah/LogicalElement.java, com/googlecode/javaewah/IteratingRLW.java, com/googlecode/javaewah/ClearIntIterator.java, com/googlecode/javaewah/IntIteratorOverIteratingRLW.java, com/googlecode/javaewah/BufferedRunningLengthWord.java, com/googlecode/javaewah/CloneableIterator.java, com/googlecode/javaewah/LongArray.java
+/*
+ * Copyright 2009-2016, Daniel Lemire, Cliff Moon, David McIntosh, Robert Becho, Google Inc., Veronika Zenz, Owen Kaser, Gregory Ssi-Yan-Kai, Rory Graves
+ * Licensed under the Apache License, Version 2.0.
+ */
+
+Source entries: com/googlecode/javaewah32/IntIteratorImpl32.java
+/*
+ * Copyright 2012, Google Inc.  
+ * Licensed under the Apache License, Version 2.0.
+ */
+
+Source entries: com/googlecode/javaewah/IntIteratorImpl.java
+/*
+ * Copyright 2012, Google Inc.
+ * Licensed under the Apache License, Version 2.0.
+ */

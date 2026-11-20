@@ -1,0 +1,70 @@
+{
+  "protocExit": 0,
+  "stderr": "",
+  "matches": {
+    "mysqlx.proto": true,
+    "mysqlx_datatypes.proto": true,
+    "mysqlx_connection.proto": true,
+    "mysqlx_expr.proto": true,
+    "mysqlx_crud.proto": true,
+    "mysqlx_sql.proto": true,
+    "mysqlx_prepare.proto": true,
+    "mysqlx_cursor.proto": true,
+    "mysqlx_expect.proto": true,
+    "mysqlx_notice.proto": true,
+    "mysqlx_resultset.proto": true,
+    "mysqlx_session.proto": true
+  },
+  "allMatched": true,
+  "files": [
+    {
+      "path": "mysqlx.proto",
+      "sha256": "7523292b4303ff15c524d706cbdac91c25dbf25cc236fc4409ac883bea8fdbf6"
+    },
+    {
+      "path": "mysqlx_connection.proto",
+      "sha256": "749b1aa501b9b2848e23ed6bab83a105e39f09a49c38a1665f13b4b5d8e0b453"
+    },
+    {
+      "path": "mysqlx_crud.proto",
+      "sha256": "f703ea263cdc3e2643b462edd324e4aac2613e3d5cc212de5359846ca726343a"
+    },
+    {
+      "path": "mysqlx_cursor.proto",
+      "sha256": "1c3534a9d9b32aea6f59dc806d38db5f12b9b1222a9359d80eb0ae4868e9ee69"
+    },
+    {
+      "path": "mysqlx_datatypes.proto",
+      "sha256": "584b4848744c14c3d6bb578a91751c872ef31bb6a277503769cb1192a87d56b7"
+    },
+    {
+      "path": "mysqlx_expect.proto",
+      "sha256": "52630c0fb4a7b845d2c9d1684a10c1881403218bc715382d73afd013c48d898d"
+    },
+    {
+      "path": "mysqlx_expr.proto",
+      "sha256": "d1e6d526f8bef0e68826a7b3ed305860c1c01197b332933e6a04070162ac53bd"
+    },
+    {
+      "path": "mysqlx_notice.proto",
+      "sha256": "fcd20779201e8acd7a6687406df4e9806962775c6771ee9c33cba7d9328d4aa8"
+    },
+    {
+      "path": "mysqlx_prepare.proto",
+      "sha256": "fe87cca3acdf883a44922fbb5773b2a6ea5c2ecd7efa3d758bda3e78c1aab5c1"
+    },
+    {
+      "path": "mysqlx_resultset.proto",
+      "sha256": "0742beb0c0de147d00691e7b47f069254cddd74fdb3f33d832407db0057cc3c5"
+    },
+    {
+      "path": "mysqlx_session.proto",
+      "sha256": "77050ca1bd6b8addd0e2abe886f734f77c47cc45ca62fbe2213a0943694f8f6a"
+    },
+    {
+      "path": "mysqlx_sql.proto",
+      "sha256": "efe1f41c81db0dbc62d40c101ad4967621aa45f7d5415c07d7caea81980e3ae4"
+    }
+  ],
+  "normalization": "Only protoc-added json_name fields omitted from comparison; unknown fields/options retained, source_info not requested."
+}

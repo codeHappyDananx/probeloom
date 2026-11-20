@@ -1,0 +1,227 @@
+# Maintainer: Alexey Pavlov <alexpux@gmail.com>
+
+pkgname=subversion
+pkgver=1.14.5
+pkgrel=4
+pkgdesc="A Modern Concurrent Version Control System"
+arch=('i686' 'x86_64')
+url="https://subversion.apache.org/"
+msys2_repository_url='https://github.com/apache/subversion'
+msys2_references=(
+  "anitya: 4905"
+  "cpe: cpe:/a:apache:subversion"
+  "cpe: cpe:/a:subversion:subversion"
+)
+license=('spdx:Apache-2.0')
+groups=('VCS')
+depends=('apr' 'apr-util' 'file' 'gcc-libs' 'libbz2' 'libexpat' 'libiconv' 'libintl'
+         'liblz4' 'liblzma' 'libopenssl' 'libsasl' 'libserf' 'libsqlite' 'libutil-linux'
+         'libxcrypt' 'libzstd' 'zlib')
+makedepends=('gcc' 'autotools' 'perl' 'python' 'python-py3c' 'python-setuptools' 'ruby' 'swig'
+             'gmp-devel' 'liblz4-devel' 'libsasl-devel' 'libserf-devel' 'libsqlite-devel')
+optdepends=('bash-completion: for svn bash completion'
+            'python: for some hook scripts'
+            'ruby: for some hook scripts')
+provides=('svn')
+options=('!libtool' '!emptydirs')
+noextract=("subversion-${pkgver}.tar.bz2")
+source=(https://archive.apache.org/dist/subversion/subversion-${pkgver}.tar.bz2{,.asc}
+        svnclean
+        0001-Create-directories-in-build-tree.patch
+        0002-Fix-linking-for-Cygwin.patch
+        0003-Fix-linking-for-perl.patch
+        0004-Fix-a-switch-test-that-expects-to-an-error-due-to-re.patch
+        0005-Use-WIN32-retry-loop-on-Cygwin-too.patch
+        0006-Use-binary-mode-for-svnadmin-dump-load.patch
+        0007-Don-t-support-DOS-paths-for-Cygwin.patch
+        0008-Fix-ruby-tests.patch
+        0009-Support-wincrypt-for-password-encryption-on-Cygwin.patch
+        0010-Install-perl-modules-into-vendors.patch
+        0011-XFAIL-some-case-sensitive-rename-and-move-tests.patch
+        0012-Fix-svnlook_tests.py-so-it-sets-PATH-in-the-python-h.patch
+        0013-Fix-DSO-open-specifically-for-auth-modules-like-GNOM.patch
+        0014-Fix-svnauthz_tests.py-by-adding-usr-bin-to-PATH.patch
+        0015-Mark-basic_test.py-rm_missing_with_case_clashing_ond.patch
+        0016-Fix-serf-config.patch
+        0017-Remove-contrib.patch
+        0018-subversion-1.9.1-msys2.patch
+        0019-remove-checking-symlink.patch
+        0020-90-use-copy-instead-symlink.patch
+        0021-Avoid-inadvertently-blocking-files-during-svnadmin-c.patch
+        0022-subversion-backport-patch-to-build-with-SWIG-4.patch
+        0023-Allow-ra-tests-to-spawn-svnserve.exe-successfully.patch
+        0024-XFAIL-tests-that-fail-due-to-Cygwin-MSYS2-platform-l.patch)
+sha256sums=('e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1'
+            'SKIP'
+            'b09dd041aba0078c8d50df130ef2f96c3ef8486279a620532fef4fe48ef9961e'
+            '76d20bc2614279a1e5a1335f0f2c9ca68a9fe48614843451659ef70fc133f059'
+            'cf25ba474942493328b2bbd46a902a6aa4e2737d85653a90451bd59bdca72ced'
+            'bbcb42b3dc1b24fb219e5cfca372ddfa2e90200013709d3fa4c87b4c8ec9da48'
+            '6cbeb96595565d8158da62838380e0c460b95c77359287d7f430f6db87296c04'
+            '6fd3214fb6545d07c165372622c7edd642946f2bc2e3f8ac27347a693face132'
+            '2cb0cee50391bedce01d65203d40d080ca2b9e03d34f9de309fc0710c5f55b7e'
+            '87c3132ece7fc926c8d8b0179bde86c22a0658a0a5550f2278556c430a8f4380'
+            'eb105e6d6b7dc39912f93e99287600caa3ab704e261a8121f525ee876512550a'
+            '8ffa2e5e18a65c994762358a1f8f0adeaa36656b0c9c3e27cfcf3d915ef75f43'
+            'b22a4f8549640c2b6eba36856457da18aa49168265890ea9067954b92b6743a5'
+            'e1c18d14529f8e966630e06c0dd343d627cee7fa40b52bd0230ab8cf001f0981'
+            'afeefd521ee0421b2591bdb2346223c5d0eaf0c30f51d7eff8396532f49cf614'
+            '4dbf50209f7ce8b46e268eb5b6bbb03b1a288cc08168450f6fc72774c4a2a83e'
+            '24268c8ccc11f6253a905d692e3b3ab22216bc0abdb65dc70ded594095aeb361'
+            'db8a8a397c1a5984b79d1ccbfc5d816e6122f4f27c3649ddf46438c95896cfe7'
+            '25badf2d24709e4a0f24b3b6f0894f2f0515213bace58cda649020bd86b0eadd'
+            '15339d04c7947a97440519ca240a4217fc19eebb95f45ab65b2e46b9a22aaeb5'
+            '84c34178b522d03e555b39f4573bf6a65f14f3c23fa015bb2208a999b520b595'
+            '4644c63f9214107c893f79922b3f784c187e643272a708262b1f4c64d6e792f4'
+            '9041fca325dd21499e1e6000b854d1c410b035338a30649d504e63b987054640'
+            'a1561f3198d46a91d8250fc323d605a18dd03e698d47889ecc6dbc0c58db3978'
+            'dca0bd19fb6c957a6d9104a1cbc9ccdef65ea400c05be92b680e5f1bdda8737a'
+            '1dca7ce5d73127554154da24d796d5f01d641f665a95586acd6ad381ab184b41'
+            'efa21bcf159541bce33183f196cf3d21d8ae158241901e94d7acdcc09841dfca')
+# https://subversion.apache.org/download.cgi#recommended-release
+validpgpkeys=('7DC8A7BF37478FF48E33E85E2B4822B4B6340BAC')
+
+apply_patch_with_msg() {
+  for _fname in "$@"
+  do
+    msg2 "Applying ${_fname}"
+    patch -Nbp1 -i "${srcdir}"/${_fname}
+  done
+}
+
+prepare() {
+  echo "Extracting ${pkgname}-${pkgver}.tar.bz2..."
+  tar -xjf ${pkgname}-${pkgver}.tar.bz2 -C ${srcdir} || true
+
+  cd "${srcdir}"/${pkgname}-${pkgver}
+
+  apply_patch_with_msg \
+    0001-Create-directories-in-build-tree.patch \
+    0002-Fix-linking-for-Cygwin.patch \
+    0003-Fix-linking-for-perl.patch \
+    0004-Fix-a-switch-test-that-expects-to-an-error-due-to-re.patch \
+    0005-Use-WIN32-retry-loop-on-Cygwin-too.patch \
+    0006-Use-binary-mode-for-svnadmin-dump-load.patch \
+    0007-Don-t-support-DOS-paths-for-Cygwin.patch \
+    0008-Fix-ruby-tests.patch \
+    0009-Support-wincrypt-for-password-encryption-on-Cygwin.patch \
+    0010-Install-perl-modules-into-vendors.patch \
+    0011-XFAIL-some-case-sensitive-rename-and-move-tests.patch \
+    0012-Fix-svnlook_tests.py-so-it-sets-PATH-in-the-python-h.patch \
+    0013-Fix-DSO-open-specifically-for-auth-modules-like-GNOM.patch \
+    0014-Fix-svnauthz_tests.py-by-adding-usr-bin-to-PATH.patch \
+    0015-Mark-basic_test.py-rm_missing_with_case_clashing_ond.patch \
+    0016-Fix-serf-config.patch \
+    0017-Remove-contrib.patch \
+    0018-subversion-1.9.1-msys2.patch \
+    0019-remove-checking-symlink.patch \
+    0020-90-use-copy-instead-symlink.patch \
+    0021-Avoid-inadvertently-blocking-files-during-svnadmin-c.patch \
+    0022-subversion-backport-patch-to-build-with-SWIG-4.patch \
+    0023-Allow-ra-tests-to-spawn-svnserve.exe-successfully.patch \
+    0024-XFAIL-tests-that-fail-due-to-Cygwin-MSYS2-platform-l.patch
+
+  PYTHON=/usr/bin/python ./autogen.sh
+  # Hack to allow `libsvn_test-1` to be built
+  sed 's/ -o libsvn_test-1.la / -no-undefined&/' -i build-outputs.mk
+}
+
+build() {
+  export lt_cv_deplibs_check_method='pass_all'
+  cd ${pkgname}-${pkgver}
+  export PYTHON=/usr/bin/python
+
+  CFLAGS+=" -Wno-int-conversion -Wno-incompatible-pointer-types"
+
+  ./configure --prefix=/usr \
+      --build=${CHOST} \
+      --with-apr=/usr \
+      --with-apr-util=/usr \
+      --with-zlib=/usr \
+      --with-serf=/usr \
+      --with-sqlite=/usr \
+      --without-apxs \
+      --without-gnome-keyring \
+      --with-utf8proc=internal \
+      --enable-shared --disable-static \
+      --with-ruby-sitedir=/usr/lib/ruby/vendor_ruby \
+      --disable-mod-activation \
+      --enable-disallowing-of-undefined-references \
+      --enable-local-library-preloading
+
+  make clean-swig
+  make autogen-swig
+  make all
+
+  plain "Compiling swig bindings: ruby"
+  RUBY_LIB="-l$(ruby -rrbconfig -e 'print RbConfig::CONFIG["RUBY_SO_NAME"]')"
+  make swig-rb LIBS="$RUBY_LIB"
+
+  plain "Compiling swig bindings: perl"
+  make swig-pl
+
+  plain "Compiling swig bindings: python"
+  PYTHON_SITELIB=$(/usr/bin/python -c 'from distutils.sysconfig import * ; print(get_python_lib(0,0));')
+  make swig-py LIBS="-lpython3.14" swig_pydir=${PYTHON_SITELIB}/libsvn swig_pydir_extra=${PYTHON_SITELIB}/svn
+}
+
+#check() {
+#   cd ${pkgname}-${pkgver}
+#   export LANG=C LC_ALL=C
+#   make check # check-swig-py check-swig-rb CLEANUP=yes # check-javahl
+#
+#   # The swig-pl tests load _Core.dll etc. via perl.exe. Those extension
+#   # DLLs import msys-svn_swig_perl-1-0.dll and friends, which the
+#   # Windows loader resolves by searching the *EXE* directory first.
+#   # When perl.exe lives in /usr/bin alongside the *installed* (old)
+#   # DLLs, the locally-built ones in .libs/ are never found, causing
+#   # a SWIG struct-layout mismatch and segfaults.
+#   #
+#   # Work around this by placing a hard-linked perl.exe into a
+#   # throw-away directory together with the locally-built DLLs, so
+#   # the "application directory" search rule picks up ours first.
+#   local _testbin="${srcdir}/.test-bin"
+#   rm -rf "$_testbin"
+#   mkdir -p "$_testbin"
+#   ln /usr/bin/perl.exe "$_testbin/"
+#   find subversion -name 'msys-svn_*-0.dll' -path '*/.libs/*' \
+#     -exec ln {} "$_testbin/" \;
+#   make swig-pl
+#   cd subversion/bindings/swig/perl/native
+#   PATH="$_testbin:$PATH" \
+#     make test FULLPERL="$_testbin/perl.exe"
+#   cd "${srcdir}/${pkgname}-${pkgver}"
+#   rm -rf "$_testbin"
+#}
+
+package() {
+  cd ${pkgname}-${pkgver}
+
+  PYTHON_SITELIB=$(/usr/bin/python -c 'from distutils.sysconfig import * ; print(get_python_lib(0,0));')
+  RUBY_LIB="-l$(ruby -rrbconfig -e 'print RbConfig::CONFIG["RUBY_SO_NAME"]')"
+
+  make -j1 DESTDIR="${pkgdir}" INSTALLDIRS=vendor \
+    LIBS="$RUBY_LIB -lpython3.14" \
+    swig_pydir=${PYTHON_SITELIB}/libsvn \
+    swig_pydir_extra=${PYTHON_SITELIB}/svn \
+    install install-tools install-swig-py install-swig-pl install-swig-rb
+
+  install -dm755 "${pkgdir}"/usr/share/subversion
+  cp -a tools/hook-scripts "${pkgdir}"/usr/share/subversion/
+  rm "${pkgdir}"/usr/share/subversion/hook-scripts/*.in
+
+  ## svnclean
+  install -Dm 755 ${srcdir}/svnclean "${pkgdir}"/usr/bin/svnclean
+
+  install -Dm 644 tools/client-side/bash_completion \
+     "${pkgdir}"/usr/share/bash-completion/completions/subversion
+  for i in svn svnadmin svndumpfilter svnlook svnsync svnversion; do
+      ln -sf subversion "${pkgdir}"/usr/share/bash-completion/completions/${i}
+  done
+
+  # Remove illegal files
+  find ${pkgdir}/usr -type f -name "*::*" | xargs rm -f
+
+  # fix permissons
+  find ${pkgdir}/usr -type f \( -name *.dll -o -name *.exe \) | xargs chmod 0755
+}

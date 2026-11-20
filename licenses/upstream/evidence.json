@@ -1,0 +1,941 @@
+{
+  "schemaVersion": 1,
+  "dependencies": [
+    {
+      "coordinate": "com.zaxxer:HikariCP:4.0.3",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3-sources.jar",
+          "output": "licenses/upstream/com.zaxxer_HikariCP_4.0.3/SOURCE-NOTICES.txt",
+          "sha256": "9ba1af061d8f21f2cb0e3883125c7951cee6b024807d025535354f6ccf0f7c1e",
+          "archiveSha256": "671c75a139a1661bd82f6e178031cd67008752291dd39d658a3aefb793854405",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.zaxxer_HikariCP_4.0.3/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.zaxxer_HikariCP_4.0.3/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.zaxxer_HikariCP_4.0.3/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.googlecode.javaewah:JavaEWAH:1.1.13",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13-sources.jar",
+          "output": "licenses/upstream/com.googlecode.javaewah_JavaEWAH_1.1.13/SOURCE-NOTICES.txt",
+          "sha256": "8b1996a3b1206b702d0147c93df04652d7bfcc8fdb5b5b73f2d1eb4e17668c0f",
+          "archiveSha256": "b37fa4dedd38b8932c7922e29b1be695d82decf7c770924fbde169355e2c5000",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.googlecode.javaewah_JavaEWAH_1.1.13/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.googlecode.javaewah_JavaEWAH_1.1.13/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.googlecode.javaewah_JavaEWAH_1.1.13/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.zaxxer:SparseBitSet:1.3",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.zaxxer_SparseBitSet_1.3/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.zaxxer_SparseBitSet_1.3/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "net.minidev:accessors-smart:2.4.7",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7-sources.jar",
+          "output": "licenses/upstream/net.minidev_accessors-smart_2.4.7/SOURCE-NOTICES.txt",
+          "sha256": "aa015bb6538e2022d72bb63b24daad046fa6f9cbadd7dda37ecb870d58ea43fe",
+          "archiveSha256": "85b1dee0c967b7a5515dc5dd381cded097aae594a37d6814a757289c18bdd487",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/net.minidev_accessors-smart_2.4.7/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/net.minidev_accessors-smart_2.4.7/SOURCE-NOTICES.txt",
+        "licenses/upstream/net.minidev_accessors-smart_2.4.7/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.ow2.asm:asm:9.1",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.1/asm-9.1-sources.jar",
+          "output": "licenses/upstream/org.ow2.asm_asm_9.1/SOURCE-NOTICES.txt",
+          "sha256": "da36ab0d5d9259b04d2b6fdf7469e60759cc9569a9b79a356a9051c365e457a7",
+          "archiveSha256": "64a1059b152dee08e203b4e1117b7979fff1578c545573f05329fb6d9090bb41",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.ow2.asm_asm_9.1/SOURCE-NOTICES.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.fasterxml:classmate:1.5.1",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.5.1/classmate-1.5.1-sources.jar",
+          "output": "licenses/upstream/com.fasterxml_classmate_1.5.1/sources-META-INF_LICENSE",
+          "sha256": "7d8d549eb31995fe67822c860acc7ac3dd958a03a5a71aef4069033e7df72d94",
+          "archiveEntry": "META-INF/LICENSE",
+          "archiveSha256": "6466bab50813b0ce8e908378e53e8e351d647d79308b667cc1bb23a1b7e01093"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.5.1/classmate-1.5.1-sources.jar",
+          "output": "licenses/upstream/com.fasterxml_classmate_1.5.1/sources-META-INF_NOTICE",
+          "sha256": "9def0e7fc72296e6a7126fcf5d62294387d16d5921717418fda9bfc57cdfd45a",
+          "archiveEntry": "META-INF/NOTICE",
+          "archiveSha256": "6466bab50813b0ce8e908378e53e8e351d647d79308b667cc1bb23a1b7e01093"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.fasterxml_classmate_1.5.1/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.fasterxml_classmate_1.5.1/sources-META-INF_LICENSE",
+        "licenses/upstream/com.fasterxml_classmate_1.5.1/sources-META-INF_NOTICE",
+        "licenses/upstream/com.fasterxml_classmate_1.5.1/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": true
+    },
+    {
+      "coordinate": "com.github.virtuald:curvesapi:1.08",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/github/virtuald/curvesapi/1.08/curvesapi-1.08-sources.jar",
+          "output": "licenses/upstream/com.github.virtuald_curvesapi_1.08/SOURCE-NOTICES.txt",
+          "sha256": "bd6f2201ea324e3e0bcb25c8d008e0b5d4a139e6fde493b67e0115059b331f3f",
+          "archiveSha256": "9e57375e8ee46f543297c2e9272be0aab05caab885202378c653c48d792f6d09",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.github.virtuald_curvesapi_1.08/SOURCE-NOTICES.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.hibernate.validator:hibernate-validator:6.0.22.Final",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.22.Final/hibernate-validator-6.0.22.Final-sources.jar",
+          "output": "licenses/upstream/org.hibernate.validator_hibernate-validator_6.0.22.Final/SOURCE-NOTICES.txt",
+          "sha256": "73ab0f3eb79388da2beefdbd18e38651dab1d01a484c9fb15837e02655f0819d",
+          "archiveSha256": "cb2ca001ad1cad1cc61be9126016557ab664d5e4072b88e36135b7838574ec67",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.hibernate.validator_hibernate-validator_6.0.22.Final/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.hibernate.validator_hibernate-validator_6.0.22.Final/SOURCE-NOTICES.txt",
+        "licenses/upstream/org.hibernate.validator_hibernate-validator_6.0.22.Final/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.fasterxml.jackson.core:jackson-core:2.15.2",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/sources-META-INF_LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "archiveEntry": "META-INF/LICENSE",
+          "archiveSha256": "4b29fe878549425194521d5c3270fae13f9c82cfcad639ebffea0963431bef45"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/SOURCE-NOTICES.txt",
+          "sha256": "32a27f4302585300fc4d69d0d57c947eeb38e4aaa80246e69fd9d449371fcc13",
+          "archiveSha256": "4b29fe878549425194521d5c3270fae13f9c82cfcad639ebffea0963431bef45",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/wrandelshofer/FastDoubleParser/522be16e145f43308c43b23094e31d5efcaa580e/LICENSE",
+          "output": "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/FastDoubleParser-MIT-LICENSE",
+          "sha256": "5f7260e2124be5a560d2c5ec1824475f76bb02dcb352b7f4848a1d702948007c"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/sources-META-INF_LICENSE",
+        "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/Apache-2.0.txt",
+        "licenses/upstream/com.fasterxml.jackson.core_jackson-core_2.15.2/FastDoubleParser-MIT-LICENSE"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.2",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jdk8_2.15.2/sources-META-INF_LICENSE",
+          "sha256": "bc3d1a9b9fe02f5b9186447ca2896a63015e5e626eccfdda6a04bd7d71be3ce0",
+          "archiveEntry": "META-INF/LICENSE",
+          "archiveSha256": "21e7f649cfb0e3495bec58f507db07beeb2ea4415df3c7fd286c6ceb2402a02a"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jdk8_2.15.2/sources-META-INF_NOTICE",
+          "sha256": "7347397a0665f6898b32894a1869a514251abef7da7620902b0e57c5026cf1ed",
+          "archiveEntry": "META-INF/NOTICE",
+          "archiveSha256": "21e7f649cfb0e3495bec58f507db07beeb2ea4415df3c7fd286c6ceb2402a02a"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jdk8_2.15.2/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jdk8_2.15.2/sources-META-INF_LICENSE",
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jdk8_2.15.2/sources-META-INF_NOTICE",
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jdk8_2.15.2/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": true
+    },
+    {
+      "coordinate": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/sources-META-INF_LICENSE",
+          "sha256": "66ea9c8987b1674aababbcc24f61c83ab4fb7baf3af1d701caf0a3aaea97fa92",
+          "archiveEntry": "META-INF/LICENSE",
+          "archiveSha256": "a97722978382650c21008e2833d8bee45049c7401afabfa44021374ab5db7a1e"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/sources-META-INF_NOTICE",
+          "sha256": "7347397a0665f6898b32894a1869a514251abef7da7620902b0e57c5026cf1ed",
+          "archiveEntry": "META-INF/NOTICE",
+          "archiveSha256": "a97722978382650c21008e2833d8bee45049c7401afabfa44021374ab5db7a1e"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/SOURCE-NOTICES.txt",
+          "sha256": "d411838ed2092f642375d4fd9f1573a38829af72057f75ddc727cd8570d3c300",
+          "archiveSha256": "a97722978382650c21008e2833d8bee45049c7401afabfa44021374ab5db7a1e",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/sources-META-INF_LICENSE",
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/sources-META-INF_NOTICE",
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.fasterxml.jackson.datatype_jackson-datatype-jsr310_2.15.2/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": true
+    },
+    {
+      "coordinate": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.2",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.module_jackson-module-parameter-names_2.15.2/sources-META-INF_LICENSE",
+          "sha256": "a09ba3adcfdcac2d7e31b89e8e7799cec96d7303dc82c0bb3d38d8a352d41d19",
+          "archiveEntry": "META-INF/LICENSE",
+          "archiveSha256": "d5632c0d73ab92c54b008567df942b2bfb686d1e948484c0587b328a06fa7fde"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2-sources.jar",
+          "output": "licenses/upstream/com.fasterxml.jackson.module_jackson-module-parameter-names_2.15.2/sources-META-INF_NOTICE",
+          "sha256": "7347397a0665f6898b32894a1869a514251abef7da7620902b0e57c5026cf1ed",
+          "archiveEntry": "META-INF/NOTICE",
+          "archiveSha256": "d5632c0d73ab92c54b008567df942b2bfb686d1e948484c0587b328a06fa7fde"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.fasterxml.jackson.module_jackson-module-parameter-names_2.15.2/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.fasterxml.jackson.module_jackson-module-parameter-names_2.15.2/sources-META-INF_LICENSE",
+        "licenses/upstream/com.fasterxml.jackson.module_jackson-module-parameter-names_2.15.2/sources-META-INF_NOTICE",
+        "licenses/upstream/com.fasterxml.jackson.module_jackson-module-parameter-names_2.15.2/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": true
+    },
+    {
+      "coordinate": "jakarta.validation:jakarta.validation-api:2.0.2",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2-sources.jar",
+          "output": "licenses/upstream/jakarta.validation_jakarta.validation-api_2.0.2/SOURCE-NOTICES.txt",
+          "sha256": "37af4e70970c679132591fc883f92fd6a63859ac01efb3b3b03eed7dafeeeb89",
+          "archiveSha256": "19c594e00f04d7f3953a065d798d9ee5edf37d00e01e5894babd61bc7652fa5c",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/jakarta.validation_jakarta.validation-api_2.0.2/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/jakarta.validation_jakarta.validation-api_2.0.2/SOURCE-NOTICES.txt",
+        "licenses/upstream/jakarta.validation_jakarta.validation-api_2.0.2/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.jayway.jsonpath:json-path:2.7.0",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0-sources.jar",
+          "output": "licenses/upstream/com.jayway.jsonpath_json-path_2.7.0/SOURCE-NOTICES.txt",
+          "sha256": "6240054347c4dedfe9ed6c2ec1bfda8751bea89982e29a5eb18292e57e5e2724",
+          "archiveSha256": "5ffc419f7471a7e2c8eb047bf2665396c748b6174268a7cb2a419447dd78baca",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.jayway.jsonpath_json-path_2.7.0/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.jayway.jsonpath_json-path_2.7.0/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.jayway.jsonpath_json-path_2.7.0/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "net.minidev:json-smart:2.4.7",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.4.7/json-smart-2.4.7-sources.jar",
+          "output": "licenses/upstream/net.minidev_json-smart_2.4.7/SOURCE-NOTICES.txt",
+          "sha256": "f4801799bb9404a343b6b18b87aaf5219c681d0665db180aca3a072371bff93b",
+          "archiveSha256": "339532d8b3688a4b93fb00b92fd01d48138d21e5e5324dc6a28350da9f7b666f",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/net.minidev_json-smart_2.4.7/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/net.minidev_json-smart_2.4.7/SOURCE-NOTICES.txt",
+        "licenses/upstream/net.minidev_json-smart_2.4.7/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.slf4j:jul-to-slf4j:1.7.30",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30-sources.jar",
+          "output": "licenses/upstream/org.slf4j_jul-to-slf4j_1.7.30/SOURCE-NOTICES.txt",
+          "sha256": "b7904cbf13529abcf357710fbf5d5fad5429ac59b99db7bfc04f13b77b5d6bad",
+          "archiveSha256": "27f2004c22deb54eca903490ea79d8feea56146430f5fd5be7c39b1a9f488796",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.slf4j_jul-to-slf4j_1.7.30/SOURCE-NOTICES.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "ch.qos.logback:logback-classic:1.2.3",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar",
+          "output": "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/SOURCE-NOTICES.txt",
+          "sha256": "431478a9cea11f5b4654f0a1615517decf9d31c974b7def8290e5d0698f7117d",
+          "archiveSha256": "480cb5e99519271c9256716d4be1a27054047435ff72078d9deae5c6a19f63eb",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/qos-ch/logback/v_1.2.3/LICENSE.txt",
+          "output": "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/LICENSE.txt",
+          "sha256": "94a99c6ee7e8b5ba3ef66a1d234c22a55c149e93584040d66a7f6694d552e7ea"
+        },
+        {
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt",
+          "output": "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/LGPL-2.1.txt",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "url": "https://www.eclipse.org/legal/epl-v10.html",
+          "output": "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/EPL-1.0.html",
+          "sha256": "a40741b59364cc49449255e9b9bfe1fcfe6a2e7ab4d37ca89db3bacbfb14e9d2"
+        }
+      ],
+      "files": [
+        "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/SOURCE-NOTICES.txt",
+        "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/LICENSE.txt",
+        "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/LGPL-2.1.txt",
+        "licenses/upstream/ch.qos.logback_logback-classic_1.2.3/EPL-1.0.html"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "ch.qos.logback:logback-core:1.2.3",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar",
+          "output": "licenses/upstream/ch.qos.logback_logback-core_1.2.3/SOURCE-NOTICES.txt",
+          "sha256": "8ad3d741ce89268b495a742131401ac57c07c7e55df7b452668cdca9ed62da0e",
+          "archiveSha256": "1f69b6b638ec551d26b10feeade5a2b77abe347f9759da95022f0da9a63a9971",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/qos-ch/logback/v_1.2.3/LICENSE.txt",
+          "output": "licenses/upstream/ch.qos.logback_logback-core_1.2.3/LICENSE.txt",
+          "sha256": "94a99c6ee7e8b5ba3ef66a1d234c22a55c149e93584040d66a7f6694d552e7ea"
+        },
+        {
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt",
+          "output": "licenses/upstream/ch.qos.logback_logback-core_1.2.3/LGPL-2.1.txt",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "url": "https://www.eclipse.org/legal/epl-v10.html",
+          "output": "licenses/upstream/ch.qos.logback_logback-core_1.2.3/EPL-1.0.html",
+          "sha256": "a40741b59364cc49449255e9b9bfe1fcfe6a2e7ab4d37ca89db3bacbfb14e9d2"
+        }
+      ],
+      "files": [
+        "licenses/upstream/ch.qos.logback_logback-core_1.2.3/SOURCE-NOTICES.txt",
+        "licenses/upstream/ch.qos.logback_logback-core_1.2.3/LICENSE.txt",
+        "licenses/upstream/ch.qos.logback_logback-core_1.2.3/LGPL-2.1.txt",
+        "licenses/upstream/ch.qos.logback_logback-core_1.2.3/EPL-1.0.html"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.microsoft.sqlserver:mssql-jdbc:7.4.1.jre8",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/microsoft/sqlserver/mssql-jdbc/7.4.1.jre8/mssql-jdbc-7.4.1.jre8-sources.jar",
+          "output": "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_cityhash_LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "archiveEntry": "mssql/googlecode/cityhash/LICENSE",
+          "archiveSha256": "8949515da23b8bd13483876c9e078d45b5240ee2c9c7f0c41a1ce3e09bcf499f"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/microsoft/sqlserver/mssql-jdbc/7.4.1.jre8/mssql-jdbc-7.4.1.jre8-sources.jar",
+          "output": "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_cityhash_NOTICE",
+          "sha256": "59732a3d036e04fd21fc99a60a1ed0c2587a0793853540d8ef603aa4a5c9436a",
+          "archiveEntry": "mssql/googlecode/cityhash/NOTICE",
+          "archiveSha256": "8949515da23b8bd13483876c9e078d45b5240ee2c9c7f0c41a1ce3e09bcf499f"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/microsoft/sqlserver/mssql-jdbc/7.4.1.jre8/mssql-jdbc-7.4.1.jre8-sources.jar",
+          "output": "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_concurrentlinkedhashmap_LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "archiveEntry": "mssql/googlecode/concurrentlinkedhashmap/LICENSE",
+          "archiveSha256": "8949515da23b8bd13483876c9e078d45b5240ee2c9c7f0c41a1ce3e09bcf499f"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/microsoft/sqlserver/mssql-jdbc/7.4.1.jre8/mssql-jdbc-7.4.1.jre8-sources.jar",
+          "output": "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_concurrentlinkedhashmap_NOTICE",
+          "sha256": "2187c7441a15d99ef64e99bb2782f2f9f399f5143553f807315a0f7202a9e0bd",
+          "archiveEntry": "mssql/googlecode/concurrentlinkedhashmap/NOTICE",
+          "archiveSha256": "8949515da23b8bd13483876c9e078d45b5240ee2c9c7f0c41a1ce3e09bcf499f"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/microsoft/sqlserver/mssql-jdbc/7.4.1.jre8/mssql-jdbc-7.4.1.jre8-sources.jar",
+          "output": "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/SOURCE-NOTICES.txt",
+          "sha256": "ead9038bba91a143bff9095b183b09d7a6d029a6798211e7dbd0b83d4b7b8e39",
+          "archiveSha256": "8949515da23b8bd13483876c9e078d45b5240ee2c9c7f0c41a1ce3e09bcf499f",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/microsoft/mssql-jdbc/v7.4.1/LICENSE",
+          "output": "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/LICENSE",
+          "sha256": "8de570cc0a416559e16b7f8f200feab562c97e81af8760e9daee6d7e278f2715"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_cityhash_LICENSE",
+        "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_cityhash_NOTICE",
+        "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_concurrentlinkedhashmap_LICENSE",
+        "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/sources-mssql_googlecode_concurrentlinkedhashmap_NOTICE",
+        "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.microsoft.sqlserver_mssql-jdbc_7.4.1.jre8/LICENSE"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.eclipse.jgit:org.eclipse.jgit:5.13.3.202401111512-r",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r-sources.jar",
+          "output": "licenses/upstream/org.eclipse.jgit_org.eclipse.jgit_5.13.3.202401111512-r/SOURCE-NOTICES.txt",
+          "sha256": "68e58d5fda4b19cb4767a3b9717a44f060e94c3528bc347cbc767fe05b52ba76",
+          "archiveSha256": "0c917a2da8095f5507a964e731c7bea9e077c24fda92778c0fb26f8d755210d6",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/eclipse-jgit/jgit/v5.13.3.202401111512-r/LICENSE",
+          "output": "licenses/upstream/org.eclipse.jgit_org.eclipse.jgit_5.13.3.202401111512-r/LICENSE",
+          "sha256": "10f5ea95859c008c924854e945ef92e49088ba9abb8c818b525b80d960170cf8"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.eclipse.jgit_org.eclipse.jgit_5.13.3.202401111512-r/SOURCE-NOTICES.txt",
+        "licenses/upstream/org.eclipse.jgit_org.eclipse.jgit_5.13.3.202401111512-r/LICENSE"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.google.protobuf:protobuf-java:3.21.9",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9-sources.jar",
+          "output": "licenses/upstream/com.google.protobuf_protobuf-java_3.21.9/SOURCE-NOTICES.txt",
+          "sha256": "15a22fbec2fffddae82d687317fc91b81e2ba1e31e700c88cb155bba61c6d249",
+          "archiveSha256": "9f2378b5bdbc59191b45d34156b0875f8dfc3d964aeb03d0d45c9de3450de692",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.google.protobuf_protobuf-java_3.21.9/SOURCE-NOTICES.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.slf4j:slf4j-api:1.7.30",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar",
+          "output": "licenses/upstream/org.slf4j_slf4j-api_1.7.30/SOURCE-NOTICES.txt",
+          "sha256": "cf10f65e7511ea99c43929d5521647b80c03a77422e9f5481b7f8617077821f6",
+          "archiveSha256": "9ee459644577590fed7ea94afae781fa3cc9311d4553faee8a3219ffbd7cc386",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.slf4j_slf4j-api_1.7.30/SOURCE-NOTICES.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.yaml:snakeyaml:1.25",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.25/snakeyaml-1.25-sources.jar",
+          "output": "licenses/upstream/org.yaml_snakeyaml_1.25/SOURCE-NOTICES.txt",
+          "sha256": "7ad16c3b8a4aeee40eb2cc9eb845b225ac9a1a9546f386d67f772070b5cafa01",
+          "archiveSha256": "fcc58a580b640e80f6c71acdd20b00dd87b80c9944dcad0389a904b77f04c88d",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.yaml_snakeyaml_1.25/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.yaml_snakeyaml_1.25/SOURCE-NOTICES.txt",
+        "licenses/upstream/org.yaml_snakeyaml_1.25/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.2.13.RELEASE/spring-boot-2.2.13.RELEASE-sources.jar",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot_2.2.13.RELEASE/SOURCE-NOTICES.txt",
+          "sha256": "a3803aab67921608bb1a13e9f34c986d34922f9fddf844ce206b932bcf6b9e7e",
+          "archiveSha256": "66a886eeb0bca3b6f117fc4e6636a361120918b2876aadc5515d490939b62321",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot_2.2.13.RELEASE/SOURCE-NOTICES.txt",
+        "licenses/upstream/org.springframework.boot_spring-boot_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-autoconfigure:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.2.13.RELEASE/spring-boot-autoconfigure-2.2.13.RELEASE-sources.jar",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-autoconfigure_2.2.13.RELEASE/SOURCE-NOTICES.txt",
+          "sha256": "83786b3ae4cb44b0522e9b6c7d7ced23352008c40c7da275737d796de6b45748",
+          "archiveSha256": "f4ca9b58c2c4e9e2dfa034b3ed294db49043bd9a26584566ee5d0d1061e2a0a3",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-autoconfigure_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-autoconfigure_2.2.13.RELEASE/SOURCE-NOTICES.txt",
+        "licenses/upstream/org.springframework.boot_spring-boot-autoconfigure_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-starter:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-starter_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-starter_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-starter-json:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-starter-json_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-starter-json_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-starter-logging:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-starter-logging_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-starter-logging_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-starter-tomcat:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-starter-tomcat_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-starter-tomcat_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-starter-validation:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-starter-validation_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-starter-validation_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.boot:spring-boot-starter-web:2.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.boot_spring-boot-starter-web_2.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.boot_spring-boot-starter-web_2.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "org.springframework.security:spring-security-crypto:5.2.13.RELEASE",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/5.2.13.RELEASE/spring-security-crypto-5.2.13.RELEASE-sources.jar",
+          "output": "licenses/upstream/org.springframework.security_spring-security-crypto_5.2.13.RELEASE/SOURCE-NOTICES.txt",
+          "sha256": "522890dedea67c011950a702c94b573e79eb2246d95e7022b5d57e6e9161ff8e",
+          "archiveSha256": "488b9e69aad864619e556d2b3f1a346da1944deabdf6d5fbfbbcc0b3e07eb497",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/org.springframework.security_spring-security-crypto_5.2.13.RELEASE/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/org.springframework.security_spring-security-crypto_5.2.13.RELEASE/SOURCE-NOTICES.txt",
+        "licenses/upstream/org.springframework.security_spring-security-crypto_5.2.13.RELEASE/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "com.univocity:univocity-parsers:2.9.1",
+      "ecosystem": "java",
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1-sources.jar",
+          "output": "licenses/upstream/com.univocity_univocity-parsers_2.9.1/SOURCE-NOTICES.txt",
+          "sha256": "dbedfaa8016eb7e19e08dd1026ff7b1ef369891bf84014638daed8343abd8bde",
+          "archiveSha256": "484a48fa4a9587a47893f4a332cbe09c2902091b7a647c5d04258a46166c891b",
+          "kind": "Unmodified legal comment blocks; source code omitted"
+        },
+        {
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "output": "licenses/upstream/com.univocity_univocity-parsers_2.9.1/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "License authority text named by the artifact POM"
+        }
+      ],
+      "files": [
+        "licenses/upstream/com.univocity_univocity-parsers_2.9.1/SOURCE-NOTICES.txt",
+        "licenses/upstream/com.univocity_univocity-parsers_2.9.1/Apache-2.0.txt"
+      ],
+      "resolvedLicenseText": true,
+      "packagedTextIsNoticeOnly": false
+    },
+    {
+      "coordinate": "@oxlint/binding-win32-x64-msvc@1.78.0",
+      "ecosystem": "npm",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/oxc-project/oxc/oxlint_v1.78.0/LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+          "output": "licenses/upstream/_oxlint_binding-win32-x64-msvc_1.78.0/LICENSE"
+        }
+      ],
+      "files": [
+        "licenses/upstream/_oxlint_binding-win32-x64-msvc_1.78.0/LICENSE"
+      ],
+      "resolvedLicenseText": true
+    },
+    {
+      "coordinate": "@rolldown/binding-win32-x64-msvc@1.2.4",
+      "ecosystem": "npm",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/rolldown/rolldown/v1.2.4/LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "output": "licenses/upstream/_rolldown_binding-win32-x64-msvc_1.2.4/LICENSE"
+        }
+      ],
+      "files": [
+        "licenses/upstream/_rolldown_binding-win32-x64-msvc_1.2.4/LICENSE"
+      ],
+      "resolvedLicenseText": true
+    },
+    {
+      "coordinate": "react-remove-scroll-bar@2.3.8",
+      "ecosystem": "npm",
+      "sources": [
+        {
+          "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/compare/29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4...8ca9ba5ea52de03308fe8ced94f7b159a44d28ff",
+          "output": "licenses/upstream/react-remove-scroll-bar_2.3.8/code-equivalence-proof.json",
+          "sha256": "2bb6b2bb7c2b798ce4d8f88fd61ec480eb624eeb19a848595fc38466f22cc0cb",
+          "kind": "Reviewed derived comparison; publisher/source inputs verified below, not an upstream license"
+        },
+        {
+          "url": "https://registry.npmjs.org/react-remove-scroll-bar/2.3.7",
+          "sha256": "791a5a87d0ac5aaedde298c3fdae19ac6cab88969beeaf77a0c466e03b631fbc",
+          "output": "licenses/upstream/react-remove-scroll-bar_2.3.8/registry-2.3.7.json"
+        },
+        {
+          "url": "https://registry.npmjs.org/react-remove-scroll-bar/2.3.8",
+          "sha256": "826c618ece09367334160c1ab3a272fd54f8f12e3b0a45f75b0f2660d285855a",
+          "output": "licenses/upstream/react-remove-scroll-bar_2.3.8/registry-2.3.8.json"
+        },
+        {
+          "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/git/tags/7fe7bbe11f85b8a616c51c2331849537cdbe0549",
+          "sha256": "13a4f1e809554789d5d7c2df95b46b6e2a50efae58e9e5a87029b63aaee78463",
+          "output": "licenses/upstream/react-remove-scroll-bar_2.3.8/official-v2.3.7-tag-object.json"
+        },
+        {
+          "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/compare/29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4...8ca9ba5ea52de03308fe8ced94f7b159a44d28ff",
+          "sha256": "1321287a66a9f72fdd469552ac98a5fb219e430ebad519c990f8e631e0e46f6b",
+          "output": "licenses/upstream/react-remove-scroll-bar_2.3.8/official-source-compare.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/theKashey/react-remove-scroll-bar/8ca9ba5ea52de03308fe8ced94f7b159a44d28ff/LICENSE",
+          "sha256": "a79aae0c0f21990d9d963bb3c5a79cdcea9a46f8523ba55c58d7fe776b6ebc84",
+          "output": "licenses/upstream/react-remove-scroll-bar_2.3.8/LICENSE"
+        }
+      ],
+      "files": [
+        "licenses/upstream/react-remove-scroll-bar_2.3.8/code-equivalence-proof.json",
+        "licenses/upstream/react-remove-scroll-bar_2.3.8/registry-2.3.7.json",
+        "licenses/upstream/react-remove-scroll-bar_2.3.8/registry-2.3.8.json",
+        "licenses/upstream/react-remove-scroll-bar_2.3.8/official-v2.3.7-tag-object.json",
+        "licenses/upstream/react-remove-scroll-bar_2.3.8/official-source-compare.json",
+        "licenses/upstream/react-remove-scroll-bar_2.3.8/LICENSE"
+      ],
+      "resolvedLicenseText": true,
+      "artifactSources": [
+        {
+          "url": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.7.tgz",
+          "sha256": "5ee31e784254a1a0c80b2a14a569c3dc254af4c75d709a04f79ff409e856df91"
+        },
+        {
+          "url": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz",
+          "sha256": "ccc872d7a2dc007cbf9d755f30d56b8d80eabdbe22c44c95a709129bfdc46f01"
+        },
+        {
+          "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/zipball/29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4",
+          "sha256": "304c2addd221a4d9f6d1b5291c1243bd06bf21fb5271d93b863fc8b6e22fd8ca"
+        },
+        {
+          "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/zipball/8ca9ba5ea52de03308fe8ced94f7b159a44d28ff",
+          "sha256": "ad5e6aa8dcbf2d9391ea74e8760868ab9d4d22da7a20924e02828ba36b8890e7"
+        }
+      ],
+      "upstreamLicenseDeclaration": "MIT; publisher declaration and reviewed unchanged implementation with fixed official copyright/license text",
+      "provenanceLimit": "dist files are not tracked in the source repository and npm provenance is unavailable. This is a source review plus publisher metadata and byte-for-byte cross-version identity, not a reproducible-build or authenticated provenance proof. The 2.3.8 gitHead remains unavailable."
+    }
+  ]
+}

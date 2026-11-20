@@ -1,0 +1,104 @@
+/* 执行统计看板：色板、数字字体与少量无法用工具类表达的样式。由 src/index.css 引入。 */
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/barlow-semi-condensed-latin-500-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/barlow-semi-condensed-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+@theme {
+  --color-st-ink: #1a2232;
+  --color-st-muted: #5b6578;
+  --color-st-faint: #8a93a3;
+  --color-st-rule: #e2e7ee;
+  --color-st-line: #ccd3dd;
+  --color-st-wash: #f1f4f8;
+  --color-st-shade: #eef1f5;
+
+  --color-st-pass: #178a64;
+  --color-st-pass-tint: #d4ede2;
+  --color-st-pass-ink: #0f6b4c;
+  --color-st-fail: #d2432f;
+  --color-st-fail-tint: #fbe2dd;
+  --color-st-fail-ink: #a5301f;
+  --color-st-warn: #c68a12;
+  --color-st-warn-tint: #f6e8c6;
+  --color-st-warn-ink: #855a06;
+  --color-st-halt: #7a8496;
+  --color-st-halt-tint: #e3e7ed;
+  --color-st-halt-ink: #4b5466;
+  --color-st-idle: #c3cad5;
+
+  --font-num: "Barlow Semi Condensed", ui-sans-serif, system-ui, "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+}
+
+/* 未执行：斜纹，和“无结果”的空格区分开 */
+.st-hatch {
+  background-color: #eef1f5;
+  background-image: repeating-linear-gradient(135deg, var(--color-st-idle) 0 1.5px, transparent 1.5px 5px);
+}
+
+/* 唯一的自动动效：首次出现时柱子自下而上长出 */
+@keyframes st-rise {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+.st-rise {
+  transform-origin: bottom;
+  animation: st-rise 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes st-pop {
+  from { opacity: 0; transform: translateY(-4px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.st-pop {
+  animation: st-pop 140ms ease-out;
+}
+
+@keyframes st-drawer {
+  from { transform: translateX(100%); }
+  to { transform: none; }
+}
+
+@keyframes st-veil {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.st-drawer[data-state="open"] {
+  animation: st-drawer 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.st-veil[data-state="open"] {
+  animation: st-veil 200ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .st-rise, .st-pop, .st-drawer[data-state="open"], .st-veil[data-state="open"] {
+    animation: none;
+  }
+}
+
+/*
+ * src/index.css 里未分层的 `button { font: inherit }` 会压过 Tailwind 的字号工具类。
+ * 看板及其弹层内恢复为分层样式，让按钮上的 text-* / font-* 生效。
+ */
+.st-board button,
+.st-layer button {
+  font: revert-layer;
+}

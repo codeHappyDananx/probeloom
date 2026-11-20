@@ -1,0 +1,27 @@
+[
+  {
+    "coordinate": "ch.qos.logback:logback-core:1.2.3",
+    "publishedJavaFiles": 326,
+    "exactJavaMatchesIgnoringLineEndings": 326,
+    "differentJavaFiles": [],
+    "generatedJavaToPreferredGroovySources": {},
+    "generator": null
+  },
+  {
+    "coordinate": "ch.qos.logback:logback-classic:1.2.3",
+    "publishedJavaFiles": 169,
+    "exactJavaMatchesIgnoringLineEndings": 161,
+    "differentJavaFiles": [],
+    "generatedJavaToPreferredGroovySources": {
+      "ch/qos/logback/classic/gaffer/PropertyUtil.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/PropertyUtil.groovy",
+      "ch/qos/logback/classic/boolex/EvaluatorTemplate.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/boolex/EvaluatorTemplate.groovy",
+      "ch/qos/logback/classic/gaffer/NestingType.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/NestedType.groovy",
+      "ch/qos/logback/classic/gaffer/AppenderDelegate.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/AppenderDelegate.groovy",
+      "ch/qos/logback/classic/gaffer/ComponentDelegate.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/ComponentDelegate.groovy",
+      "ch/qos/logback/classic/gaffer/ConfigurationContributor.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/ConfigurationContributor.groovy",
+      "ch/qos/logback/classic/gaffer/ConfigurationDelegate.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/ConfigurationDelegate.groovy",
+      "ch/qos/logback/classic/gaffer/GafferConfigurator.java": "qos-ch-logback-a154cd1/logback-classic/src/main/groovy/ch/qos/logback/classic/gaffer/GafferConfigurator.groovy"
+    },
+    "generator": "org.codehaus.gmavenplus:gmavenplus-plugin:1.5"
+  }
+]

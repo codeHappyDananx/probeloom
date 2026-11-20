@@ -1,0 +1,12 @@
+--- a/outgoing.c
++++ b/outgoing.c
+@@ -1114,7 +1114,8 @@
+                 status = APR_SUCCESS;
+                 goto error;
+             }
+-            else if (APR_STATUS_IS_EAGAIN(status) && !len) {
++            else if ((APR_STATUS_IS_EAGAIN(status) || status == APR_SUCCESS)
++                     && !len) {
+                 status = APR_SUCCESS;
+                 goto error;
+             } else if (status && !APR_STATUS_IS_EAGAIN(status)) {

@@ -1,0 +1,294 @@
+{
+  "component": "react-remove-scroll-bar",
+  "version": "2.3.8",
+  "publishedArchiveComparison": {
+    "2.3.7": {
+      "registryUrl": "https://registry.npmjs.org/react-remove-scroll-bar/2.3.7",
+      "tarballUrl": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.7.tgz",
+      "sha256": "5ee31e784254a1a0c80b2a14a569c3dc254af4c75d709a04f79ff409e856df91",
+      "integrity": "sha512-UzA0npskGFA2bUqwWsSRJscuQEt7zyfVtMpCtBl/lk+k/ky6lzYImEks9jwgxTDe/B0tb5hyrYgbQv/JQaHjDw==",
+      "gitHead": "29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4"
+    },
+    "2.3.8": {
+      "registryUrl": "https://registry.npmjs.org/react-remove-scroll-bar/2.3.8",
+      "tarballUrl": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz",
+      "sha256": "ccc872d7a2dc007cbf9d755f30d56b8d80eabdbe22c44c95a709129bfdc46f01",
+      "integrity": "sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==",
+      "gitHead": "b3b1287aad81def2e2ae707274b74531b61ddbaf"
+    }
+  },
+  "files": [
+    {
+      "path": "package/README.md",
+      "sha256_2.3.7": "486442209236ffa3893312e508694699a6b8834d30a2f9c083c1f3379983e4f9",
+      "sha256_2.3.8": "486442209236ffa3893312e508694699a6b8834d30a2f9c083c1f3379983e4f9",
+      "identical": true
+    },
+    {
+      "path": "package/constants/package.json",
+      "sha256_2.3.7": "9b557c166960d4a096abc83259b8787a4072516f666856f8cf51656e38ed904b",
+      "sha256_2.3.8": "9b557c166960d4a096abc83259b8787a4072516f666856f8cf51656e38ed904b",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/component.d.ts",
+      "sha256_2.3.7": "8b9441c9166045f81e5000001f95521319692124baea142b228efdc370883736",
+      "sha256_2.3.8": "8b9441c9166045f81e5000001f95521319692124baea142b228efdc370883736",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/component.js",
+      "sha256_2.3.7": "3baec61523006aedf14321423427b0c50aa17bfe48faf344bebff9d883149f29",
+      "sha256_2.3.8": "3baec61523006aedf14321423427b0c50aa17bfe48faf344bebff9d883149f29",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/constants.d.ts",
+      "sha256_2.3.7": "cd9dd3a7b0b95c3068f3b43b82da6dc6bee018f56d975b248d4bb6c484e61ed1",
+      "sha256_2.3.8": "cd9dd3a7b0b95c3068f3b43b82da6dc6bee018f56d975b248d4bb6c484e61ed1",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/constants.js",
+      "sha256_2.3.7": "1c73582ef730bbca1d536a6995c7eea438dcd0632fee2856337627e44b5872e2",
+      "sha256_2.3.8": "1c73582ef730bbca1d536a6995c7eea438dcd0632fee2856337627e44b5872e2",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/index.d.ts",
+      "sha256_2.3.7": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "sha256_2.3.8": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/index.js",
+      "sha256_2.3.7": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "sha256_2.3.8": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/utils.d.ts",
+      "sha256_2.3.7": "c4304c2114b48bb2778de565b4a0274ebbbbd71f6d7f5c57e116bd1656ea2c32",
+      "sha256_2.3.8": "c4304c2114b48bb2778de565b4a0274ebbbbd71f6d7f5c57e116bd1656ea2c32",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2015/utils.js",
+      "sha256_2.3.7": "2c4105ab772a5cbf4b3d1e54f49e94d03fde867d20767b46bb3e5c27f4d82f00",
+      "sha256_2.3.8": "2c4105ab772a5cbf4b3d1e54f49e94d03fde867d20767b46bb3e5c27f4d82f00",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/component.d.ts",
+      "sha256_2.3.7": "8b9441c9166045f81e5000001f95521319692124baea142b228efdc370883736",
+      "sha256_2.3.8": "8b9441c9166045f81e5000001f95521319692124baea142b228efdc370883736",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/component.js",
+      "sha256_2.3.7": "ac214bb2783fdf743a0c949fef47784741db109dcc6f4426f46e77386dee1c8f",
+      "sha256_2.3.8": "ac214bb2783fdf743a0c949fef47784741db109dcc6f4426f46e77386dee1c8f",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/constants.d.ts",
+      "sha256_2.3.7": "cd9dd3a7b0b95c3068f3b43b82da6dc6bee018f56d975b248d4bb6c484e61ed1",
+      "sha256_2.3.8": "cd9dd3a7b0b95c3068f3b43b82da6dc6bee018f56d975b248d4bb6c484e61ed1",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/constants.js",
+      "sha256_2.3.7": "f597b4036280caca4cc58d3476ffc02dc5c16564090229e6685e98b80a8e2a33",
+      "sha256_2.3.8": "f597b4036280caca4cc58d3476ffc02dc5c16564090229e6685e98b80a8e2a33",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/index.d.ts",
+      "sha256_2.3.7": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "sha256_2.3.8": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/index.js",
+      "sha256_2.3.7": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "sha256_2.3.8": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/utils.d.ts",
+      "sha256_2.3.7": "c4304c2114b48bb2778de565b4a0274ebbbbd71f6d7f5c57e116bd1656ea2c32",
+      "sha256_2.3.8": "c4304c2114b48bb2778de565b4a0274ebbbbd71f6d7f5c57e116bd1656ea2c32",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es2019/utils.js",
+      "sha256_2.3.7": "dafd773a756cca848d359153df92315235becb2ed8e10b1146458be4bfd38826",
+      "sha256_2.3.8": "dafd773a756cca848d359153df92315235becb2ed8e10b1146458be4bfd38826",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/component.d.ts",
+      "sha256_2.3.7": "8b9441c9166045f81e5000001f95521319692124baea142b228efdc370883736",
+      "sha256_2.3.8": "8b9441c9166045f81e5000001f95521319692124baea142b228efdc370883736",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/component.js",
+      "sha256_2.3.7": "d95ae68cda75b262f01b7c3eba3d530c6a24579778cbb3e320b2449348dabb13",
+      "sha256_2.3.8": "d95ae68cda75b262f01b7c3eba3d530c6a24579778cbb3e320b2449348dabb13",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/constants.d.ts",
+      "sha256_2.3.7": "cd9dd3a7b0b95c3068f3b43b82da6dc6bee018f56d975b248d4bb6c484e61ed1",
+      "sha256_2.3.8": "cd9dd3a7b0b95c3068f3b43b82da6dc6bee018f56d975b248d4bb6c484e61ed1",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/constants.js",
+      "sha256_2.3.7": "20bf238e562be0830b10b1813d36fa321e81cd07fd99b27724833132304b73bc",
+      "sha256_2.3.8": "20bf238e562be0830b10b1813d36fa321e81cd07fd99b27724833132304b73bc",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/index.d.ts",
+      "sha256_2.3.7": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "sha256_2.3.8": "130bc4c810a84aeae180ba8fe1e7fd96f706d5d3a0cf6728419ff2c74708185f",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/index.js",
+      "sha256_2.3.7": "0e1ab245d6b12ef80409b988b0f29b498c562b6cff6e7365714cb0c351914a12",
+      "sha256_2.3.8": "0e1ab245d6b12ef80409b988b0f29b498c562b6cff6e7365714cb0c351914a12",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/utils.d.ts",
+      "sha256_2.3.7": "c4304c2114b48bb2778de565b4a0274ebbbbd71f6d7f5c57e116bd1656ea2c32",
+      "sha256_2.3.8": "c4304c2114b48bb2778de565b4a0274ebbbbd71f6d7f5c57e116bd1656ea2c32",
+      "identical": true
+    },
+    {
+      "path": "package/dist/es5/utils.js",
+      "sha256_2.3.7": "ee6c64e8690475db96ec1a1b2ede342ffdc45ccf739bd28dd6f86c8c9a5917c3",
+      "sha256_2.3.8": "ee6c64e8690475db96ec1a1b2ede342ffdc45ccf739bd28dd6f86c8c9a5917c3",
+      "identical": true
+    },
+    {
+      "path": "package/package.json",
+      "sha256_2.3.7": "484ad46c8cc261e168d7e2602bbb70b80f8d10307b7de91d99485da28c350a03",
+      "sha256_2.3.8": "e372f857ce05f266137c65293436b5380fec42ac311e6acb9378ed78b98d75d0",
+      "identical": false
+    }
+  ],
+  "license": {
+    "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/contents/LICENSE?ref=8ca9ba5ea52de03308fe8ced94f7b159a44d28ff",
+    "sha256": "a79aae0c0f21990d9d963bb3c5a79cdcea9a46f8523ba55c58d7fe776b6ebc84",
+    "commit": "8ca9ba5ea52de03308fe8ced94f7b159a44d28ff"
+  },
+  "repositoryCompare": {
+    "url": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/compare/29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4...8ca9ba5ea52de03308fe8ced94f7b159a44d28ff",
+    "changedFiles": [
+      "LICENSE"
+    ]
+  },
+  "sameFileCount": 26,
+  "onlyPackageJsonChanges": {
+    "version": [
+      "2.3.7",
+      "2.3.8"
+    ],
+    "dependencies.react-style-singleton": [
+      "^2.2.1",
+      "^2.2.2"
+    ]
+  },
+  "installedFilesMatchRegistryArchive": true,
+  "status": "All implementation files of installed 2.3.8 equal published 2.3.7; official 2.3.7 source tree gains only MIT LICENSE at fixed commit. The 2.3.8 gitHead and npm provenance remain unavailable, but no differing implementation is distributed.",
+  "officialSourceArchives": [
+    {
+      "commit": "29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4",
+      "sha256": "304c2addd221a4d9f6d1b5291c1243bd06bf21fb5271d93b863fc8b6e22fd8ca"
+    },
+    {
+      "commit": "8ca9ba5ea52de03308fe8ced94f7b159a44d28ff",
+      "sha256": "ad5e6aa8dcbf2d9391ea74e8760868ab9d4d22da7a20924e02828ba36b8890e7"
+    }
+  ],
+  "completeSourceTreeChanges": [
+    "LICENSE"
+  ],
+  "fixedSourceFiles": [
+    {
+      "path": "src/component.tsx",
+      "sha256": "9cf7f1768847ee331747101493a5ed7860199f730fd814e85f37f05368e56b55",
+      "sameBetweenCommits": true
+    },
+    {
+      "path": "src/constants.ts",
+      "sha256": "f597b4036280caca4cc58d3476ffc02dc5c16564090229e6685e98b80a8e2a33",
+      "sameBetweenCommits": true
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "46c5f7a742c3838959d33077733e634aad9c5cfc4041bcd38dba5f7cf3e05200",
+      "sameBetweenCommits": true
+    },
+    {
+      "path": "src/utils.ts",
+      "sha256": "c7d2d318bca380ff6a13ed35d1264cdfac9d9bc9389802f7bcacae24611865d1",
+      "sameBetweenCommits": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "484ad46c8cc261e168d7e2602bbb70b80f8d10307b7de91d99485da28c350a03",
+      "sameBetweenCommits": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "486442209236ffa3893312e508694699a6b8834d30a2f9c083c1f3379983e4f9",
+      "sameBetweenCommits": true
+    }
+  ],
+  "npm237PackageJsonEqualsOfficialTag": true,
+  "npm237ReadmeEqualsOfficialTag": true,
+  "licensedSourceLicenseEqualsPreservedOriginal": true,
+  "officialTagMapping": {
+    "refUrl": "https://api.github.com/repos/theKashey/react-remove-scroll-bar/git/ref/tags/v2.3.7",
+    "tagObjectSha": "7fe7bbe11f85b8a616c51c2331849537cdbe0549",
+    "commit": "29e9fcd1eecf7d3b77a767941c4a57fe461fc1e4",
+    "registryGitHeadMatches": true
+  },
+  "sourceDistributionReview": {
+    "sourceFiles": [
+      "src/component.tsx",
+      "src/constants.ts",
+      "src/index.ts",
+      "src/utils.ts"
+    ],
+    "runtimeFilesReviewed": [
+      "dist/es5/component.js",
+      "dist/es5/constants.js",
+      "dist/es5/index.js",
+      "dist/es5/utils.js",
+      "dist/es2015/component.js",
+      "dist/es2015/constants.js",
+      "dist/es2015/index.js",
+      "dist/es2015/utils.js",
+      "dist/es2019/component.js",
+      "dist/es2019/constants.js",
+      "dist/es2019/index.js",
+      "dist/es2019/utils.js"
+    ],
+    "declarationFilesReviewed": 12,
+    "result": "Manual source-to-distribution review found the same exports, CSS literals, React hooks, DOM scrollbar width calculations, lock counter and TypeScript declarations. Differences are type erasure, JSX React.createElement lowering, ES5/CommonJS lowering and formatting. No additional behavior was observed.",
+    "limit": "dist files are not tracked in the source repository and npm provenance is unavailable. This is a source review plus publisher metadata and byte-for-byte cross-version identity, not a reproducible-build or authenticated provenance proof."
+  },
+  "licenseScopeReview": {
+    "text": "Standard MIT license, copyright 2025 Anton Korzunov <thekashey@gmail.com>.",
+    "versionRestriction": false,
+    "requiredNotice": "Retain copyright and permission notice in copies or substantial portions.",
+    "fixedSourceCompare": "Only LICENSE added between official npm 2.3.7 source commit and licensed fixed commit."
+  },
+  "recommendation": "Preserve the fixed official MIT original plus registry, tag, compare, code equivalence and source review evidence for the installed 2.3.8. No dependency replacement needed for this documentation-evidence remedy. Do not claim that missing 2.3.8 gitHead or npm provenance was recovered."
+}

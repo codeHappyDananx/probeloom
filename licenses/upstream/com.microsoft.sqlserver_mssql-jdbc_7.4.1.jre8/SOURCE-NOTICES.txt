@@ -1,0 +1,110 @@
+Source entries: com/microsoft/sqlserver/jdbc/ActivityCorrelator.java, com/microsoft/sqlserver/jdbc/ISQLServerBulkRecord.java, com/microsoft/sqlserver/jdbc/ISQLServerConnection43.java, com/microsoft/sqlserver/jdbc/ISQLServerDataRecord.java, com/microsoft/sqlserver/jdbc/SQLServerColumnEncryptionCertificateStoreProvider.java, com/microsoft/sqlserver/jdbc/SQLServerColumnEncryptionKeyStoreProvider.java, com/microsoft/sqlserver/jdbc/SQLServerSecurityUtility.java, com/microsoft/sqlserver/jdbc/SQLServerSortOrder.java, com/microsoft/sqlserver/jdbc/StringUtils.java, com/microsoft/sqlserver/jdbc/UDTTDSHeader.java, com/microsoft/sqlserver/jdbc/AE.java, com/microsoft/sqlserver/jdbc/DLLException.java, com/microsoft/sqlserver/jdbc/dns/DNSKerberosLocator.java, com/microsoft/sqlserver/jdbc/dns/DNSRecordSRV.java, com/microsoft/sqlserver/jdbc/dns/DNSUtilities.java, com/microsoft/sqlserver/jdbc/FailOverInfo.java, com/microsoft/sqlserver/jdbc/FailOverMapSingleton.java, com/microsoft/sqlserver/jdbc/SQLServerParser.java, com/microsoft/sqlserver/jdbc/SQLServerStatementColumnEncryptionSetting.java, com/microsoft/sqlserver/jdbc/SQLServerSymmetricKey.java, com/microsoft/sqlserver/jdbc/SQLServerSymmetricKeyCache.java, com/microsoft/sqlserver/jdbc/AuthenticationJNI.java, com/microsoft/sqlserver/jdbc/ISQLServerConnection.java, com/microsoft/sqlserver/jdbc/Column.java, com/microsoft/sqlserver/jdbc/ISQLServerResultSetMetaData.java, com/microsoft/sqlserver/jdbc/ISQLServerSavepoint.java, com/microsoft/sqlserver/jdbc/ISQLServerStatement.java, com/microsoft/sqlserver/jdbc/JaasConfiguration.java, com/microsoft/sqlserver/jdbc/KeyStoreProviderCommon.java, com/microsoft/sqlserver/jdbc/NTLMAuthentication.java, com/microsoft/sqlserver/jdbc/ParameterUtils.java, com/microsoft/sqlserver/jdbc/PLPInputStream.java, com/microsoft/sqlserver/jdbc/ReaderInputStream.java, com/microsoft/sqlserver/jdbc/ScrollWindow.java, com/microsoft/sqlserver/jdbc/SimpleInputStream.java, com/microsoft/sqlserver/jdbc/SqlFedAuthToken.java, com/microsoft/sqlserver/jdbc/SQLServerAeadAes256CbcHmac256Algorithm.java, com/microsoft/sqlserver/jdbc/SQLServerAeadAes256CbcHmac256EncryptionKey.java, com/microsoft/sqlserver/jdbc/SQLServerAeadAes256CbcHmac256Factory.java, com/microsoft/sqlserver/jdbc/SQLServerBulkCopyOptions.java, com/microsoft/sqlserver/jdbc/SQLServerColumnEncryptionJavaKeyStoreProvider.java, com/microsoft/sqlserver/jdbc/SQLServerConnectionPoolProxy.java, com/microsoft/sqlserver/jdbc/SQLServerDataColumn.java, com/microsoft/sqlserver/jdbc/SQLServerEncryptionAlgorithm.java, com/microsoft/sqlserver/jdbc/SQLServerEncryptionAlgorithmFactory.java, com/microsoft/sqlserver/jdbc/SQLServerEncryptionAlgorithmFactoryList.java, com/microsoft/sqlserver/jdbc/SQLServerEncryptionType.java, com/microsoft/sqlserver/jdbc/SQLServerError.java, com/microsoft/sqlserver/jdbc/SQLServerFMTQuery.java, com/microsoft/sqlserver/jdbc/SQLServerLexer.java, com/microsoft/sqlserver/jdbc/SQLServerMetaData.java, com/microsoft/sqlserver/jdbc/SQLServerNClob.java, com/microsoft/sqlserver/jdbc/SqlVariant.java, com/microsoft/sqlserver/jdbc/SSPIAuthentication.java, com/microsoft/sqlserver/jdbc/StreamColInfo.java, com/microsoft/sqlserver/jdbc/StreamDone.java, com/microsoft/sqlserver/jdbc/StreamInfo.java, com/microsoft/sqlserver/jdbc/StreamLoginAck.java, com/microsoft/sqlserver/jdbc/StreamPacket.java, com/microsoft/sqlserver/jdbc/StreamRetStatus.java, com/microsoft/sqlserver/jdbc/StreamRetValue.java, com/microsoft/sqlserver/jdbc/StreamSSPI.java, com/microsoft/sqlserver/jdbc/StreamTabName.java, com/microsoft/sqlserver/jdbc/TVP.java, com/microsoft/sqlserver/jdbc/XMLTDSHeader.java, microsoft/sql/DateTimeOffset.java
+/*
+ * Microsoft JDBC Driver for SQL Server Copyright(c) Microsoft Corporation All rights reserved. This program is made
+ * available under the terms of the MIT License. See the LICENSE file in the project root for more information.
+ */
+
+Source entries: com/microsoft/sqlserver/jdbc/ISQLServerCallableStatement.java, com/microsoft/sqlserver/jdbc/ISQLServerDataSource.java, com/microsoft/sqlserver/jdbc/ISQLServerResultSet.java, com/microsoft/sqlserver/jdbc/SQLServerClob.java, com/microsoft/sqlserver/jdbc/SQLServerConnection.java, com/microsoft/sqlserver/jdbc/SQLServerResultSetMetaData.java, com/microsoft/sqlserver/jdbc/SQLServerSavepoint.java, com/microsoft/sqlserver/jdbc/SQLServerSpatialDatatype.java, com/microsoft/sqlserver/jdbc/SQLServerSQLXML.java, com/microsoft/sqlserver/jdbc/SQLServerStatement.java, com/microsoft/sqlserver/jdbc/tdsparser.java, com/microsoft/sqlserver/jdbc/ThreePartName.java, com/microsoft/sqlserver/jdbc/Util.java, microsoft/sql/Types.java, com/microsoft/sqlserver/jdbc/dataclassification/ColumnSensitivity.java, com/microsoft/sqlserver/jdbc/dataclassification/InformationType.java, com/microsoft/sqlserver/jdbc/dataclassification/Label.java, com/microsoft/sqlserver/jdbc/dataclassification/SensitivityClassification.java, com/microsoft/sqlserver/jdbc/dataclassification/SensitivityProperty.java, com/microsoft/sqlserver/jdbc/DataTypes.java, com/microsoft/sqlserver/jdbc/DDC.java, com/microsoft/sqlserver/jdbc/dtv.java, com/microsoft/sqlserver/jdbc/Geography.java, com/microsoft/sqlserver/jdbc/Geometry.java, com/microsoft/sqlserver/jdbc/InternalSpatialDatatype.java, com/microsoft/sqlserver/jdbc/IOBuffer.java, com/microsoft/sqlserver/jdbc/SQLServerPreparedStatement.java, com/microsoft/sqlserver/jdbc/SQLServerResultSet.java, com/microsoft/sqlserver/jdbc/SQLServerXAConnection.java, com/microsoft/sqlserver/jdbc/SQLServerXADataSource.java, com/microsoft/sqlserver/jdbc/SQLServerXAResource.java, com/microsoft/sqlserver/jdbc/ISQLServerPreparedStatement.java, com/microsoft/sqlserver/jdbc/KerbAuthentication.java, com/microsoft/sqlserver/jdbc/KerbCallback.java, com/microsoft/sqlserver/jdbc/KeyVaultCredential.java, com/microsoft/sqlserver/jdbc/osgi/Activator.java, com/microsoft/sqlserver/jdbc/osgi/SQLServerDataSourceFactory.java, com/microsoft/sqlserver/jdbc/Parameter.java, com/microsoft/sqlserver/jdbc/ParsedSQLMetadata.java, com/microsoft/sqlserver/jdbc/SharedTimer.java, com/microsoft/sqlserver/jdbc/SQLCollation.java, com/microsoft/sqlserver/jdbc/SQLJdbcVersion.java, com/microsoft/sqlserver/jdbc/SQLServerADAL4JUtils.java, com/microsoft/sqlserver/jdbc/SQLServerBlob.java, com/microsoft/sqlserver/jdbc/SQLServerBulkBatchInsertRecord.java, com/microsoft/sqlserver/jdbc/SQLServerBulkCopy.java, com/microsoft/sqlserver/jdbc/SQLServerBulkCSVFileRecord.java, com/microsoft/sqlserver/jdbc/SQLServerBulkRecord.java, com/microsoft/sqlserver/jdbc/SQLServerCallableStatement.java, com/microsoft/sqlserver/jdbc/SQLServerColumnEncryptionAzureKeyVaultProvider.java, com/microsoft/sqlserver/jdbc/SQLServerConnection43.java, com/microsoft/sqlserver/jdbc/SQLServerConnectionPoolDataSource.java, com/microsoft/sqlserver/jdbc/SQLServerDatabaseMetaData.java, com/microsoft/sqlserver/jdbc/SQLServerDataSource.java, com/microsoft/sqlserver/jdbc/SQLServerDataSourceObjectFactory.java, com/microsoft/sqlserver/jdbc/SQLServerDataTable.java, com/microsoft/sqlserver/jdbc/SQLServerDriver.java, com/microsoft/sqlserver/jdbc/SQLServerException.java, com/microsoft/sqlserver/jdbc/SQLServerJdbc43.java, com/microsoft/sqlserver/jdbc/SQLServerKeyVaultAuthenticationCallback.java, com/microsoft/sqlserver/jdbc/SQLServerLob.java, com/microsoft/sqlserver/jdbc/SQLServerParameterMetaData.java, com/microsoft/sqlserver/jdbc/SQLServerPooledConnection.java, com/microsoft/sqlserver/jdbc/SQLServerResource.java, com/microsoft/sqlserver/jdbc/StreamColumns.java, com/microsoft/sqlserver/jdbc/TDSTimeoutTask.java
+/*
+ * Microsoft JDBC Driver for SQL Server Copyright(c) Microsoft Corporation All rights reserved. This program is made
+ * available under the terms of the MIT License. See the LICENSE file in the project root for more information.
+ */
+
+Source entries: mssql/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap.java, mssql/googlecode/concurrentlinkedhashmap/Weighers.java, mssql/googlecode/concurrentlinkedhashmap/EvictionListener.java, mssql/googlecode/concurrentlinkedhashmap/Weigher.java
+/*
+ * Copyright 2010 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: com/microsoft/sqlserver/jdbc/SQLServerJdbc42.java
+/*
+ * Microsoft JDBC Driver for SQL Server
+ * 
+ * Copyright(c) Microsoft Corporation All rights reserved.
+ * 
+ * This program is made available under the terms of the MIT License. See the LICENSE file in the project root for more information.
+ */
+
+Source entries: mssql/googlecode/cityhash/CityHash.java, mssql/googlecode/cityhash/package-info.java
+/**
+ * Copyright (C) 2012 tamtam180
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations
+ * under the License.
+ *
+ * @author tamtam180 - kirscheless at gmail.com
+ * @see <a href=
+ *      "http://google-opensource.blogspot.jp/2011/04/introducing-cityhash.html">http://google-opensource.blogspot.jp/2011/04/introducing-cityhash.html</a>
+ * @see <a href="http://code.google.com/p/cityhash/">http://code.google.com/p/cityhash/</a>
+ */
+
+Source entries: mssql/googlecode/concurrentlinkedhashmap/EntryWeigher.java
+/*
+ * Copyright 2012 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: mssql/googlecode/concurrentlinkedhashmap/LinkedDeque.java
+/*
+ * Copyright 2011 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source entries: mssql/googlecode/concurrentlinkedhashmap/package-info.java
+/*
+ * Copyright 2011 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations
+ * under the License.
+ */
+
+Source entries: mssql/security/provider/MD4.java
+/*
+ * Copyright (c) 2005, 2016, Oracle and/or its affiliates. All rights reserved. ORACLE PROPRIETARY/CONFIDENTIAL. Use is
+ * subject to license terms.
+ */
